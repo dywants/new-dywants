@@ -10,7 +10,7 @@ const Temoignages = ({testimonial}) =>{
 
     return (
         <SectionTemoignages>
-            <Container className="text-center p-10">
+            <div className="container max-w-full mx-auto text-center p-10">
                 <h2 className="font-semibold text-[40px] text-white leading-10 mb-4">
                     Témoignages
                 </h2>
@@ -19,9 +19,16 @@ const Temoignages = ({testimonial}) =>{
                 </p>
                 <Splide className="cards" aria-label="My testimonial" options={{
                     rewind: true,
-                    fixedWidth: '450px',
+                    fixedWidth: '650px',
                     perPage: 2,
                     gap: '1rem',
+
+                    breakpoints: {
+                        640: {
+                            fixedWidth: '320px',
+                            perPage: 1,// Used after destruction
+                        }
+                    }
                 }}>
                     {
                         testimonial.map((p, i) => {
@@ -34,7 +41,7 @@ const Temoignages = ({testimonial}) =>{
                         })
                     }
                 </Splide>
-            </Container>
+            </div>
         </SectionTemoignages>
     )
 }

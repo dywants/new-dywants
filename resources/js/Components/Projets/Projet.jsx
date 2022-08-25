@@ -14,9 +14,18 @@ const Projets = ({projets}) =>{
                 </h2>
                 <Splide aria-label="Nos recents projets" options={{
                     rewind: true,
-                    fixedWidth: '750px',
+                    fixedWidth: '735px',
                     perPage: 1,
                     gap: '1.5rem',
+
+                    breakpoints: {
+                        640: {
+                            fixedWidth: '350px',
+                            fixedHeight: '750px',
+                            perPage: 1,// Used after destruction
+                        },
+
+                    }
                 }}>
                     {
                         projets.map((p, i) => {
@@ -36,7 +45,6 @@ const Projets = ({projets}) =>{
 
 const ProjetSection = styled.section`
   background-color: ${(props) => props.theme.colors.degradedPrimary};
-  // margin-top:76px;
 
    .splide__pagination__page {
     &.is-active {

@@ -7,10 +7,10 @@ const CardProjet = ({image, title, description, link, className = "",
                     }) => {
     return(
         <CardSections>
-            <div className="image mx-auto mb-2">
+            <div className="image mx-auto mb-2 object-fill">
                 <img src={image} alt="" className="w-full h-full rounded-md object-cover"/>
             </div>
-            <div className="text-left mb-2 mt-4">
+            <div className="text-left mb-2 mt-8 px-12">
                 <h3 className="text-black text-[28px] font-semibold mb-4">{title}</h3>
                 <TagList>
                     {
@@ -26,27 +26,32 @@ const CardProjet = ({image, title, description, link, className = "",
                     {description}
                 </p>
             </div>
-            <Link href={link} target="_blank" className={
-                `inline-flex items-center text-right mt-4 px-4 py-2 bg-[#FFB400] border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest active:bg-gray-900 transition ease-in-out duration-150 ${
-                    processing && "opacity-25"
-                } ` + className
-            }>Visiter</Link>
+           <div className="p-14">
+               <Link href={link} target="_blank" className={
+                   `inline-flex items-center text-right mt-4 px-4 py-2 bg-[#FFB400] border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest active:bg-gray-900 transition ease-in-out duration-150 ${
+                       processing && "opacity-25"
+                   } ` + className
+               }>Visiter</Link>
+           </div>
         </CardSections>
     )
 }
 
 const CardSections = styled.div`
- // max-width: 900px;
  border-radius:20px;
  background-color:white;
- padding: 4rem;
  margin-top: 2rem;
  text-align:right;
- height: 750px;
+ // height: 750px;
 
  .image{
-   // max-width: 900px;
-   height:400px;
+   height:auto;
+ }
+
+ @media screen and (min-width: 736px) {
+    .image{
+      height:400px;
+    }
  }
 `;
 

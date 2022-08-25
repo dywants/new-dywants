@@ -6,7 +6,7 @@ import "./particle.css";
 
 const Header = () => {
     return (
-        <HeaderSection className="border-gray-200 border-b relative">
+        <HeaderSection className="border-gray-200 border-b relative py-12">
             <div className="container mx-auto">
                 <div className="flex items-center justify-between relative">
                     <div className="zone-text py-[113px] flex-1 justify-between space-x-4">
@@ -65,7 +65,7 @@ const Header = () => {
                 </div>
             </div>
             <Particules />
-            <img src="assets/images/header_circles.png" alt="" className="absolute -top-16 -right-6 -z-40"/>
+            <img src="assets/images/header_circles.png" alt="" className="absolute -top-12 -right-16 -z-40"/>
         </HeaderSection>
     );
 };

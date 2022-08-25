@@ -9,6 +9,7 @@ export default {
     colors: {
         primary: "#FFB400",
         degradedPrimary: "#E6C46926",
+        gradedPrimary: "linear-gradient(90deg, rgba(27, 53, 103, 0.8) 0%, rgba(79, 108, 164, 0.44) 100%)",
         secondary: "#1B3567",
         light: "#eaeef3",
         textColor: "#242526",
@@ -18,7 +19,7 @@ export default {
     breakpoints: {
         sm: "screen and (max-width: 640px)",
         md: "screen and (max-width: 768px)",
-        lg: "screen and (max-width: 1024px)",
-        xl: "screen and (max-width: 1280px)",
+        lg: "screen and (min-width: 1024px)",
+        xl: "screen and (min-width: 1280px)",
     },
 };

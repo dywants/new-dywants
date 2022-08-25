@@ -24,14 +24,17 @@ const GlobalStyles = createGlobalStyle`
 
 export const Container = styled.div`
     z-index: 1;
+    padding-right: 30px;
+    padding-left: 30px;
     width: 100%;
-    max-width: calc(100% - 18.75rem);
-    margin-left: auto;
-    margin-right: auto;
 
-    @media screen and (max-width: 991px) {
-        padding-right: 30px;
-        padding-left: 30px;
+     @media screen and (min-width: 736px) {
+        width: 100%;
+        max-width: calc(100% - 18.75rem);
+        margin-left: auto;
+        margin-right: auto;
     }
+
+
 `;
 export default GlobalStyles;
