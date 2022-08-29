@@ -17,7 +17,7 @@ const Footer = () => {
                     <div className="name">
                         <h3 className="footer__title">Nos services</h3>
                         <hr className="h-8 font-bold text-white w-24 mt-1 mx-auto"/>
-                        <ul className="text-left text-gray-800 space-y-6">
+                        <ul className="text-left text-white space-y-6">
                             <li className="hover:scale-x-75"><a href="#" className="text-lg"> Développement web</a></li>
                             <li className="hover:scale-x-75"><a href="#" className="text-lg"> UI/UX Design</a></li>
                             <li className="hover:scale-x-75"><a href="#" className="text-lg"> Développement Apps Mobile</a></li>
@@ -31,10 +31,10 @@ const Footer = () => {
                     <div className="name">
                         <h3 className="footer__title">Contact</h3>
                         <hr className="h-8 text-white w-14 mt-1 mx-auto"/>
-                        <ul className="text-left text-gray-800 space-y-3">
-                            <li><a href="#"><img src="assets/images/icons/map-pin.png" className="inline-flex mr-1" alt="icon arrow-right-circle"/>Douala Cameroun, sis Lycée cité des palmier</a></li>
-                            <li><a href="#"><img src="assets/images/icons/mail.png" className="inline-flex mr-1" alt="icon arrow-right-circle"/>contact@dywants.com</a></li>
-                            <li><a href="#"><img src="assets/images/icons/phone-call.png" className="inline-flex mr-1" alt="icon arrow-right-circle"/>(+237) 699278240</a></li>
+                        <ul className="text-left text-white space-y-3">
+                            <li><a href="#"><img src="assets/images/icons/map-pin.png" className="inline-flex mr-1 bg-white p-1 rounded-sm" alt="icon arrow-right-circle"/>Douala Cameroun, sis Lycée cité des palmier</a></li>
+                            <li><a href="#"><img src="assets/images/icons/mail.png" className="inline-flex mr-1 bg-white p-1 rounded-sm" alt="icon arrow-right-circle"/>contact@dywants.com</a></li>
+                            <li><a href="#"><img src="assets/images/icons/phone-call.png" className="inline-flex mr-1 bg-white p-1 rounded-sm" alt="icon arrow-right-circle"/>(+237) 699278240</a></li>
                         </ul>
                     </div>
                 </FooterWrapper>
@@ -73,7 +73,7 @@ const FooterWrapper = styled.div`
    font-weight: 700;
    font-size: 24px;
    line-height: 28px;
-   color: black;
+   color: ${(props) => props.theme.colors.primary};;
  }
 `;
 

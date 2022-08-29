@@ -20,6 +20,12 @@ const GlobalStyles = createGlobalStyle`
     font-family: ${(props) => props.theme.fonts.title};
   }
 
+  h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 55px;
+  }
+
 `;
 
 export const Container = styled.div`

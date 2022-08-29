@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\HomeIndexController;
-use Illuminate\Foundation\Application;
-use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Foundation\Application;
+use App\Http\Controllers\HomeIndexController;
+use App\Http\Controllers\ContactIndexController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,5 +31,6 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/', HomeIndexController::class);
+Route::get('/contact', ContactIndexController::class);
 
 require __DIR__ . '/auth.php';

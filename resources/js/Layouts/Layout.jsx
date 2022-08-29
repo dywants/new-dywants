@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
                     <Navbar />
                     <main className="overflow-hidden z-40">{children}</main>
                 </div>
-                <Footer>Footer</Footer>
+                <Footer />
             </div>
         </Theme>
     );
