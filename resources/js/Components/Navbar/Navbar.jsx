@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaTimes, FaBars } from 'react-icons/fa';
 import {Nav, NavBarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, SectionButton} from "./NavBarStyled";
-import Button from "@/Components/Button";
+import LinkElement from "@/Components/LinkElement";
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
@@ -34,7 +34,7 @@ const Navbar = () => {
                         </NavItem>
                     </NavMenu>
                     <SectionButton className="space-x-2">
-                        <Button >Contact</Button>
+                        <LinkElement href="#" >Demander un devis</LinkElement>
                     </SectionButton>
                 </NavBarContainer>
             </Nav>

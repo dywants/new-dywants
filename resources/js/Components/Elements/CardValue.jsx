@@ -1,5 +1,3 @@
-
-
 const CardValue = ({title, icon, description}) => {
     return (
         <div className="text-left border p-4 rounded-md">

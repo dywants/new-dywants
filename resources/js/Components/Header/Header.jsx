@@ -3,6 +3,7 @@ import Button from "../Button";
 import Particules from "../Particules";
 import { HeaderSection } from "./HeaderStyled";
 import "./particle.css";
+import LinkElement from "@/Components/LinkElement";
 
 const Header = () => {
     return (
@@ -25,7 +26,8 @@ const Header = () => {
                             Nous vous proposons des solutions
                             innovantes pour votre business.
                         </p>
-                        <Button classname="mt-4">Demander un devis</Button>
+                        <LinkElement href="#" primary classname="mt-4">Demander un devis</LinkElement>
+                        <LinkElement href="#" classname="mt-4">En savoir plus</LinkElement>
                     </div>
                     <div className="zone-image relative flex-1 flex-end flex items-center justify-center">
                         <img
