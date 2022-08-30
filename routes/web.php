@@ -4,6 +4,7 @@ use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
 use App\Http\Controllers\HomeIndexController;
+use App\Http\Controllers\AproposIndexController;
 use App\Http\Controllers\ContactIndexController;
 
 /*
@@ -32,5 +33,6 @@ Route::get('/dashboard', function () {
 
 Route::get('/', HomeIndexController::class);
 Route::get('/contact', ContactIndexController::class);
+Route::get('/qui-sommes-nous', AproposIndexController::class);
 
 require __DIR__ . '/auth.php';
