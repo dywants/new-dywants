@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
+const plugin = require("tailwindcss");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -20,5 +21,18 @@ module.exports = {
         },
     },
 
-    plugins: [require('@tailwindcss/forms')],
+    plugins: [
+        require('@tailwindcss/forms'),
+        plugin(function({ addComponents }) {
+            addComponents({
+                '.btn': {
+                    padding: '.5rem 1rem !important',
+                    borderRadius: '.25rem !important',
+                    fontWeight: '600 !important',
+                    backGround: '#1B3567 !important'
+                },
+                // ...
+            })
+        })
+    ],
 };

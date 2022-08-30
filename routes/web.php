@@ -31,8 +31,8 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/', HomeIndexController::class);
-Route::get('/contact', ContactIndexController::class);
-Route::get('/qui-sommes-nous', AproposIndexController::class);
+Route::get('/', HomeIndexController::class)->name('homepage');
+Route::get('/contact', ContactIndexController::class)->name('contact');
+Route::get('/qui-sommes-nous', AproposIndexController::class)->name('apropos');
 
 require __DIR__ . '/auth.php';

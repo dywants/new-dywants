@@ -1,9 +1,9 @@
 import {Link} from "@inertiajs/inertia-react";
 import styled, { css } from 'styled-components';
 
-const LinkElement = ({ href, primary, children }) => {
+const LinkElement = ({ href, primary, children, className = "" }) => {
     return (
-        <LinkStyle primary={primary} href={href}>
+        <LinkStyle primary={primary} href={href} className={``+ className}>
             {children}
         </LinkStyle>
     )
@@ -17,7 +17,7 @@ const LinkStyle = styled(Link)`
 
   font-size: 1em;
   margin: 1em;
-  padding: 0.25em 1em;
+  padding: 0.35em 1.1em;
   border: 2px solid ${props => props.theme.colors.primary};;
   border-radius: 3px;
 
@@ -27,7 +27,6 @@ const LinkStyle = styled(Link)`
       transform: translate(0%, -30%);
       transition: 0.3s ease-out;
     }
-
 `;
 
 export default LinkElement;

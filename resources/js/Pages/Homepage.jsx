@@ -9,6 +9,7 @@ import Temoignages from "@/Components/Temoignages/Temoignages";
 import {TestimonialObj} from "@/Pages/Data/temoignages";
 import Projets from "@/Components/Projets/Projet";
 import {projetsObj} from "@/Pages/Data/projets";
+import Valeurs from "@/Components/Elements/Valeurs";
 
 const Homepage = () => {
     return (
@@ -16,7 +17,11 @@ const Homepage = () => {
             <Header />
             <Mission />
             <Services />
-            <Temoignages {...TestimonialObj}/>
+            <div className="container mx-auto max-w-6xl px-7">
+                <h2 className="text-right">Nos valeurs</h2>
+                <Valeurs/>
+            </div>
+            {/*<Temoignages {...TestimonialObj}/>*/}
             <Projets {...projetsObj}/>
             {/*<Compagnies />*/}
             {/*<Expertises />*/}

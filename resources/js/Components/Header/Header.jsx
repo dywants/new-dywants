@@ -26,8 +26,8 @@ const Header = () => {
                             Nous vous proposons des solutions
                             innovantes pour votre business.
                         </p>
-                        <LinkElement href="#" primary classname="mt-4">Demander un devis</LinkElement>
-                        <LinkElement href="#" classname="mt-4">En savoir plus</LinkElement>
+                        <LinkElement href={route('contact')} primary classname="mt-4">Demander un devis</LinkElement>
+                        <LinkElement href={route('apropos')} classname="mt-4">En savoir plus</LinkElement>
                     </div>
                     <div className="zone-image relative flex-1 flex-end flex items-center justify-center">
                         <img

@@ -11,7 +11,7 @@ const Navbar = () => {
         <>
             <Nav>
                 <NavBarContainer>
-                    <NavLogo>
+                    <NavLogo href={route('homepage')}>
                         <img src="assets/logo/logo.png" alt="" className="w-full h-full"/>
                         Dywants
                     </NavLogo>
@@ -24,7 +24,7 @@ const Navbar = () => {
                             <NavLinks href="#">Projets</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks href="#">About Us</NavLinks>
+                            <NavLinks href={route('apropos')}>Qui sommes nous</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks href="#">Podcast</NavLinks>
@@ -34,7 +34,7 @@ const Navbar = () => {
                         </NavItem>
                     </NavMenu>
                     <SectionButton className="space-x-2">
-                        <LinkElement href="#" >Demander un devis</LinkElement>
+                        <LinkElement href={route('contact')} >Demander un devis</LinkElement>
                     </SectionButton>
                 </NavBarContainer>
             </Nav>

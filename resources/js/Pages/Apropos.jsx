@@ -7,11 +7,12 @@ import Layout from '@/Layouts/Layout';
 import React from 'react';
 import styled from 'styled-components';
 import { teams } from './Data/teams';
+import CallToAction from "@/Components/Elements/CallToAction";
 
 const Apropos = () => {
     return (
         <Layout>
-            <HeaderPage title='Qui sommes nous?' description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            <HeaderPage title='Qui sommes nous?' description="Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unkno" img="assets/images/apropos/apropos.png"/>
             <Presentation/>
             <Sections title="Nos Valeurs" image="assets/images/apropos/valeurs.png">
@@ -40,10 +41,10 @@ const Apropos = () => {
                         )
                     })
                 }
-                
               </WrapperTeams>
             </div>
             </Sections>
+            <CallToAction/>
         </Layout>
     );
 };
