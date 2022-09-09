@@ -3,26 +3,26 @@ import { v4 as uuidv4 } from "uuid";
 export const values = [
     {
         id: uuidv4(),
-        title: "Esprit de collaboration",
-        icon: "assets/images/logo-entreprises/logo-digitalblackbusiness.png",
-        description: "Nous sommes satisfaits lorsque vous nous considérez comme une extension de vos propres équipes."
+        title: "Ecoute et collaboration",
+        icon: "assets/images/values/les-interactions.png",
+        description: "Nous veillons à identifier vos besoins réels et collaborons avec vous comme des membres d'une même équipe"
     },
     {
         id: uuidv4(),
         title: "Qualité plutôt que quantité",
-        logo: "assets/images/logo-entreprises/logo-event-presta.png",
-        description: "Chaque détail doit être parfait.Même si pour cela nous devons limiter notre scope d’intervention."
+        icon: "assets/images/values/controle-de-qualite.png",
+        description: "Chaque détail doit être parfait. Mais surtout dois être en accord avec vos valeurs et vos attentes, nous ne vous encombrons pas des choses inutiles"
     },
     {
         id: uuidv4(),
-        title: "L'utilisateur avant tout",
-        icon: "assets/images/logo-entreprises/logo-ej-collection.png",
-        description: "Nous n'oublions jamais que pour l'utilisateur, l'interface est le produit.        "
+        title: "Expérience client ",
+        icon: "assets/images/values/la-satisfaction.png",
+        description: "Nous vous accompagnons en etant tout notre savoir faire pour que votre produit soit le meilleure possible"
     },
     {
         id: uuidv4(),
         title: "Efficacité",
-        icon: "assets/images/logo-entreprises/logo-findtofound.svg",
-        description: "Les plannings doivent être tenus. Voilà tout."
+        icon: "assets/images/values/efficacite.png",
+        description: "Le respect des delais est une condition pour nous. Voilà tout."
     },
 ];
