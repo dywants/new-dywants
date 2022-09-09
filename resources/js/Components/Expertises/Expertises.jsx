@@ -35,6 +35,7 @@ const Expertises = () => {
                             return (
                                 <CardExpertise
                                     key={expertise.id}
+                                    img={expertise.img}
                                     name={expertise.name}
                                 />
                             );

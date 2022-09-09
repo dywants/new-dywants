@@ -21,10 +21,11 @@ const Homepage = () => {
                 <h2 className="text-right">Nos valeurs</h2>
                 <Valeurs/>
             </div>
+            <Expertises />
             {/*<Temoignages {...TestimonialObj}/>*/}
             <Projets {...projetsObj}/>
             {/*<Compagnies />*/}
-            {/*<Expertises />*/}
+            
         </Layout>
     );
 };

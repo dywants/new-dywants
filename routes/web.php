@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ServiceDevelopmentWebController;
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
@@ -34,5 +35,6 @@ Route::get('/dashboard', function () {
 Route::get('/', HomeIndexController::class)->name('homepage');
 Route::get('/contact', ContactIndexController::class)->name('contact');
 Route::get('/qui-sommes-nous', AproposIndexController::class)->name('apropos');
+Route::get('/services/developpement-web', ServiceDevelopmentWebController::class)->name('devWeb');
 
 require __DIR__ . '/auth.php';
