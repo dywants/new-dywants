@@ -9,6 +9,7 @@ import Temoignages from "@/Components/Temoignages/Temoignages";
 import {TestimonialObj} from "@/Pages/Data/temoignages";
 import Projets from "@/Components/Projets/Projet";
 import {projetsObj} from "@/Pages/Data/projets";
+import {articles} from "@/Pages/Data/blog";
 import Valeurs from "@/Components/Elements/Valeurs";
 import BlogSection from "@/Components/Blog/BlogSection";
 
@@ -26,7 +27,7 @@ const Homepage = () => {
             {/*<Temoignages {...TestimonialObj}/>*/}
             <Projets {...projetsObj}/>
             {/*<Compagnies />*/}
-            <BlogSection/>
+            <BlogSection {...articles}/>
             
         </Layout>
     );
