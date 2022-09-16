@@ -10,6 +10,7 @@ import {TestimonialObj} from "@/Pages/Data/temoignages";
 import Projets from "@/Components/Projets/Projet";
 import {projetsObj} from "@/Pages/Data/projets";
 import Valeurs from "@/Components/Elements/Valeurs";
+import BlogSection from "@/Components/Blog/BlogSection";
 
 const Homepage = () => {
     return (
@@ -25,6 +26,7 @@ const Homepage = () => {
             {/*<Temoignages {...TestimonialObj}/>*/}
             <Projets {...projetsObj}/>
             {/*<Compagnies />*/}
+            <BlogSection/>
             
         </Layout>
     );

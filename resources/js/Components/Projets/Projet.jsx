@@ -8,20 +8,20 @@ import '@splidejs/react-splide/css';
 const Projets = ({projets}) =>{
     return (
         <ProjetSection>
-            <Container className="text-center p-16">
+            <div className="text-center">
                 <h2 className="font-semibold text-[40px] text-[#FFB400] leading-10 mb-4">
                     Nos récents projets
                 </h2>
                 <Splide aria-label="Nos recents projets" options={{
                     rewind: true,
-                    fixedWidth: '735px',
-                    perPage: 1,
-                    gap: '1.5rem',
+                    perPage: 2,
+                    drag: "free",
+                    gap: "2rem",
 
                     breakpoints: {
                         640: {
                             fixedWidth: '350px',
-                            fixedHeight: '750px',
+                            fixedHeight: '590px',
                             perPage: 1,// Used after destruction
                         },
 
@@ -38,13 +38,14 @@ const Projets = ({projets}) =>{
                         })
                     }
                 </Splide>
-            </Container>
+            </div>
         </ProjetSection>
     )
 }
 
 const ProjetSection = styled.section`
   background-color: ${(props) => props.theme.colors.degradedPrimary};
+  padding: 5rem;
 
    .splide__pagination__page {
     &.is-active {

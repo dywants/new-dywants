@@ -10,6 +10,7 @@ export default {
         primary: "#FFB400",
         degradedPrimary: "#E6C46926",
         gradedPrimary: "linear-gradient(90deg, rgba(27, 53, 103, 0.8) 0%, rgba(79, 108, 164, 0.44) 100%)",
+        gradedSecondary:"linear-gradient(179.95deg, rgba(27, 53, 103, 0) 0.04%, #1B3567 74.02%)",
         secondary: "#1B3567",
         light: "#eaeef3",
         textColor: "#242526",
