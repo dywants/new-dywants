@@ -9,7 +9,7 @@ const CardProjet = ({image, title, description, link, className = "",
         <CardSections>
             <SectionImage className="mx-auto relative">
                 <img src={image} alt={title} className="w-full h-full rounded-t-md object-cover image"/>
-                <h3 className="text-black text-[24px] font-bold mb-4 absolute bottom-0 left-8">{title}</h3>
+                <h3 className="text-black text-[24px] font-bold mb-4 absolute bottom-0 left-8 backdrop-contrast-50 bg-white/30 p-2 rounded-sm">{title}</h3>
             </SectionImage>
             <SectionBody className="text-left mb-2 px-12 py-4 rounded-b-lg">
                 <h4 className="text-black text-[20px] font-semibold mb-4">Technologies</h4>
@@ -59,7 +59,7 @@ z-index:9999;
         position: relative;
         z-index:-1;
     }
-    
+
     img::before{
         content:"";
         background:${(props) => props.theme.colors.gradedSecondary} !important;
@@ -69,7 +69,7 @@ z-index:9999;
         width: 45%;
         transform: translateX(-50%) skew(-50deg);
     }
-    
+
 `;
 
 export const SectionBody = styled.div`

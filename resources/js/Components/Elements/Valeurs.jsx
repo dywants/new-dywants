@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import CardValue from './CardValue';
-import { values } from "../../Pages/Data/values";
+import { values } from "@/Pages/Data/values";
 
 const Valeurs = () => {
     return (
@@ -14,7 +14,7 @@ const Valeurs = () => {
                         )
                     })
                 }
-                
+
             </WrapperValue>
         </div>
     );

@@ -2,6 +2,7 @@ import { articles } from '@/Pages/Data/blog';
 import React from 'react';
 import styled from 'styled-components';
 import CardBlog from '../Elements/CardBlog';
+import MetaBlog from "@/Components/Elements/MetaBlog";
 
 const BlogSection = () => {
     return (
@@ -9,15 +10,17 @@ const BlogSection = () => {
             <h2 className="text-left">Articles de blog</h2>
             <WrapperBlog>
                 {
-                    articles.map((aritcle, i) => {
+                    articles.map((article, i) => {
                         return(
-                            <CardBlog key={i} 
-                            title={aritcle.title} 
-                            description={aritcle.description} 
-                            image={aritcle.image}
-                            url={aritcle.url}
-                            category={aritcle.category}
-                            />
+                            <CardBlog key={i}
+                            title={article.title}
+                            description={article.description}
+                            image={article.image}
+                            url={article.url}
+                            category={article.category}
+                            >
+                                <MetaBlog img="assets/images/blog/Avatar.png" name={article.name} date={article.date} url={article.url}/>
+                            </CardBlog>
                         )
                     })
                 }
