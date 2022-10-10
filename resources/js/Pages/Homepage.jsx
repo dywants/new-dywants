@@ -12,11 +12,14 @@ import {projetsObj} from "@/Pages/Data/projets";
 import {articles} from "@/Pages/Data/blog";
 import Valeurs from "@/Components/Elements/Valeurs";
 import BlogSection from "@/Components/Blog/BlogSection";
+import CallToAction from "@/Components/Elements/CallToAction";
+import About from "@/Components/Abouts/About";
 
 const Homepage = () => {
     return (
         <Layout>
             <Header />
+            <About/>
             <Mission />
             <Services />
             <div className="container mx-auto max-w-6xl px-7">
@@ -28,7 +31,7 @@ const Homepage = () => {
             <Projets {...projetsObj}/>
             {/*<Compagnies />*/}
             <BlogSection {...articles}/>
-            
+            <CallToAction/>
         </Layout>
     );
 };

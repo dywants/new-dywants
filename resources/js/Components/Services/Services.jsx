@@ -15,7 +15,7 @@ const Services = () => {
                         <h2 className="font-semibold text-[48px] leading-10 mb-8">
                             Nos services
                         </h2>
-                        <p className="text-[18px] font-light leading-tight">
+                        <p className="text-[18px] font-light leading-7">
                             Comprendre ce dont vous avez besoins et y apporter
                             une réponse numerique sur-mesure,qui vous
                             corresponds est Notre objectif

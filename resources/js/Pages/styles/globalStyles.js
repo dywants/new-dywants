@@ -40,7 +40,18 @@ export const Container = styled.div`
         margin-left: auto;
         margin-right: auto;
     }
-
-
 `;
+
+/*export const TitleSection = styled.h2`
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 3px;
+text-transform: uppercase;
+color: #000000;
+opacity: 0.87;
+
+`;*/
 export default GlobalStyles;

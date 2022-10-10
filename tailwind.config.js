@@ -17,6 +17,12 @@ module.exports = {
             },
             colors: {
                 'degradedSecondary': "linear-gradient(90deg, rgba(27, 53, 103, 0.8) 0%, rgba(79, 108, 164, 0.44) 100%)",
+                'title': "#232536",
+                'texte': "#5D5F6D",
+                'primary': "#FFB400",
+                'secondaty': '#1B3567',
+                'light': "#eaeef3",
+                'dark': "#0A142F"
               },
         },
     },
