@@ -12,10 +12,10 @@ import LinkElement from "@/Components/LinkElement";
 const Services = () => {
     return (
         <SectionServices>
-            <div className="container mx-auto max-w-6xl text-left p-20">
+            <div className="container mx-auto max-w-7xl text-left px-16 py-20">
                 <TitleSection title="Nos services"/>
                 <Title className="w-[777px] mb-4" title="Nous construisons des solutions logicielles qui résolvent les défis commerciaux de nos clients"/>
-                <LinkElement primary className="mt-8 w-full ml-0">
+                <LinkElement href={route('contact')} primary className="mt-8 w-full ml-0">
                     Démarrer un projet
                     <img className="w-6 h-6 ml-1 inline-flex" src="assets/images/icons/right-arrow.png" alt="right-arrow icon" />
                 </LinkElement>

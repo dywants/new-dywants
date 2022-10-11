@@ -9,11 +9,13 @@ import Temoignages from "@/Components/Temoignages/Temoignages";
 import {TestimonialObj} from "@/Pages/Data/temoignages";
 import Projets from "@/Components/Projets/Projet";
 import {projetsObj} from "@/Pages/Data/projets";
+import {processInfos} from "@/Pages/Data/process";
 import {articles} from "@/Pages/Data/blog";
 import Valeurs from "@/Components/Elements/Valeurs";
 import BlogSection from "@/Components/Blog/BlogSection";
 import CallToAction from "@/Components/Elements/CallToAction";
 import About from "@/Components/Abouts/About";
+import Process from "@/Components/Process/Process";
 
 const Homepage = () => {
     return (
@@ -22,11 +24,12 @@ const Homepage = () => {
             <About/>
             <Expertises />
             {/*<Mission /> */}
-            <Services /> 
-            <div className="container mx-auto max-w-6xl px-7">
+            <Services />
+            <Process {...processInfos}/>
+           { /*<div className="container mx-auto max-w-6xl px-7">
                 <h2 className="text-right">Nos valeurs</h2>
                 <Valeurs/>
-            </div>
+    </div>*/}
             {/*<Temoignages {...TestimonialObj}/>*/}
             <Projets {...projetsObj}/>
             {/*<Compagnies />*/}
