@@ -3,14 +3,35 @@ import React from "react";
 import styled from "styled-components";
 import { SectionServices } from "./ServicesStyled.js";
 import CardService from "@/Components/Elements/CardService";
-import { servicesInfo } from "@/Pages/Data/services";
+import CardServices from './CardService'
+import { servicesInfo, servicesInfos } from "@/Pages/Data/services";
+import TitleSection from "../Elements/TitleSection.jsx";
+import Title from "../Elements/Title.jsx";
+import LinkElement from "@/Components/LinkElement";
 
 const Services = () => {
     return (
         <SectionServices>
-            <div className="text-center p-16">
-
-                <div className="flex mx-auto max-w-full items-center justify-center gap-4">
+            <div className="container mx-auto max-w-6xl text-left p-20">
+                <TitleSection title="Nos services"/>
+                <Title className="w-[777px] mb-4" title="Nous construisons des solutions logicielles qui résolvent les défis commerciaux de nos clients"/>
+                <LinkElement primary className="mt-8 w-full ml-0">
+                    Démarrer un projet
+                    <img className="w-6 h-6 ml-1 inline-flex" src="assets/images/icons/right-arrow.png" alt="right-arrow icon" />
+                </LinkElement>
+                <div className='flex justify-between items-center gap-4 mt-14'>
+                    {servicesInfos.map((service) => {
+                        return (
+                            <CardServices
+                                key={service.id}
+                                src={service.icon}
+                                title={service.title}
+                                description={service.description}
+                            />
+                        );
+                    })}
+                </div>
+                {/*<div className="flex mx-auto max-w-full items-center justify-center gap-4">
                     <div className="max-w-[395px] w-full text-left">
                         <h2 className="font-semibold text-[48px] leading-10 mb-8">
                             Nos services
@@ -36,9 +57,7 @@ const Services = () => {
 
                         </GridSection>
                     </div>
-                </div>
-
-
+                        </div> */}
             </div>
         </SectionServices>
     );

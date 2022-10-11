@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from 'styled-components'
 
-const TitleSection = ({title}) => {
+const TitleSection = ({title ,  className = ""}) => {
     return (
-        <TitleName>
+        <TitleName  className={
+            `` + className
+        }>
             {title}
         </TitleName>
     );

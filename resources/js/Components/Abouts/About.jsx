@@ -7,7 +7,7 @@ import { Link } from "@inertiajs/inertia-react";
 
 const About = () => {
     return (
-        <div className="container mx-auto max-w-6xl px-7 my-10">
+        <div className="container mx-auto max-w-6xl px-7 my-16">
             {aboutInfo.map((p, index) => {
                 return (
                     <div key={index}>

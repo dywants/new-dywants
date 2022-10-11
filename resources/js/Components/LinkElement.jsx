@@ -16,7 +16,6 @@ const LinkStyle = styled(Link)`
   transition: 0.3s ease-out;
 
   font-size: 1em;
-  margin: 1em;
   padding: 0.35em 1.1em;
   border: 2px solid ${props => props.theme.colors.primary};;
   border-radius: 3px;

@@ -43,6 +43,11 @@ export const expertises = [
     },
     {
         id: uuidv4(),
+        name: "Webflow",
+        img: "assets/images/expertises/webflow-original.svg",
+    },
+    {
+        id: uuidv4(),
         name: "WORDPRESS",
         img: "assets/images/expertises/wordpress-original.svg",
     },
@@ -103,13 +108,47 @@ export const expertises = [
     },
     {
         id: uuidv4(),
-        name: "APACHE",
-        img: "assets/images/expertises/apache-original.svg",
-    },
-    {
-        id: uuidv4(),
         name: "NGINX",
         img: "assets/images/expertises/nginx-original.svg",
     },
-
+    {
+        id: uuidv4(),
+        name: "AWS",
+        img: "assets/images/expertises/amazonwebservices-original.svg",
+    },
+    {
+        id: uuidv4(),
+        name: "AZURE",
+        img: "assets/images/expertises/azure-original.svg",
+    },
+    {
+        id: uuidv4(),
+        name: "Digital Ocean",
+        img: "assets/images/expertises/digitalocean-original.svg",
+    },
+    {
+        id: uuidv4(),
+        name: "Google cloud",
+        img: "assets/images/expertises/googlecloud-original.svg",
+    },
+    {
+        id: uuidv4(),
+        name: "Heroku",
+        img: "assets/images/expertises/heroku-original.svg",
+    },
+    {
+        id: uuidv4(),
+        name: "KUBERNETES",
+        img: "assets/images/expertises/kubernetes-plain.svg",
+    },
+    {
+        id: uuidv4(),
+        name: "Terraform",
+        img: "assets/images/expertises/terraform-original.svg",
+    },
+    {
+        id: uuidv4(),
+        name: "Vagrant",
+        img: "assets/images/expertises/vagrant-plain.svg",
+    },
 ];

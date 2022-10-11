@@ -45,3 +45,27 @@ export const servicesInfo = [
     // },
 
 ];
+
+export const servicesInfos = [
+    {
+        id: uuidv4(),
+        title: "Technical support",
+        description:
+            "We aim to attain the greatest satisfaction for our clients and be one of the prominent names when it comes to world-class service",
+        icon: "assets/images/services/support.png",
+    },
+    {
+        id: uuidv4(),
+        title: "Développement",
+        description:
+            "We aim to attain the greatest satisfaction for our clients and be one of the prominent names when it comes to world-class service",
+        icon: "assets/images/services/developpement.png",
+    },
+    {
+        id: uuidv4(),
+        title: "Testing Management",
+        description:
+            "We aim to attain the greatest satisfaction for our clients and be one of the prominent names when it comes to world-class service",
+        icon: "assets/images/services/maintenance.png",
+    },
+]

@@ -20,7 +20,7 @@ module.exports = {
                 'title': "#232536",
                 'texte': "#5D5F6D",
                 'primary': "#FFB400",
-                'secondaty': '#1B3567',
+                'secondary': '#1B3567',
                 'light': "#eaeef3",
                 'dark': "#0A142F"
               },

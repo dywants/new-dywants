@@ -1,7 +1,7 @@
 import React from "react";
-import styled from "styled-components";
 import CardExpertise from "@/Components/Elements/CardExpertise";
 import { expertises } from "../../Pages/Data/expertises";
+import TitleSection from "../Elements/TitleSection";
 
 const Expertises = () => {
     return (
@@ -15,7 +15,8 @@ const Expertises = () => {
                     />
                 </div>
                 <div className="flex-1 px-[100px]">
-                    <h3 className="text-[36px] font-semibold">
+                    <TitleSection title="Notre expertise"/>
+                    <h3 className="text-[36px] font-semibold mt-2">
                         Nous mettons tous notre savoir faire pour realiser ce
                         dont vous avez vraiment besoins
                     </h3>

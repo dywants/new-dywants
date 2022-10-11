@@ -20,13 +20,13 @@ const Homepage = () => {
         <Layout>
             <Header />
             <About/>
-            <Mission />
-            <Services />
+            <Expertises />
+            {/*<Mission /> */}
+            <Services /> 
             <div className="container mx-auto max-w-6xl px-7">
                 <h2 className="text-right">Nos valeurs</h2>
                 <Valeurs/>
             </div>
-            <Expertises />
             {/*<Temoignages {...TestimonialObj}/>*/}
             <Projets {...projetsObj}/>
             {/*<Compagnies />*/}
