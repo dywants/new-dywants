@@ -19,7 +19,6 @@ font-size: 14px;
 line-height: 20px;
 letter-spacing: 3px;
 text-transform: uppercase;
-color: #000000;
 opacity: 0.87;
 
 `;

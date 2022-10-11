@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from './Image';
 
-const CardProcess = ({icon, title, description, number}) => {
+const CardProcess = ({icon, title, description, number = ""}) => {
     return (
-        <div className='border border-gray-300 p-6 relative rounded-sm'>
+        <div className='border border-gray-300 p-6 relative rounded-sm bg-white'>
             <div className='flex gap-2 items-start'>
                 <Image className='w-[47px] h-[47px]' src={icon} name={title}/>
                 <div>
@@ -12,7 +12,7 @@ const CardProcess = ({icon, title, description, number}) => {
                 </div>
             </div>
             <div className='absolute top-4 right-4 w-[29px] h-[32px]'>
-                <Image src={number} name='number'/>
+                <Image src={number}/>
             </div>
         </div>
     );

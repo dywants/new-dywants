@@ -5,6 +5,7 @@ import Services from "@/Components/Services/Services";
 import Expertises from "@/Components/Expertises/Expertises";
 import Compagnies from "@/Components/Companies/Compagnies";
 import Mission from "@/Components/Mission/Mission";
+import Values from "@/Components/Values/Values";
 import Temoignages from "@/Components/Temoignages/Temoignages";
 import {TestimonialObj} from "@/Pages/Data/temoignages";
 import Projets from "@/Components/Projets/Projet";
@@ -26,6 +27,7 @@ const Homepage = () => {
             {/*<Mission /> */}
             <Services />
             <Process {...processInfos}/>
+            <Values/>
            { /*<div className="container mx-auto max-w-6xl px-7">
                 <h2 className="text-right">Nos valeurs</h2>
                 <Valeurs/>

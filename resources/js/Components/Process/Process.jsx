@@ -8,7 +8,7 @@ const Process = ({processes}) => {
     return (
         <div>
             <div className="container mx-auto max-w-7xl text-left p-16">
-                <TitleSection title="Notre processus"/>
+                <TitleSection className="text-black" title="Notre processus"/>
                 <Title className="w-[777px] mb-4" title="Nous construisons des solutions logicielles qui résolvent les défis commerciaux de nos clients"/>
                 <p className='text-texte text-base font-normal leading-6 opacity-80 mb-8 w-[642px]'>Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable.</p>
                 <GridSection>

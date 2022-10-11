@@ -26,3 +26,24 @@ export const values = [
         description: "Le respect des delais est une condition pour nous. Voilà tout."
     },
 ];
+
+export const valuesInfo = [
+    {
+        id: uuidv4(),
+        title: "Délais de livraison respectés",
+        icon: "assets/images/values/delivery.png",
+        description: "Nous veillons à identifier vos besoins réels et collaborons avec vous comme des membres d'une même équipe"
+    },
+    {
+        id: uuidv4(),
+        title: "Service de meilleure qualité",
+        icon: "assets/images/values/quality.png",
+        description: "Nous veillons à identifier vos besoins réels et collaborons avec vous comme des membres d'une même équipe"
+    },
+    {
+        id: uuidv4(),
+        title: "Assistance",
+        icon: "assets/images/values/support.png",
+        description: "Nous veillons à identifier vos besoins réels et collaborons avec vous comme des membres d'une même équipe"
+    },
+]
