@@ -12,17 +12,17 @@ export const aboutInfo = [
         images: [
             {
                 id: uuidv4(),
-                image: "assets/images/apropos/Image1.png",
+                image: "/assets/images/apropos/Image1.png",
                 name: 'image1'
             },
             {
                 id: uuidv4(),
-                image: "assets/images/apropos/Image2.png",
+                image: "/assets/images/apropos/Image2.png",
                 name: 'image2'
             },
             {
                 id: uuidv4(),
-                image: "assets/images/apropos/Image3.png",
+                image: "/assets/images/apropos/Image3.png",
                 name: 'image2'
             },
         ]

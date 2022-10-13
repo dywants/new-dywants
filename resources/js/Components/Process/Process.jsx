@@ -15,7 +15,7 @@ const Process = ({processes}) => {
                     {
                         processes.map((process, i) => {
                             return(
-                                <CardProcess title={process.title} 
+                                <CardProcess key={i} title={process.title} 
                                             description={process.description}
                                             number={process.number}
                                             icon={process.icon}/>

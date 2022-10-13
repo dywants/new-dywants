@@ -14,7 +14,7 @@ const Navbar = () => {
             <Nav>
                 <NavBarContainer>
                     <NavLogo href={route('homepage')}>
-                        <img src="assets/logo/logo.png" alt="" className="w-full h-full"/>
+                        <img src="/assets/logo/logo.png" alt="" className="w-full h-full"/>
                         Dywants
                     </NavLogo>
                     <MobileIcon onClick={handleClick}>{click ? <FaTimes /> : <FaBars />}</MobileIcon>

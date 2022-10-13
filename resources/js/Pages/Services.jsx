@@ -18,7 +18,7 @@ const Services = () => {
     return (
         <Layout>
             <div className="bg-secondaryGraded overflow-hidden w-full">
-                <div className="container mx-auto max-w-7xl text-left p-16">
+                <div className="container mx-auto max-w-7xl text-left px-16 py-20">
                     <TitleSection className="text-white" title="Nos services" />
                     <div className="flex justify-between items-start">
                         <div className="max-w-[624px]">
@@ -52,8 +52,8 @@ const Services = () => {
             <div className="bg-[#F9F9FF]">
                 <Process {...processInfos} />
             </div>
-            <div>
-                <div className="container mx-auto max-w-7xl text-left">
+            <div className="bg-transparent">
+                <div className="container mx-auto max-w-7xl px-16 text-left">
                     <SectionService
                         title="Le meilleur support technique de sa catégorie pour votre entreprise. Nous devenons votre colonne vertébrale technologique"
                         src="/assets/images/services/feature1.png"
@@ -63,7 +63,7 @@ const Services = () => {
                 </div>
             </div>
             <div className="bg-[#ECF8F9]">
-                <div className="container mx-auto max-w-7xl text-left">
+                <div className="container mx-auto max-w-7xl px-16 text-left">
                     <SectionService reverse
                         title="Le meilleur support technique de sa catégorie pour votre entreprise. Nous devenons votre colonne vertébrale technologique"
                         src="/assets/images/services/feature2.png"
@@ -73,7 +73,7 @@ const Services = () => {
                 </div>
             </div>
             <div>
-                <div className="container mx-auto max-w-7xl text-left">
+                <div className="container mx-auto max-w-7xl px-16 text-left">
                     <SectionService
                         title="Le meilleur support technique de sa catégorie pour votre entreprise. Nous devenons votre colonne vertébrale technologique"
                         src="/assets/images/services/feature3.png"
@@ -83,7 +83,7 @@ const Services = () => {
                 </div>
             </div>
             <div className="bg-[#F9F9FF]">
-                <div className="container mx-auto max-w-7xl text-left">
+                <div className="container mx-auto max-w-7xl px-16 text-left">
                     <SectionService reverse
                         title="Le meilleur support technique de sa catégorie pour votre entreprise. Nous devenons votre colonne vertébrale technologique"
                         src="/assets/images/services/feature4.png"
@@ -93,7 +93,7 @@ const Services = () => {
                 </div>
             </div>
             <div>
-                <div className="container mx-auto max-w-7xl text-left">
+                <div className="container mx-auto max-w-7xl px-16 text-left">
                     <SectionService
                         title="Le meilleur support technique de sa catégorie pour votre entreprise. Nous devenons votre colonne vertébrale technologique"
                         src="/assets/images/services/feature5.png"
@@ -102,7 +102,7 @@ const Services = () => {
                     />
                 </div>
             </div>
-            <div className="container mx-auto max-w-7xl px-7 mb-8">
+            <div className="container mx-auto max-w-7xl px-16 mb-8">
                 <Newsletter/>
             </div>
         </Layout>
