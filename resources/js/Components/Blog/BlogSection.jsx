@@ -7,7 +7,7 @@ import MetaBlog from "@/Components/Elements/MetaBlog";
 const BlogSection = () => {
     return (
         <section className="container mx-auto p-20">
-            <h2 className="text-left">Articles de blog</h2>
+            <h2 className="text-left text-title">Lisez nos derniers blogs et actualités</h2>
             <WrapperBlog>
                 {
                     articles.map((article, i) => {

@@ -7,6 +7,7 @@ import Compagnies from "@/Components/Companies/Compagnies";
 import Mission from "@/Components/Mission/Mission";
 import Values from "@/Components/Values/Values";
 import Temoignages from "@/Components/Temoignages/Temoignages";
+import Newsletter from "@/Components/Newsletter/Newsletter"
 import {TestimonialObj} from "@/Pages/Data/temoignages";
 import Projets from "@/Components/Projets/Projet";
 import {projetsObj} from "@/Pages/Data/projets";
@@ -36,7 +37,9 @@ const Homepage = () => {
             <Projets {...projetsObj}/>
             {/*<Compagnies />*/}
             <BlogSection {...articles}/>
-            <CallToAction/>
+            <div className="container mx-auto max-w-7xl px-7 mb-8">
+                <Newsletter/>
+            </div>
         </Layout>
     );
 };

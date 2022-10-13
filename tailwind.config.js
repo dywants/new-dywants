@@ -21,6 +21,7 @@ module.exports = {
                 'texte': "#5D5F6D",
                 'primary': "#FFB400",
                 'secondary': '#1B3567',
+                'secondaryGraded': '#4F6CA4',
                 'light': "#eaeef3",
                 'dark': "#0A142F"
               },
