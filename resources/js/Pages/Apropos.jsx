@@ -7,32 +7,42 @@ import Layout from '@/Layouts/Layout';
 import React from 'react';
 import styled from 'styled-components';
 import { teams } from './Data/teams';
+import {processInfos} from "@/Pages/Data/process";
 import CallToAction from "@/Components/Elements/CallToAction";
+import SectionService from '@/Components/Elements/SectionService';
+import Process from '@/Components/Process/Process';
+import Values from '@/Components/Values/Values';
+import TitleSection from '@/Components/Elements/TitleSection';
+import Title from '@/Components/Elements/Title';
 
 const Apropos = () => {
     return (
         <Layout>
-            <HeaderPage title='Qui sommes nous?' description="Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unkno" img="assets/images/apropos/apropos.png"/>
-            <Presentation/>
-            <Sections title="Nos Valeurs" image="assets/images/apropos/valeurs.png">
-                <Valeurs/>
-            </Sections>
-            <Sections reversed="reversed" title="Comment travaillons nous ?" image="assets/images/apropos/how-are-work-us.png">
-               <div className='mt-4 space-y-2'>
-               <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sunt iusto obcaecati consequatur non, rem itaque dolorum nesciunt quasi magni quod pariatur et beatae delectus temporibus dolorem error praesentium magnam.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sunt iusto obcaecati consequatur non, rem itaque dolorum nesciunt quasi magni quod pariatur et beatae delectus temporibus dolorem error praesentium magnam.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sunt iusto obcaecati consequatur non, rem itaque dolorum nesciunt quasi magni quod pariatur et beatae delectus temporibus dolorem error praesentium magnam.
-                </p>
-               </div>
-            </Sections>
-            <Sections title="La Team" image="assets/images/apropos/teams.png">
-            <div className="container mx-auto max-w-6xl px-7">
+            <div className="container mx-auto max-w-6xl mt-32">
+                <SectionService  titlesection={"Qui sommes-nous?"}
+                        title={"Nos conceptions résolvent les problèmes"}
+                        src={'/assets/images/apropos/about.png'}
+                        description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."}/>
+                <Presentation/>
+            </div>
+            <Process {...processInfos}/>
+            <div className='bg-[#EEF4FA]'> 
+                <div className="container mx-auto max-w-6xl">
+                <SectionService  titlesection={"Notre mission"}
+                        title={"Inspirez, innovez, partagez"}
+                        src={'/assets/images/apropos/mission.png'}
+                        description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."}/>
+                <SectionService reverse titlesection={"Notre vision"}
+                        title={"La performance"}
+                        src={'/assets/images/apropos/vision.png'}
+                        description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."}/>
+                </div>
+            </div>
+            <div >
+            <div className="container mx-auto max-w-6xl px-7 my-16">
+                <TitleSection title={"Une equipe"}/>
+                <Title title={"d'experte dynamique a votre écoute"}/>
+                <p className='text-texte text-base leading-6'>Le travail d'équipe est la seule notre façon de travailler</p>
               <WrapperTeams className="wrapper">
                 {
                     teams.map((p,i) => {
@@ -43,7 +53,7 @@ const Apropos = () => {
                 }
               </WrapperTeams>
             </div>
-            </Sections>
+            </div>
             <CallToAction/>
         </Layout>
     );

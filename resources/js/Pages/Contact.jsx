@@ -1,6 +1,4 @@
-import HeaderContact from '@/Components/Contact/HeaderContact';
 import SectionForm from '@/Components/Contact/SectionForm';
-import SectionInfoContact from '@/Components/Contact/SectionInfoContact';
 import SectionMap from '@/Components/Contact/SectionMap';
 import Layout from '@/Layouts/Layout';
 import React, { Component } from 'react';

@@ -56,7 +56,7 @@ export const servicesInfos = [
     },
     {
         id: uuidv4(),
-        title: "Développement",
+        title: "Développement web&app",
         description:
             "We aim to attain the greatest satisfaction for our clients and be one of the prominent names when it comes to world-class service",
         icon: "/assets/images/services/developpement.png",

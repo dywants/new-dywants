@@ -1,30 +1,16 @@
 import React from 'react';
+import Image from '../Elements/Image';
+import TitleSection from '../Elements/TitleSection';
 
 const Presentation = () => {
     return (
-        <div className="container mx-auto max-w-6xl px-7 pb-10  relative">
-            <div className="wrapper flex gap-3 mb-10 mt-48">
-                <div className="left max-w-[414px] w-full">
-                    <h2>Presentation de l'entreprise</h2>
-                </div>
-                <div className="right w-[552px] h-[267px]">
-                    <img src="assets/images/apropos/hero-start-ups.png" alt="" />
-                </div>
+        <div className="">
+            <div className="p-10 bg-[#F4F5F5]">
+                <TitleSection title={"DYWANTS TECHNOLOGIE AND SERVICES (DTS)"}/>
+                <p className='text-texte text-base leading-6 mt-2'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci provident, architecto laudantium at voluptatem illum odit. Minus, dignissimos corrupti exercitationem dolorem vero cupiditate eum est, ipsa libero voluptates ipsum unde.</p>
             </div>
-            <div className="space-y-3">
-            <p className='text-muted leading-relaxed'>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti accusantium odio iusto ullam natus quae tempora culpa. Laudantium dignissimos soluta ducimus culpa, dolorum dicta magnam repudiandae suscipit consectetur est, labore tempore rerum libero vitae accusamus illo! Illum, ut placeat, ipsa aliquid facilis vitae tempora minus nostrum, quisquam perferendis odit porro.
-            </p>
-            <p className='text-muted leading-relaxed '>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti accusantium odio iusto ullam natus quae tempora culpa. Laudantium dignissimos soluta ducimus culpa, dolorum dicta magnam repudiandae suscipit consectetur est, labore tempore rerum libero vitae accusamus illo! Illum, ut placeat, ipsa aliquid facilis vitae tempora minus nostrum, quisquam perferendis odit porro.
-            </p>
-            <p className='text-muted leading-relaxed '>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti accusantium odio iusto ullam natus quae tempora culpa. Laudantium dignissimos soluta ducimus culpa, dolorum dicta magnam repudiandae suscipit consectetur est, labore tempore rerum libero vitae accusamus illo! Illum, ut placeat, ipsa aliquid facilis vitae tempora minus nostrum, quisquam perferendis odit porro.
-            </p>
-            </div>
-            <div className='absolute -top-40 right-0 space-y-2'>
-                <div className="w-[267px] h-[267px] bg-[#FFB400]"></div>
-                <div className="w-[180px] h-[180px] bg-[#1B3567]"></div>
+            <div className='w-full h-[340]'>
+                <Image src={"/assets/images/apropos/team.png"}/>
             </div>
         </div>
     );
