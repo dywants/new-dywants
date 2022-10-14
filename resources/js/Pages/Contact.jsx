@@ -9,10 +9,8 @@ class Contact extends Component {
     render() {
         return (
             <Layout>
-                <HeaderContact/>
-                <SectionMap/>
-                <SectionInfoContact />
                 <SectionForm/>
+                <SectionMap/>
             </Layout>
         );
     }

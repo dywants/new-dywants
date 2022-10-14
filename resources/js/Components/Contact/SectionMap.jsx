@@ -3,22 +3,16 @@ import styled from 'styled-components';
 import MapSection from '../Maps/Map';
 
 const location = {
-    address: '1600 Amphitheatre Parkway, Mountain View, california.',
-    lat: 37.42216,
-    lng: -122.08427,
+    address: 'DYWANTS TECHNOLOGIE AND SERVICES Sarl',
+    lat: 4.051655,
+    lng: 9.765258,
   }
 
 const SectionMap = () => {
     return (
         <div> 
-            <div className="container mx-auto max-w-6xl px-7 py-10">
-                <div className="wrapper flex justify-between items-center gap-4">
-                    <LeftSection className="left">
-                        <h2>Situation Géographique</h2>
-                        <p className="font-medium text-md mt-2 leading-relaxed">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi officiis corporis vitae quo placeat aspernatur, molestias explicabo pariatur atque suscipit.
-                        </p>
-                    </LeftSection>
+            <div className="container mx-auto max-w-7xl px-16 py-10 mb-8">
+                <div>
                     <RightSection className="right">
                         <MapSection location={location} zoomLevel={17}/>
                     </RightSection>
@@ -31,7 +25,7 @@ const SectionMap = () => {
 
 const LeftSection = styled.div`
    max-width: 414px;
-   
+
    h2 {
     font-family: 'Poppins';
     font-style: normal;
@@ -43,7 +37,6 @@ const LeftSection = styled.div`
 `;
 
 const RightSection = styled.div`
-  max-width: 924px;
   width: 100%;
 `;
 export default SectionMap;
