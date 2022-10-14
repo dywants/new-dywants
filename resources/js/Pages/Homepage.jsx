@@ -18,6 +18,7 @@ import BlogSection from "@/Components/Blog/BlogSection";
 import CallToAction from "@/Components/Elements/CallToAction";
 import About from "@/Components/Abouts/About";
 import Process from "@/Components/Process/Process";
+import Digitalisation from "@/Components/Digitalisation/Digitalisation";
 
 const Homepage = () => {
     return (
@@ -27,6 +28,7 @@ const Homepage = () => {
             <Expertises />
             {/*<Mission /> */}
             <Services />
+            <Digitalisation/>
             <Process {...processInfos}/>
             <Values/>
            { /*<div className="container mx-auto max-w-6xl px-7">

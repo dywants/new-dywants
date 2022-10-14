@@ -22,7 +22,7 @@ const Header = () => {
                                 Let us create what you want!
                             </h1>
                         </div>
-                        <p className="font-medium text-[22px] text-white mb-4 z-40">
+                        <p className="font-medium text-[22px] text-white mb-8 z-40">
                             Nous vous proposons des solutions
                             innovantes pour votre business.
                         </p>
