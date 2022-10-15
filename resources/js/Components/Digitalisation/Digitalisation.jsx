@@ -42,7 +42,7 @@ const Digitalisation = () => {
                             entreprises avec ce que nous maîtrisons le mieux; la
                             technologie.
                         </p>
-                        <LinkElement primary className="mt-10">
+                        <LinkElement primary className="mt-10" href={route('digitalisation')}>
                             Voir nos services
                         </LinkElement>
                     </div>

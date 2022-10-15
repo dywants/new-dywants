@@ -7,6 +7,7 @@ use Illuminate\Foundation\Application;
 use App\Http\Controllers\HomeIndexController;
 use App\Http\Controllers\AproposIndexController;
 use App\Http\Controllers\ContactIndexController;
+use App\Http\Controllers\DigitalisationIndexController;
 use App\Http\Controllers\ServicesIndexController;
 
 /*
@@ -37,6 +38,7 @@ Route::get('/', HomeIndexController::class)->name('homepage');
 Route::get('/contact', ContactIndexController::class)->name('contact');
 Route::get('/qui-sommes-nous', AproposIndexController::class)->name('apropos');
 Route::get('/services', ServicesIndexController::class)->name('services');
+Route::get('/digitalisation', DigitalisationIndexController::class)->name('digitalisation');
 Route::get('/services/developpement-web', ServiceDevelopmentWebController::class)->name('devWeb');
 
 require __DIR__ . '/auth.php';

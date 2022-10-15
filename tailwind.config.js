@@ -24,7 +24,10 @@ module.exports = {
                 'secondaryGraded': '#4F6CA4',
                 'light': "#eaeef3",
                 'dark': "#0A142F"
-              },
+            },
+            lineHeight: {
+                '12': '4.5rem',
+              }
         },
     },
 
