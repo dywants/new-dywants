@@ -23,7 +23,9 @@ module.exports = {
                 'secondary': '#1B3567',
                 'secondaryGraded': '#4F6CA4',
                 'light': "#eaeef3",
-                'dark': "#0A142F"
+                'dark': "#0A142F",
+                "bgHeader": "#062B40",
+                "bgSection": "#F6F8FA"
             },
             lineHeight: {
                 '12': '4.5rem',

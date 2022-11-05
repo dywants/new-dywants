@@ -1,17 +1,22 @@
-import React from 'react';
-import LinkElement from "@/Components/LinkElement";
+import React from "react";
+import CustomLink from "@/Components/CustomLink";
 
 const CallToAction = () => {
     return (
         <div className="container mx-auto max-w-6xl px-7 pb-10">
-            <div className="wrapper bg-[#FFB400] px-14 py-16 rounded-tl-3xl rounded-br-3xl flex items-center justify-between">
+            <div className="wrapper bg-primary px-14 py-16 flex gap-4 items-center justify-between rounded-md shadow-xl">
                 <div className="left">
                     <h2 className="text-white">Besoin d’un service ?</h2>
-                    <p className="text-white font-thin text-muted">Demandez un dévis et soyez fixé sur les détails</p>
+                    <p className="text-white font-thin text-muted w-[620px]">
+                        Nous serons ravis de vous aider peu importe votre
+                        préoccupation. N’hesitez pas à nous ecrire, c’est avec
+                        plaisir que nous vous aiderons.
+                    </p>
                 </div>
 
-                <LinkElement href={route('contact')} className="bg-[#1B3567] p-2 text-white rounded-md">Demander un devis</LinkElement>
-
+                <CustomLink secondary href={route("contact")}>
+                    Demander un devis
+                </CustomLink>
             </div>
         </div>
     );

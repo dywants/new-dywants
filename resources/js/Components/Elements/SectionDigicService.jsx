@@ -47,7 +47,7 @@ const SectionDigicService = (
                     </p>
                 )}
 
-                <div className="mt-4">
+                <div className="my-4">
                     {secondary ? (
                         <CustomLink secondary href={url}>
                             {link}

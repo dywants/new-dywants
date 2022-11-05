@@ -9,27 +9,6 @@ import Image from "@/Components/Elements/Image";
 import styled from "styled-components";
 
 const Digitalisation = () => {
-    console.log(InfoDigitalisation.zimbra.temoignages);
-    const TemoignageZimbra = [
-        {
-            id: uuidv4(),
-            name: "Stefano Durzo , Oceano SRL",
-            comment:
-                "Avec Zimbra, nos coûts ont chuté de façon spectaculaire, passant de 3,30 euros par boîte aux lettres par mois à 1,22 euros.",
-        },
-        {
-            id: uuidv4(),
-            name: "Oseeterman Research",
-            comment:
-                "Zimbra offre un TCO inférieur à celui du leader du marché Microsoft Exchange et d'autres systèmes sur site.",
-        },
-        {
-            id: uuidv4(),
-            name: "Christine Preusler , HostingAdvice",
-            comment:
-                "La plate-forme évolutive de Zimbra est reconnue pour son accent sur la sécurité, l'évolutivité et la souveraineté des données.",
-        },
-    ];
     return (
         <Layout>
             <div
@@ -160,7 +139,7 @@ const Digitalisation = () => {
                                     link={"Faire un devis"}
                                     link2={"En savoir plus"}
                                     url={route("contact")}
-                                    url2={"#"}
+                                    url2={route("nextcloud")}
                                 />
                             );
                         })}
@@ -286,7 +265,7 @@ const Digitalisation = () => {
                                 <p className="text-white font-normal left-6 text-base mb-4">
                                     {ReasonWork.description}
                                 </p>
-                                <LinkElement href={"#"}>
+                                <LinkElement href={route('contact')}>
                                     Commençons maintenant
                                 </LinkElement>
                             </div>
