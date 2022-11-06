@@ -1,15 +1,16 @@
 <?php
 
-use App\Http\Controllers\ServiceDevelopmentWebController;
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
 use App\Http\Controllers\HomeIndexController;
+use App\Http\Controllers\NocoDbIndexController;
 use App\Http\Controllers\AproposIndexController;
 use App\Http\Controllers\ContactIndexController;
-use App\Http\Controllers\DigitalisationIndexController;
-use App\Http\Controllers\NextCloudIndexController;
 use App\Http\Controllers\ServicesIndexController;
+use App\Http\Controllers\NextCloudIndexController;
+use App\Http\Controllers\DigitalisationIndexController;
+use App\Http\Controllers\ServiceDevelopmentWebController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,5 +43,6 @@ Route::get('/services', ServicesIndexController::class)->name('services');
 Route::get('/digitalisation', DigitalisationIndexController::class)->name('digitalisation');
 Route::get('/services/developpement-web', ServiceDevelopmentWebController::class)->name('devWeb');
 Route::get('/services/nextcloud', NextCloudIndexController::class)->name('nextcloud');
+Route::get('/services/nocodb', NocoDbIndexController::class)->name('nocodb');
 
 require __DIR__ . '/auth.php';

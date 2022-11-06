@@ -42,6 +42,40 @@ export const Container = styled.div`
     }
 `;
 
+export const Wrapper = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: ${(props) => (props.reverse ? "row-reverse" : "")};
+    gap: 5rem;
+    overflow: hidden;
+
+    h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 50px;
+        color: #0f1727;
+    }
+
+    h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 0.6rem;
+        color: ${(props) => (props.whiteColor ? "#FFFFFF" : "#0f1727")};
+    }
+
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: ${(props) => (props.whiteColor ? "#FFFFFF" : "#0f1727")};
+    }
+`;
+
 /*export const TitleSection = styled.h2`
 font-family: 'Poppins';
 font-style: normal;

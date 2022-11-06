@@ -7,8 +7,17 @@ import Image from "@/Components/Elements/Image";
 import LinkElement from "@/Components/LinkElement";
 import Accordion from "@/Components/Accordion/Accordion";
 import CallToAction from "@/Components/Elements/CallToAction";
+import CardItem from "@/Components/Elements/CardItem";
+import { Wrapper } from "../styles/globalStyles";
 
 const Nextcloud = ({ reverse }) => {
+    const titles = [
+        "Solutec",
+        "LuminarTech",
+        "AVM",
+        "GreyTip Softwares",
+        "StoryCorp Inc",
+    ];
     return (
         <Layout>
             <HeaderPage
@@ -226,7 +235,7 @@ const Nextcloud = ({ reverse }) => {
                             </p>
                         </div>
                     </div>
-                    <CardItem />
+                    <CardItem titles={titles}/>
                     <div className="text-center mt-10">
                         <LinkElement href={route('contact')}>Travaillons ensembles</LinkElement>
                     </div>
@@ -284,76 +293,4 @@ const Item = ({ title, describe, icon, whiteColor, className = "" }) => {
     );
 };
 
-const CardItem = () => {
-    const titles = [
-        "Solutec",
-        "LuminarTech",
-        "AVM",
-        "GreyTip Softwares",
-        "StoryCorp Inc",
-    ];
-
-    return (
-        <div className="inline-flex space-x-2 w-full mt-4">
-            {titles.map((title, i) => {
-                return (
-                    <Card key={i}>
-                        <TitleEntreprise>{title}</TitleEntreprise>
-                    </Card>
-                );
-            })}
-        </div>
-    );
-};
-
-const Card = styled.div`
-    background: #ffffff;
-    padding: 35px 26px;
-
-    box-shadow: -30px 14px 50px rgba(79, 108, 164, 0.1);
-    border-radius: 16px;
-`;
-
-const TitleEntreprise = styled.h3`
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    color: #4f6ca4;
-    opacity: 0.5;
-`;
-
-const Wrapper = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: ${(props) => (props.reverse ? "row-reverse" : "")};
-    gap: 5rem;
-    overflow: hidden;
-
-    h2 {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 50px;
-        color: #0f1727;
-    }
-
-    h3 {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 28px;
-        margin-bottom: 0.6rem;
-        color: ${(props) => (props.whiteColor ? "#FFFFFF" : "#0f1727")};
-    }
-
-    p {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 30px;
-        color: ${(props) => (props.whiteColor ? "#FFFFFF" : "#0f1727")};
-    }
-`;
 export default Nextcloud;
