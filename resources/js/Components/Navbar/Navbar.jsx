@@ -1,9 +1,18 @@
 import React, { useState, useEffect } from "react";
-import { FaTimes, FaBars } from 'react-icons/fa';
-import {Nav, NavBarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, SectionButton} from "./NavBarStyled";
+import { FaTimes, FaBars } from "react-icons/fa";
+import {
+    Nav,
+    NavBarContainer,
+    NavLogo,
+    MobileIcon,
+    NavMenu,
+    NavItem,
+    NavLinks,
+    SectionButton,
+} from "./NavBarStyled";
 import LinkElement from "@/Components/LinkElement";
 import Dropdown from "@/Components/Dropdown";
-import {MenuItems} from "@/Pages/Data/MenuItems";
+import { MenuItems } from "@/Pages/Data/MenuItems";
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
@@ -13,11 +22,17 @@ const Navbar = () => {
         <>
             <Nav>
                 <NavBarContainer>
-                    <NavLogo href={route('homepage')}>
-                        <img src="/assets/logo/logo.png" alt="" className="w-full h-full"/>
+                    <NavLogo href={route("homepage")}>
+                        <img
+                            src="/assets/logo/logo.png"
+                            alt=""
+                            className="w-full h-full"
+                        />
                         Dywants
                     </NavLogo>
-                    <MobileIcon onClick={handleClick}>{click ? <FaTimes /> : <FaBars />}</MobileIcon>
+                    <MobileIcon onClick={handleClick}>
+                        {click ? <FaTimes /> : <FaBars />}
+                    </MobileIcon>
                     <NavMenu onClick={handleClick} click={click}>
                         <NavItem>
                             <div className="ml-3 relative">
@@ -29,7 +44,6 @@ const Navbar = () => {
                                                 className="inline-flex items-center px-3 py-2 border border-transparent text-md leading-4 font-medium rounded-md text-black bg-white focus:outline-none transition ease-in-out duration-150"
                                             >
                                                 Services
-
                                                 <svg
                                                     className="ml-2 -mr-0.5 h-4 w-4"
                                                     xmlns="http://www.w3.org/2000/svg"
@@ -47,15 +61,17 @@ const Navbar = () => {
                                     </Dropdown.Trigger>
 
                                     <Dropdown.Content>
-                                        {
-                                            MenuItems.map((p,i) =>{
-                                                return(
-                                                    <Dropdown.Link key={i} href={route(`${p.path}`)} method="get" >
-                                                        {p.title}
-                                                    </Dropdown.Link>
-                                                )
-                                            })
-                                        }
+                                        {MenuItems.map((p, i) => {
+                                            return (
+                                                <Dropdown.Link
+                                                    key={i}
+                                                    href={route(`${p.path}`)}
+                                                    method="get"
+                                                >
+                                                    {p.title}
+                                                </Dropdown.Link>
+                                            );
+                                        })}
                                     </Dropdown.Content>
                                 </Dropdown>
                             </div>
@@ -64,7 +80,9 @@ const Navbar = () => {
                             <NavLinks href="#">Projets</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks href={route('apropos')}>Qui sommes nous</NavLinks>
+                            <NavLinks href={route("apropos")}>
+                                Qui sommes nous
+                            </NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks href="#">Podcast</NavLinks>
@@ -74,7 +92,9 @@ const Navbar = () => {
                         </NavItem>
                     </NavMenu>
                     <SectionButton className="space-x-2">
-                        <LinkElement href={route('contact')} >Demander un devis</LinkElement>
+                        <LinkElement href={route("contact")}>
+                            Demander un devis
+                        </LinkElement>
                     </SectionButton>
                 </NavBarContainer>
             </Nav>

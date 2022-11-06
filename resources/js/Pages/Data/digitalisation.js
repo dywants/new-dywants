@@ -145,7 +145,7 @@ export const InfoDigitalisation = {
             description:
                 "Qu’attendez-vous pour faire passer votre activité au niveau supérieur? Nous avons tous les outils pour la croissance exponentielle de votre activité.",
                 describe: "Et nous ne le disons pas juste pour dire, nous avons réellement ce qu’il vous faut.",
-            src: "/assets/images/digitalisation/nocodb-info.png",
+            src: "/assets/images/digitalisation/team-work.png",
         },
     ],
 };
