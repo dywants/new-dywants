@@ -6,7 +6,7 @@ export const processInfos = {
             id: uuidv4(),
             title: "Discover",
             description:
-                "We aim to attain the greatest satisfaction for our clients and be one of the prominent names when it comes to world-class service",
+                "Nous visons à atteindre la plus grande satisfaction de nos clients, ceci en ecoutant, evaluant leur besoins pour un service de qualité",
             icon: "/assets/images/process/discover.png",
             number: "/assets/images/process/01.png"
         },
@@ -14,7 +14,7 @@ export const processInfos = {
             id: uuidv4(),
             title: "Designing",
             description:
-                "We aim to attain the greatest satisfaction for our clients and be one of the prominent names when it comes to world-class service",
+                "Recueillir les besoins des utilisateurs afin de mettre en place la meilleure experience utilisateurs",
             icon: "/assets/images/process/designing.png",
             number: "/assets/images/process/02.png"
         },

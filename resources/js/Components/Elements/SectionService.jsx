@@ -2,16 +2,21 @@ import React from "react";
 import styled from "styled-components";
 import Image from "./Image";
 
-const SectionService = ({ src, titlesection, title, description, reverse }) => {
+const SectionService = ({ src, titlesection, title, description, reverse, describe }) => {
     return (
         <Wrapper reverse={reverse}>
             <div className="w-[642px]">
                 <div className="pt-24">
                     <TitleSection>{titlesection} </TitleSection>
                     <Title>{title}</Title>
-                    <p className="text-texte text-base font-normal leading-6 opacity-80 mb-8">
+                    <p className="text-texte text-base font-normal leading-6 opacity-80 my-2">
                         {description}
                     </p>
+                    {
+                        describe && <p className="text-texte text-base font-normal leading-6 opacity-80 mb-8">
+                        {describe}
+                    </p>
+                    }
                 </div>
             </div>
 
