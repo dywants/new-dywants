@@ -55,7 +55,7 @@ const Nextcloud = ({ reverse }) => {
                                 describe={
                                     "En utilisant les répertoires d'utilisateurs et les systèmes de stockage de fichiers existants."
                                 }
-                                icon={"/assets/images/ciecle-blue.png"}
+                                icon={"/assets/images/point2.svg"}
                             />
                             <Item
                                 className="bg-secondaryGraded"
@@ -66,14 +66,14 @@ const Nextcloud = ({ reverse }) => {
                                 describe={
                                     "Des technologies de connexion sécurisées telles que la protection Brute Force et  l'authentification à 2 facteurs."
                                 }
-                                icon={"/assets/images/ciecle-blue.png"}
+                                icon={"/assets/images/point.svg"}
                             />
                             <Item
                                 title={"Taillé sur mésure pour votre équipe"}
                                 describe={
                                     "Tout ce dont vous avez besoin pour une activité collaborative efficace et transparente"
                                 }
-                                icon={"/assets/images/ciecle-blue.png"}
+                                icon={"/assets/images/point2.svg"}
                             />
                         </div>
                     </Wrapper>
@@ -235,24 +235,29 @@ const Nextcloud = ({ reverse }) => {
                             </p>
                         </div>
                     </div>
-                    <CardItem titles={titles}/>
+                    <CardItem titles={titles} />
                     <div className="text-center mt-10">
-                        <LinkElement href={route('contact')}>Travaillons ensembles</LinkElement>
+                        <LinkElement href={route("contact")}>
+                            Travaillons ensembles
+                        </LinkElement>
                     </div>
                 </div>
             </section>
             <section>
                 <div className="container mx-auto max-w-6xl py-20 text-left">
                     <Wrapper>
-                    <div className="flex-1 py-4">
+                        <div className="flex-1 py-4">
                             <h2>
-                            Vous avez des interrogations,Nous avons{" "}
+                                Vous avez des interrogations,Nous avons{" "}
                                 <span className="text-primary">
                                     des réponses.
                                 </span>{" "}
                             </h2>
                             <p className="mt-2">
-                                Nous sommes là pour vous aider. Si vous ne trouvez pas la réponse à votre question ici, contactez-nous. C'est avec plaisir que nous  discuterons avec vous.
+                                Nous sommes là pour vous aider. Si vous ne
+                                trouvez pas la réponse à votre question ici,
+                                contactez-nous. C'est avec plaisir que nous
+                                discuterons avec vous.
                             </p>
                             <div className="mt-4">
                                 <CustomLink secondary url={route("contact")}>
@@ -261,13 +266,13 @@ const Nextcloud = ({ reverse }) => {
                             </div>
                         </div>
                         <div className="flex-1 py-4">
-                            <Accordion/>
+                            <Accordion />
                         </div>
                     </Wrapper>
                 </div>
             </section>
             <section className="my-8">
-                <CallToAction/>
+                <CallToAction />
             </section>
         </Layout>
     );
@@ -280,8 +285,10 @@ const Item = ({ title, describe, icon, whiteColor, className = "" }) => {
                 `flex gap-4 px-6 py-8 items-center rounded-md ` + className
             }
         >
-            <div className="w-20 h-20">
-                <Image src={icon} />
+            <div className="max-w-md">
+                <div className="w-20 h-20">
+                    <Image src={icon} />
+                </div>
             </div>
             <div className="inline-flex">
                 <div>

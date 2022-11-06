@@ -32,7 +32,7 @@ export const valuesInfo = [
         id: uuidv4(),
         title: "Délais de livraison respectés",
         icon: "/assets/images/values/delivery.png",
-        description: "Nous veillons à identifier vos besoins réels et collaborons avec vous comme des membres d'une même équipe"
+        description: "Nous veillons au respect des délais de livraison, pour vous permettre un lancement réussi. "
     },
     {
         id: uuidv4(),
@@ -44,6 +44,6 @@ export const valuesInfo = [
         id: uuidv4(),
         title: "Assistance",
         icon: "/assets/images/values/support.png",
-        description: "Nous veillons à identifier vos besoins réels et collaborons avec vous comme des membres d'une même équipe"
+        description: "Un accompagnement et un suivi sur mesure et a votre rythme"
     },
 ]

@@ -1,8 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+import CustomLink from "../CustomLink";
 import Image from "./Image";
 
-const SectionService = ({ src, titlesection, title, description, reverse, describe }) => {
+const SectionService = ({
+    src,
+    titlesection,
+    title,
+    description,
+    reverse,
+    describe,
+    url
+}) => {
     return (
         <Wrapper reverse={reverse}>
             <div className="w-[642px]">
@@ -12,11 +21,16 @@ const SectionService = ({ src, titlesection, title, description, reverse, descri
                     <p className="text-texte text-base font-normal leading-6 opacity-80 my-2">
                         {description}
                     </p>
-                    {
-                        describe && <p className="text-texte text-base font-normal leading-6 opacity-80 mb-8">
-                        {describe}
-                    </p>
-                    }
+                    {describe && (
+                        <p className="text-texte text-base font-normal leading-6 opacity-80 mb-8">
+                            {describe}
+                        </p>
+                    )}
+                </div>
+                <div className="mt-4">
+                    <CustomLink secondary href={url}>
+                        En savoir plus
+                    </CustomLink>
                 </div>
             </div>
 

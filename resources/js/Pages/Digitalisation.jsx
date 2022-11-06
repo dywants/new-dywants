@@ -7,6 +7,7 @@ import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import Image from "@/Components/Elements/Image";
 import styled from "styled-components";
+import CustomLink from "@/Components/CustomLink";
 
 const Digitalisation = () => {
     return (
@@ -217,7 +218,8 @@ const Digitalisation = () => {
                 <div className="container mx-auto max-w-6xl py-20 text-left">
                     {InfoDigitalisation.n8n.map((p, i) => {
                         return (
-                            <SectionDigicService key={i}
+                            <SectionDigicService
+                                key={i}
                                 icon={p.icon}
                                 title={p.title}
                                 description={p.description}
@@ -236,9 +238,10 @@ const Digitalisation = () => {
 
             <section className="my-16">
                 <div className="container mx-auto max-w-6xl py-20 text-left">
-                {InfoDigitalisation.nocodb.map((p, i) => {
+                    {InfoDigitalisation.nocodb.map((p, i) => {
                         return (
-                            <SectionDigicService key={i}
+                            <SectionDigicService
+                                key={i}
                                 icon={p.icon}
                                 title={p.title}
                                 description={p.description}
@@ -247,7 +250,7 @@ const Digitalisation = () => {
                                 link={"Faire un devis"}
                                 link2={"En savoir plus"}
                                 url={route("contact")}
-                                url2={"#"}
+                                url2={route("nocodb")}
                             />
                         );
                     })}
@@ -265,7 +268,7 @@ const Digitalisation = () => {
                                 <p className="text-white font-normal left-6 text-base mb-4">
                                     {ReasonWork.description}
                                 </p>
-                                <LinkElement href={route('contact')}>
+                                <LinkElement href={route("contact")}>
                                     Commençons maintenant
                                 </LinkElement>
                             </div>
@@ -298,9 +301,10 @@ const Digitalisation = () => {
 
             <section className="my-16">
                 <div className="container mx-auto max-w-6xl py-20 text-left">
-                {InfoDigitalisation.threeSection.map((p, i) => {
+                    {InfoDigitalisation.threeSection.map((p, i) => {
                         return (
-                            <SectionFlex key={i}
+                            <SectionFlex
+                                key={i}
                                 title={p.title}
                                 description={p.description}
                                 descrite={p.describe}

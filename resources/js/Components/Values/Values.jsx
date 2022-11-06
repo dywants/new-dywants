@@ -13,12 +13,10 @@ const Values = () => {
                         <TitleSection title="Nos valeurs" />
                         <Title
                             className="max-w-[624px] mb-4"
-                            title="Nous construisons des solutions logicielles qui résolvent les défis commerciaux de nos clients"
+                            title="Développer des solutions informatique qui correspondes aux besoins réels de nos clients"
                         />
                         <p className="text-texte text-base font-normal leading-6 opacity-80 mb-8">
-                            Through True Rich Attended does no end it his mother
-                            since real had half every him case in packages
-                            enquire we up ecstatic unsatiable.
+                            Une gestion de projet flexible : grâce aux methodes de gestion de projet efficaces et des cycles de planification écourtés,
                         </p>
                     </div>
                     <div className=" flex-1 space-y-4">

@@ -22,7 +22,7 @@ export const processInfos = {
             id: uuidv4(),
             title: "Development",
             description:
-                "We aim to attain the greatest satisfaction for our clients and be one of the prominent names when it comes to world-class service",
+                "Nous développons des solutions sur mesure avec des outils modernes nécessaire pour vous démarquer de la concurrence.",
             icon: "/assets/images/process/development.png",
             number: "/assets/images/process/03.png"
         },
@@ -30,7 +30,7 @@ export const processInfos = {
             id: uuidv4(),
             title: "Testing",
             description:
-                "We aim to attain the greatest satisfaction for our clients and be one of the prominent names when it comes to world-class service",
+                "Toutes nos applications et sites web sont testés pour une meilleure performance en production.",
             icon: "/assets/images/process/testing.png",
             number: "/assets/images/process/04.png"
         },
@@ -38,7 +38,7 @@ export const processInfos = {
             id: uuidv4(),
             title: "Deployment",
             description:
-                "We aim to attain the greatest satisfaction for our clients and be one of the prominent names when it comes to world-class service",
+                "Nous vous conseillons sur le meilleur environnement pour vos applications et nous nous occupons de tous.",
             icon: "/assets/images/process/deplyment.png",
             number: "/assets/images/process/05.png"
         },
@@ -46,7 +46,7 @@ export const processInfos = {
             id: uuidv4(),
             title: "Maintenance",
             description:
-                "We aim to attain the greatest satisfaction for our clients and be one of the prominent names when it comes to world-class service",
+                "Nous avons des experts en informatique pour toute intervention sur site comme à distance.",
             icon: "/assets/images/process/maintenance-new.png",
             number: "/assets/images/process/06.png"
         },

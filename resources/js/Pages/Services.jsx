@@ -1,3 +1,4 @@
+import CustomLink from "@/Components/CustomLink";
 import SectionService from "@/Components/Elements/SectionService";
 import Title from "@/Components/Elements/Title";
 import TitleSection from "@/Components/Elements/TitleSection.jsx";
@@ -32,7 +33,7 @@ const Services = () => {
                                 mother since real had half every him case in
                                 packages enquire we up ecstatic unsatiable.
                             </p>
-                            <LinkElement>Nous contacter</LinkElement>
+                            <LinkElement href={route('contact')}>Nous contacter</LinkElement>
                         </div>
                         <div className="space-y-4">
                             {ServivicesTitle.map((service, i) => {
@@ -98,6 +99,7 @@ const Services = () => {
                         title="Le meilleur support technique de sa catégorie pour votre entreprise. Nous devenons votre colonne vertébrale technologique"
                         src="/assets/images/services/feature5.png"
                         titlesection="Digitalisation"
+                        url={route('digitalisation')}
                         description="Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every."
                     />
                 </div>
