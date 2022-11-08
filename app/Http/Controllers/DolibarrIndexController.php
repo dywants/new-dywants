@@ -1,13 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Inertia\Inertia;
 
-class HomeIndexController extends Controller
+
+class DolibarrIndexController extends Controller
 {
     public function __invoke()
     {
-        return Inertia::render('Homepage');
+        return Inertia::render('Services/Dolibarr');
     }
 }

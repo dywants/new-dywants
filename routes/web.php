@@ -10,6 +10,7 @@ use App\Http\Controllers\ContactIndexController;
 use App\Http\Controllers\ServicesIndexController;
 use App\Http\Controllers\NextCloudIndexController;
 use App\Http\Controllers\DigitalisationIndexController;
+use App\Http\Controllers\DolibarrIndexController;
 use App\Http\Controllers\IntegrateurN8NIndexController;
 use App\Http\Controllers\ServiceDevelopmentWebController;
 
@@ -45,6 +46,7 @@ Route::get('/digitalisation', DigitalisationIndexController::class)->name('digit
 Route::get('/services/developpement-web', ServiceDevelopmentWebController::class)->name('devWeb');
 Route::get('/services/nextcloud', NextCloudIndexController::class)->name('nextcloud');
 Route::get('/services/nocodb', NocoDbIndexController::class)->name('nocodb');
-Route::get('/services/integrateur-n8n', IntegrateurN8NIndexController::class)->name('n8n');
+Route::get('/services/integrateur-n8n-au-cameroun', IntegrateurN8NIndexController::class)->name('n8n');
+Route::get('/services/integrateur-dolibarr-au-cameroun', DolibarrIndexController::class)->name('dolibarr');
 
 require __DIR__ . '/auth.php';
