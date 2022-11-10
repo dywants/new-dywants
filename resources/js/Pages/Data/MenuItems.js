@@ -7,5 +7,17 @@ export const MenuItems = [
         path: 'digitalisation',
         cName: 'dropdown-link'
     },
+    {
+        id: uuidv4(),
+        title: 'Digitalisation',
+        path: 'digitalisation',
+        cName: 'dropdown-link'
+    },
+    {
+        id: uuidv4(),
+        title: 'Digitalisation',
+        path: 'digitalisation',
+        cName: 'dropdown-link'
+    },
 
 ];
