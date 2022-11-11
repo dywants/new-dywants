@@ -4,9 +4,7 @@ import Header from "@/Components/Header/Header";
 import Services from "@/Components/Services/Services";
 import Expertises from "@/Components/Expertises/Expertises";
 import Values from "@/Components/Values/Values";
-import Temoignages from "@/Components/Temoignages/Temoignages";
 import Newsletter from "@/Components/Newsletter/Newsletter"
-import {TestimonialObj} from "@/Pages/Data/temoignages";
 import Projets from "@/Components/Projets/Projet";
 import {projetsObj} from "@/Pages/Data/projets";
 import {processInfos} from "@/Pages/Data/process";
@@ -26,9 +24,7 @@ const Homepage = () => {
             <Digitalisation/>
             <Process {...processInfos}/>
             <Values/>
-            {/*<Temoignages {...TestimonialObj}/>*/}
             <Projets {...projetsObj}/>
-            {/*<Compagnies />*/}
             <BlogSection {...articles}/>
             <div className="container mx-auto max-w-7xl px-7 mb-8">
                 <Newsletter/>
