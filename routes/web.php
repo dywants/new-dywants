@@ -13,6 +13,7 @@ use App\Http\Controllers\DigitalisationIndexController;
 use App\Http\Controllers\DolibarrIndexController;
 use App\Http\Controllers\IntegrateurN8NIndexController;
 use App\Http\Controllers\ServiceDevelopmentWebController;
+use App\Http\Controllers\SupportTechniqueIndexController;
 use App\Http\Controllers\ZimbraIndexController;
 
 /*
@@ -45,6 +46,7 @@ Route::get('/qui-sommes-nous', AproposIndexController::class)->name('apropos');
 Route::get('/services', ServicesIndexController::class)->name('services');
 Route::get('/digitalisation', DigitalisationIndexController::class)->name('digitalisation');
 Route::get('/services/developpement-web', ServiceDevelopmentWebController::class)->name('devWeb');
+Route::get('/services/support-technique', SupportTechniqueIndexController::class)->name('supporttech');
 Route::get('/services/nextcloud', NextCloudIndexController::class)->name('nextcloud');
 Route::get('/services/nocodb', NocoDbIndexController::class)->name('nocodb');
 Route::get('/services/integrateur-n8n-au-cameroun', IntegrateurN8NIndexController::class)->name('n8n');

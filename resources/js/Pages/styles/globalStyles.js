@@ -42,6 +42,11 @@ export const Container = styled.div`
     }
 `;
 
+export const ContentContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
 export const Wrapper = styled.div`
     display: flex;
     align-items: center;

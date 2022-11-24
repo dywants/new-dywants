@@ -3,7 +3,7 @@ import CustomLink from "@/Components/CustomLink";
 
 const CallToAction = () => {
     return (
-        <div className="container mx-auto max-w-6xl px-7 pb-10">
+        <div className="container mx-auto max-w-7xl px-7 pb-10">
             <div className="wrapper bg-primary px-14 py-16 flex gap-4 items-center justify-between rounded-md shadow-xl">
                 <div className="left">
                     <h2 className="text-white">Besoin d’un service ?</h2>
