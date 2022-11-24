@@ -76,7 +76,7 @@ export const Wrapper = styled.div`
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
-        line-height: 30px;
+        line-height: 32px;
         color: ${(props) => (props.whiteColor ? "#FFFFFF" : "#0f1727")};
     }
 `;

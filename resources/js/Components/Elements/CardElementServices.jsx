@@ -1,12 +1,15 @@
 import React from 'react';
 import Image from './Image.jsx';
 import styled from "styled-components";
+import { clsx } from 'clsx';
 
 const CardElementServices = ({icon, title, describe, center = '', w80 = "", h80 = "" }) => {
     return (
         <Wrapper center={center} className="">
-            <div className="p-8 text-center">
-                <WithCard w80={w80} h80={h80} className="mx-auto">
+            <div
+                className={clsx(center ? "text-center" : "text-left", "p-8")}
+            >
+                <WithCard w80={w80} h80={h80} className={clsx(center ? "mx-auto" : "m-0")}>
                     <Image src={icon} />
                 </WithCard>
                 <h3>{title}</h3>

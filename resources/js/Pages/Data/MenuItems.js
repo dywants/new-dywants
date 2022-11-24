@@ -9,8 +9,8 @@ export const MenuItems = [
     },
     {
         id: uuidv4(),
-        title: 'Digitalisation',
-        path: 'digitalisation',
+        title: 'Developpement web&mobile',
+        path: 'devWeb',
         cName: 'dropdown-link'
     },
     {

@@ -6,11 +6,11 @@ import Image from "./Image.jsx";
 const HeaderOtherPages = ({ image, title, describe, url, link }) => {
     return (
         <SectionHeader className="w-full overflow-hidden h-auto bg-cover object-cover bg-bgHeader text-center">
-            <div className="flex justify-between gap-4 items-center overflow-hidden">
+            <div className="flex justify-between gap-4 items-center overflow-hidden h-auto">
                 <div className="flex-1">
                     <div className="px-4 text-left ml-24">
                         <h1>{title}</h1>
-                        <p className="text-texte text-base">{describe}</p>
+                        <p className="text-white text-base">{describe}</p>
                         <div className="my-4">
                             <CustomLink secondary href={url}>
                                 {link}
