@@ -23,8 +23,8 @@ jobs:
     - name: Generate key
       run: php artisan key:generate
     - name: Install Dependencies Nodejs
-      run: npm install && npm run dev
-    - name: Directory Permissions
+      run: npm install && npm run build
+    - name: Directory Permissionss
       run: chmod -R 777 storage bootstrap/cache
     - name: Create Database
       run: |
