@@ -72,7 +72,7 @@ const SectionForm = () => {
                         <ul className="text-left text-white space-y-10 mt-4">
                             <li className="font-medium text-3xl">contact@dywants.com</li>
                             <li className="font-medium text-3xl">(+237) 699278240</li>
-                            <li className="font-medium text-3xl">Douala Cameroun, sis Lycée cité des palmier</li>
+                            <li className="font-medium text-3xl">Douala Cameroun, sis Lycée cité des palmiers</li>
                     </ul>
                     </div>
                 </div>
