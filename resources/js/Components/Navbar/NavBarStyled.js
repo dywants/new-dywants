@@ -17,10 +17,13 @@ export const NavBarContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: calc(100% - 4.75rem);
+    max-width: calc(100% - 3rem);
     margin: 0 auto;
     width: 100%;
-    /*   height: 80px; */
+
+    @media screen and (min-width: 726px) {
+      max-width: calc(100% - 4.75rem);
+    }
 `;
 
 export const NavLogo = styled(Link)`
@@ -28,10 +31,17 @@ export const NavLogo = styled(Link)`
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
+  padding-top:1rem:
+  padding-bottom:1rem;
   display: flex;
   align-items: center;
   font-family: ${(props) => props.theme.fonts.logo};
+
+  @media screen and (min-width: 726px) {
+    font-size: 1.8rem;
+    padding:0;
+  }
 
   {Link}
 `;
@@ -113,14 +123,13 @@ export const NavLinks = styled(Link)`
 `;
 
 export const SectionButton = styled.div`
+  display:none;
   > button {
     margin-left: 1rem;
   }
-  @media screen and (max-width: 960px) {
+  @media screen and (min-width: 726px) {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    /*   height: 120px; */
   }
 `;

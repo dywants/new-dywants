@@ -26,7 +26,7 @@ const Navbar = () => {
                         <img
                             src="/assets/logo/logo.png"
                             alt=""
-                            className="w-full h-full"
+                            className="w-[45px] h-[45px] md:w-full md:h-full"
                         />
                         Dywants
                     </NavLogo>
@@ -91,7 +91,7 @@ const Navbar = () => {
                             <NavLinks href="#">Blog</NavLinks>
                         </NavItem>
                     </NavMenu>
-                    <SectionButton className="space-x-2">
+                    <SectionButton className="space-x-2 hidden md:block">
                         <LinkElement href={route("contact")}>
                             Demander un devis
                         </LinkElement>
