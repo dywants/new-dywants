@@ -22,7 +22,7 @@ const Projets = ({ projets }) => {
 
                             breakpoints: {
                                 640: {
-                                    fixedWidth: "350px",
+                                    fixedWidth: "100%",
                                     fixedHeight: "590px",
                                     perPage: 1, // Used after destruction
                                 },
@@ -52,6 +52,10 @@ const Projets = ({ projets }) => {
 const ProjetSection = styled.section`
   background-color: ${(props) => props.theme.colors.degradedPrimary};
   padding: 5rem;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: 2rem;
+  }
 
    .splide__pagination__page {
     &.is-active {

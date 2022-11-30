@@ -6,8 +6,8 @@ import MetaBlog from "@/Components/Elements/MetaBlog";
 
 const BlogSection = () => {
     return (
-        <section className="container mx-auto p-20">
-            <h2 className="text-left text-title">Lisez nos derniers blogs et actualités</h2>
+        <section className="container mx-auto p-8 md:p-20 hidden">
+            <h2 className=" text-[35px] leading-9 text-left text-title">Lisez nos derniers blogs et actualités</h2>
             <WrapperBlog>
                 {
                     articles.map((article, i) => {
@@ -32,9 +32,14 @@ const BlogSection = () => {
 
 const WrapperBlog = styled.div`
 display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
    margin: 3rem auto;
    gap: 1rem;
+   
+   @media ${(props) => props.theme.breakpoints.sm} {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin: 1.5rem auto;
+  }
 `;
 
 export default BlogSection;

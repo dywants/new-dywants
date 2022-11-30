@@ -6,7 +6,7 @@ import TitleSection from "../Elements/TitleSection";
 const Expertises = () => {
     return (
         <section className="mt-4">
-            <div className="flex items-center">
+            <div className="flex flex-col md:flex-row items-center">
                 <div className="flex-1">
                     <img
                         src="assets/images/expertises.png"
@@ -14,7 +14,7 @@ const Expertises = () => {
                         alt=""
                     />
                 </div>
-                <div className="flex-1 px-[100px]">
+                <div className="flex-1 px-6 md:px-[100px]">
                     <TitleSection title="Notre expertise"/>
                     <h3 className="text-[36px] font-semibold mt-2">
                         Nous mettons tous notre savoir faire pour realiser ce

@@ -26,7 +26,7 @@ const Homepage = () => {
             <Values/>
             <Projets {...projetsObj}/>
             <BlogSection {...articles}/>
-            <div className="container mx-auto max-w-7xl px-7 mb-8">
+            <div className="container mx-auto max-w-7xl md:px-7 mb-9 md:my-20">
                 <Newsletter/>
             </div>
         </Layout>

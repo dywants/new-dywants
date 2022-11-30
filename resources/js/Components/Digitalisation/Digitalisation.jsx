@@ -25,8 +25,8 @@ const Digitalisation = () => {
     ];
     return (
         <div className="">
-            <div className="container mx-auto max-w-7xl text-left p-16">
-                <div className="flex justify-between items-center gap-4">
+            <div className="container mx-auto max-w-7xl text-left p-8 md:p-16">
+                <div className="flex justify-between flex-col md:flex-row items-center gap-4">
                     <div className="flex-1">
                         <h2 className="text-title font-extrabold leading-9 text-[30px] mb-4">
                             Vous êtes une entreprise? Nous avons ce qu'il vous
@@ -46,15 +46,15 @@ const Digitalisation = () => {
                             Voir nos services
                         </LinkElement>
                     </div>
-                    <div className="flex-1">
+                    <div className="flex-1 mt-8 md:mt-0">
                         <Image src={"/assets/images/digitalisation.png"} />
                     </div>
                 </div>
-                <div className="grid grid-cols-3 gap-8 mt-10">
+                <div className="grid grid-col-1 md:grid-cols-3 gap-1 md:gap-8 mt-10">
                     {InfoDigics.map((p, i) => {
                         return (
-                            <div key={i} className="col-span-1 border-r border-[#DFDFDF] last:border-0">
-                                <h3 className="text-[25px] leading-9 font-semibold">{p.title}</h3>
+                            <div key={i} className="col-span-1 border-b md:border-b-0 pr-2 pb-3 md:pb-0 md:border-r border-[#DFDFDF] last:border-0">
+                                <h3 className="text-[25px]  leading-9 font-semibold">{p.title}</h3>
                                 <p className="text-texte font-normal left-6 text-base mt-2">{p.description}</p>
                             </div>
                         );

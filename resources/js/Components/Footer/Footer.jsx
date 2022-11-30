@@ -7,8 +7,8 @@ const Footer = () => {
     return (
         <SectionFooter>
             <Container>
-                <div className="grid grid-cols-5 gap-4 py-14">
-                    <div className="text-left col-span-2">
+                <div className="grid grid-cols-1 md:grid-cols-5 gap-4 py-14">
+                    <div className="text-left col-span-1 md:col-span-2">
                         <Title white title="Let's make something special" />
                         <h3 className="my-4 text-lg font-medium">
                             Let's talk! 🤙{" "}
@@ -82,18 +82,25 @@ const Footer = () => {
 const SectionFooter = styled.footer`
     background-color: ${(props) => props.theme.colors.secondary};
     color: ${(props) => props.theme.colors.light};
+    padding-left:30px;
+    padding-right:30px;
 `;
 
 const Container = styled.div`
     z-index: 1;
     width: 100%;
-    max-width: calc(100% - 15rem);
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and (max-width: 991px) {
-        padding-right: 30px;
-        padding-left: 30px;
+    @media screen and (min-width: 736px) {
+        width: 100%;
+        max-width: calc(100% - 15rem);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media ${(props) => props.theme.breakpoints.sm} {
+        max-width: 100%;
     }
 
     .footer__title {

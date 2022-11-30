@@ -19,6 +19,11 @@ font-size: 42px;
 line-height: 58px;
 color: ${props => props.white ? "white" : "#232536"};
 
+@media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 30px;
+    text-align:left;
+    line-height: 42px;
+  }
 `;
 
 export default Title;

@@ -8,7 +8,7 @@ const Header = () => {
         <HeaderSection className="border-gray-200 border-b relative py-12 bg-secondary">
             <div className="container mx-auto">
                 <div className="flex flex-col md:flex-row items-center justify-between relative">
-                    <div className="zone-text py-4 md:py-[113px] flex-1 justify-between space-x-4">
+                    <div className="zone-text py-4 px-2 md:py-[113px] flex-1 justify-between space-x-4">
                         <div className="w-[400px] h-[60px] rounded-md bg-gray-200 p-2 hidden md:inline-flex space-x-2 items-center">
                             {/*<div className="w-10 h-10 rounded-full bg-[#FFB400]"></div>*/}
                             <div className="text-[20px] font-semibold leading-7">
