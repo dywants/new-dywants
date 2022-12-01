@@ -36,9 +36,16 @@ const Wrapper = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-between;
-flex-direction: ${(props) => (props.reverse ? "row-reverse" : "")};
-gap: 5rem;
+flex-direction: ${(props) => (props.reverse ? "column-reverse" : "column")};
+gap: 3rem;
+padding-top: 1rem;
+padding-bottom: 1rem;
 overflow: hidden;
+
+@media screen and (min-width: 764px) {
+    flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
+    gap: 5rem;
+}
 `;
 
 export default SectionFlex;
