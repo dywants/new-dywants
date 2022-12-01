@@ -8,7 +8,7 @@ const Values = () => {
     return (
         <div className="bg-[#E8E8E8]">
             <div className="container mx-auto max-w-7xl text-left p-8 md:p-16">
-                <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div className="flex flex-col xl:flex-row justify-between items-center gap-6">
                     <div className="md:max-w-[642px] ">
                         <TitleSection title="Nos valeurs" />
                         <Title
