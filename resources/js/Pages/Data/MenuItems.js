@@ -15,6 +15,12 @@ export const MenuItems = [
     },
     {
         id: uuidv4(),
+        title: 'DevOps & Deployment',
+        path: 'devops',
+        cName: 'dropdown-link'
+    },
+    {
+        id: uuidv4(),
         title: 'Digitalisation',
         path: 'digitalisation',
         cName: 'dropdown-link'

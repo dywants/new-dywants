@@ -7,6 +7,7 @@ use App\Http\Controllers\HomeIndexController;
 use App\Http\Controllers\NocoDbIndexController;
 use App\Http\Controllers\AproposIndexController;
 use App\Http\Controllers\ContactIndexController;
+use App\Http\Controllers\DevopsIndexController;
 use App\Http\Controllers\ServicesIndexController;
 use App\Http\Controllers\NextCloudIndexController;
 use App\Http\Controllers\DigitalisationIndexController;
@@ -40,6 +41,7 @@ Route::get('/services/developpement-web', ServiceDevelopmentWebController::class
 Route::get('/services/support-technique', SupportTechniqueIndexController::class)->name('supporttech');
 Route::get('/services/nextcloud', NextCloudIndexController::class)->name('nextcloud');
 Route::get('/services/nocodb', NocoDbIndexController::class)->name('nocodb');
+Route::get('/services/devops-et-deploiements-app', DevopsIndexController::class)->name('devops');
 Route::get('/services/integrateur-n8n-au-cameroun', IntegrateurN8NIndexController::class)->name('n8n');
 Route::get('/services/integrateur-dolibarr-au-cameroun', DolibarrIndexController::class)->name('dolibarr');
 Route::get('/services/integrateur-zimbra-au-cameroun', ZimbraIndexController::class)->name('zimbra');
