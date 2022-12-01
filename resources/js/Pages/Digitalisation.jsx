@@ -30,10 +30,10 @@ const Digitalisation = () => {
                                 d’autres Nous le ferons pour vous.
                             </p>
                             <div>
-                                <LinkElement primary>
+                                <LinkElement primary href={route('contact')}>
                                     Contactez-nous
                                 </LinkElement>
-                                <LinkElement className="ml-2">
+                                <LinkElement className="ml-2" href={route('contact')}>
                                     Faire un devis
                                 </LinkElement>
                             </div>
@@ -70,7 +70,7 @@ const Digitalisation = () => {
                                     descrite={p.describe}
                                     link={p.linkTitle}
                                     reverse
-                                    url="#"
+                                    url={route('contact')}
                                 />
                             );
                         })}
@@ -92,7 +92,7 @@ const Digitalisation = () => {
                                     link={"Faire un devis"}
                                     link2={"En savoir plus"}
                                     url={route("contact")}
-                                    url2={"#"}
+                                    url2={route("zimbra")}
                                 />
                             );
                         })}
@@ -107,7 +107,7 @@ const Digitalisation = () => {
                             return (
                                 <div
                                     key={i}
-                                    className="col-span-1 border-b md:border-b-0 pb-2 md:pb-o md:border-r border-[#DFDFDF] last:border-0"
+                                    className="col-span-1 border-b md:border-b-0 pb-2 pr-2 md:pb-o md:border-r border-[#DFDFDF] last:border-0"
                                 >
                                     <p className="text-texte font-normal left-6 text-base mb-2">
                                         {p.comment}
@@ -182,7 +182,7 @@ const Digitalisation = () => {
                                     link={"Faire un devis"}
                                     link2={"En savoir plus"}
                                     url={route("contact")}
-                                    url2={"#"}
+                                    url2={route("nextcloud")}
                                 />
                             );
                         })}
@@ -197,7 +197,7 @@ const Digitalisation = () => {
                             return (
                                 <div
                                     key={i}
-                                    className="col-span-1 border-b md:border-b-0 md:border-r pb-3 md:pb-0 border-[#DFDFDF] last:border-0"
+                                    className="col-span-1 border-b md:border-b-0 md:border-r pb-3 md:pb-0 pr-2 border-[#DFDFDF] last:border-0"
                                 >
                                     <h3 className="text-[18px] leading-6 font-medium mb-2">
                                         {p.title}
@@ -227,7 +227,7 @@ const Digitalisation = () => {
                                 link={"Faire un devis"}
                                 link2={"En savoir plus"}
                                 url={route("contact")}
-                                url2={"#"}
+                                url2={route("n8n")}
                             />
                         );
                     })}

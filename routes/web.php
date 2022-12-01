@@ -39,11 +39,11 @@ Route::get('/services', ServicesIndexController::class)->name('services');
 Route::get('/services/digitalisation', DigitalisationIndexController::class)->name('digitalisation');
 Route::get('/services/developpement-web', ServiceDevelopmentWebController::class)->name('devWeb');
 Route::get('/services/support-technique', SupportTechniqueIndexController::class)->name('supporttech');
-Route::get('/services/nextcloud', NextCloudIndexController::class)->name('nextcloud');
-Route::get('/services/nocodb', NocoDbIndexController::class)->name('nocodb');
 Route::get('/services/devops-et-deploiements-app', DevopsIndexController::class)->name('devops');
-Route::get('/services/integrateur-n8n-au-cameroun', IntegrateurN8NIndexController::class)->name('n8n');
-Route::get('/services/integrateur-dolibarr-au-cameroun', DolibarrIndexController::class)->name('dolibarr');
-Route::get('/services/integrateur-zimbra-au-cameroun', ZimbraIndexController::class)->name('zimbra');
+Route::get('/services/digitalisation/nextcloud', NextCloudIndexController::class)->name('nextcloud');
+Route::get('/services/digitalisation/nocodb', NocoDbIndexController::class)->name('nocodb');
+Route::get('/services/digitalisation/integrateur-n8n-au-cameroun', IntegrateurN8NIndexController::class)->name('n8n');
+Route::get('/services/digitalisation/integrateur-dolibarr-au-cameroun', DolibarrIndexController::class)->name('dolibarr');
+Route::get('/services/digitalisation/integrateur-zimbra-au-cameroun', ZimbraIndexController::class)->name('zimbra');
 
 require __DIR__ . '/auth.php';
