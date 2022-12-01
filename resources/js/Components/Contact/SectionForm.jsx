@@ -7,9 +7,9 @@ import Title from "../Elements/Title";
 
 const SectionForm = () => {
     return (
-        <div className="container mx-auto max-w-6xl mt-32 mb-16">
-            <div className="wrapper flex gap-7">
-                <div className="max-w-[665px]">
+        <div className="container mx-auto max-w-7xl mt-10 md:mt-32 mb-8 md:mb-16">
+            <div className="wrapper flex flex-col md:flex-row px-8 gap-3 md:gap-7">
+                <div className="w-full md:max-w-[665px]">
                     <TitleSection title="Nous Contacter"/>
                     <Title title="Avoir une question ? Prenons contact avec nous 👋"/>
                     <p className="text-texte text-base leading-6">Remplissez le formulaire et notre équipe vous répondra dans les 24 heures</p>
@@ -66,13 +66,13 @@ const SectionForm = () => {
                         </form>
                     </div>
                 </div>
-                <div className="bg-secondaryGraded flex-1">
+                <div className="bg-secondaryGraded flex-1 flex justify-center items-center">
                     <div className="p-10">
                         <TitleSection className="text-white" title="Location"/>
-                        <ul className="text-left text-white space-y-10 mt-4">
-                            <li className="font-medium text-3xl">contact@dywants.com</li>
-                            <li className="font-medium text-3xl">(+237) 699278240</li>
-                            <li className="font-medium text-3xl">Douala Cameroun, sis Lycée cité des palmiers</li>
+                        <ul className="text-left text-white space-y-4 md:space-y-10 mt-4">
+                            <li className="font-medium md:text-3xl">contact@dywants.com</li>
+                            <li className="font-medium md:text-3xl">(+237) 699278240</li>
+                            <li className="font-medium md:text-3xl">Douala Cameroun, sis Lycée cité des palmiers</li>
                     </ul>
                     </div>
                 </div>

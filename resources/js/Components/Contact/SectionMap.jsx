@@ -11,7 +11,7 @@ const location = {
 const SectionMap = () => {
     return (
         <div> 
-            <div className="container mx-auto max-w-7xl px-16 py-10 mb-8">
+            <div className="">
                 <div>
                     <RightSection className="right">
                         <MapSection location={location} zoomLevel={17}/>
