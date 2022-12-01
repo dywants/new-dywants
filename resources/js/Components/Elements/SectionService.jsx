@@ -14,8 +14,11 @@ const SectionService = ({
 }) => {
     return (
         <Wrapper reverse={reverse}>
-            <div className="w-[642px]">
-                <div className="pt-24">
+             <div className="w-full md:max-w-[480px]">
+                <Image src={src} className="" />
+            </div>
+            <div className="w-full px-10 md:px-0 md:w-[642px]">
+                <div className="pt-o md:pt-24">
                     <TitleSection>{titlesection} </TitleSection>
                     <Title>{title}</Title>
                     <p className="text-texte text-base font-normal leading-6 opacity-80 my-2">
@@ -33,10 +36,6 @@ const SectionService = ({
                     </CustomLink>
                 </div>
             </div>
-
-            <div className="max-w-[480px]">
-                <Image src={src} className="" />
-            </div>
         </Wrapper>
     );
 };
@@ -45,10 +44,17 @@ const Wrapper = styled.div`
     display: flex;
     align-items: start;
     justify-content: space-between;
-    flex-direction: ${(props) => (props.reverse ? "row-reverse" : "")};
     gap: 3rem;
     padding-bottom: 6rem;
     overflow: hidden;
+
+    @media ${(props) => props.theme.breakpoints.sm} {
+        flex-direction: ${(props) => (props.reverse ? "column-reverse" : "column")};
+      }
+
+    @media screen and (min-width: 768px) {
+        flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
+    }
 `;
 
 const Title = styled.h3`
