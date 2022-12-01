@@ -4,7 +4,7 @@ import AccordionLayout from './AccordionLayout/AccordionLayout';
 const Accordion = () => {
     const [activeIndex, setActiveIndex] = useState(1);
     return (
-        <div className='flex flex-col justify-center items-center w-full'>
+        <div className='flex flex-col justify-center items-center w-full px-8'>
           <AccordionLayout 
             title="Temps nécessaire pour la mise en place" 
             index={1}

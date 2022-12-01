@@ -22,9 +22,9 @@ const SupportTechnique = () => {
                 url={route("contact")}
             />
             <section className="my-8">
-                <div className="container mx-auto max-w-7xl py-20 text-left">
+                <div className="container mx-auto max-w-7xl my-10 py-8 md:py-20 text-left">
                     <Wrapper>
-                        <div className="flex-1">
+                        <div className="flex-1 px-8">
                             <h2>
                                 Nous facilitons votre quotidien. Concentrez-vous
                                 sur votre domaine d’activité,{" "}
@@ -50,7 +50,7 @@ const SupportTechnique = () => {
                 </div>
             </section>
             <section>
-                <div className="overflow-hidden flex gap-8 items-center">
+                <div className="overflow-hidden flex flex-col-reverse md:flex-row gap-3 md:gap-8 items-center">
                     <div className="flex-1">
                         <Image
                             src={
@@ -81,9 +81,9 @@ const SupportTechnique = () => {
                 </div>
             </section>
             <section className="my-8">
-                <div className="container mx-auto max-w-7xl py-20 text-left">
+                <div className="container mx-auto max-w-7xl py-6 md:py-20 text-left">
                     <Wrapper>
-                        <div className="flex-1">
+                        <div className="flex-1 px-8">
                             <h2>
                                 Nous nous{" "}
                                 <span className="text-primary">adapatons</span>{" "}
@@ -108,7 +108,7 @@ const SupportTechnique = () => {
             </section>
             <section>
                 <div className="container mx-auto max-w-7xl pb-14 text-left">
-                    <div className="max-w-[852px] my-6">
+                    <div className="w-full md:max-w-[852px] my-6 px-8">
                         <h2>Comment ça marche? </h2>
                         <p className="text-base text-texte left-7 mt-2">
                             Nous travaillons selon les meilleurs normes, ce qui
@@ -117,7 +117,7 @@ const SupportTechnique = () => {
                             étape de la création du produit en toute sérénité
                         </p>
                     </div>
-                    <div className="grid grid-cols-3 gap-4 my-10">
+                    <div className="grid w-full px-8 md:p-0 md:grid-cols-3 gap-4 my-10">
                         {
                             items.map((item, i) => {
                                 return(
@@ -128,15 +128,15 @@ const SupportTechnique = () => {
                     </div>
                 </div>
             </section>
-            <section className="mx-auto max-w-[1120px] text-center my-10">
+            <section className="mx-auto w-full px-8 md:max-w-[1120px] text-center md:my-10">
                 <h2>
                     Concentrez-vous sur votre domaine d’activité, <span className="text-primary">Nous faisons le reste.</span>
                 </h2>
             </section>
             <section>
-                <div className="container mx-auto max-w-7xl py-20 text-left">
+                <div className="container mx-auto max-w-7xl my-8 md:py-20 text-left">
                     <Wrapper>
-                        <div className="flex-1 py-4">
+                        <div className="flex-1 p-8">
                             <h2>
                                 Vous avez des interrogations,Nous avons{" "}
                                 <span className="text-primary">

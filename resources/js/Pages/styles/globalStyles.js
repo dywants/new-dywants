@@ -22,8 +22,13 @@ const GlobalStyles = createGlobalStyle`
 
   h2 {
     font-weight: 700;
-    font-size: 48px;
-    line-height: 55px;
+    font-size: 35px;
+    line-height: 42px;
+
+    @media screen and (min-width: 736px) {
+      font-size: 48px;
+      line-height: 55px;
+  }
   }
 
 `;
@@ -34,7 +39,7 @@ export const Container = styled.div`
     padding-left: 30px;
     width: 100%;
 
-     @media screen and (min-width: 736px) {
+    @media screen and (min-width: 736px) {
         width: 100%;
         max-width: calc(100% - 18.75rem);
         margin-left: auto;
@@ -51,9 +56,14 @@ export const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: ${(props) => (props.reverse ? "row-reverse" : "")};
-    gap: 5rem;
+    flex-direction: ${(props) => (props.reverse ? "column-reverse" : "column")};
+    gap: 1.5rem;
     overflow: hidden;
+
+    @media screen and (min-width: 736px) {
+      gap: 5rem;
+      flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
+  }
 
     h2 {
         font-style: normal;
