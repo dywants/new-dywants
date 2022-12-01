@@ -40,11 +40,11 @@ const DevelopmentWeb = () =>{
                 link={"Contactez-nous"}
                 url={route("contact")}
             />
-            <section className="my-8">
-                <div className="container mx-auto max-w-7xl py-20 text-left">
+            <section className="md:my-8">
+                <div className="container mx-auto max-w-7xl md:py-20 text-left">
                     <Wrapper className="pb-40">
-                        <div className="flex-1">
-                            <div className="max-w-2xl">
+                        <div className="flex-1 pt-8">
+                            <div className="w-full md:max-w-2xl px-8">
                                 <h2>
                                     Nous sommes une équipe Tournée vers,{" "}
                                     <span className="text-primary">
@@ -66,7 +66,7 @@ const DevelopmentWeb = () =>{
                                     "/assets/images/development/vue-laterale-portrait-femme-developpeuse.png"
                                 }
                             />
-                            <div className="absolute -bottom-40 -left-40">
+                            <div className="absolute md:-bottom-40 md:-left-40 w-40 h-40 md:w-72 md:h-72 -bottom-28 -left-10">
                                 <Image
                                     src={
                                         "/assets/images/development/db-icon.png"
@@ -78,7 +78,7 @@ const DevelopmentWeb = () =>{
                 </div>
             </section>
             <section>
-                <div className="overflow-hidden flex gap-8 items-center">
+                <div className="overflow-hidden flex flex-col-reverse md:flex-row gap-3 md:gap-8 items-center">
                     <div className="flex-1">
                         <Image
                             src={
@@ -108,8 +108,8 @@ const DevelopmentWeb = () =>{
                 </div>
             </section>
             <section>
-                <div className="container mx-auto max-w-7xl py-20 text-left">
-                    <div className="max-w-2xl">
+                <div className="container mx-auto max-w-7xl py-10 md:py-20 px-8 text-left">
+                    <div className="w-full md:max-w-2xl">
                         <h2>
                             Des services{" "}
                             <span className="text-primary">de qualité</span> sur
@@ -128,7 +128,7 @@ const DevelopmentWeb = () =>{
                             pour vous aider à trouver la meilleure solution.
                         </p>
                     </div>
-                    <div className="grid grid-cols-4 gap-4 my-10">
+                    <div className="grid w-full md:grid-cols-4 gap-4 my-10">
                         {itemsDevelopment.map((item, i) => {
                             return (
                                 <CardElementServices
@@ -143,8 +143,8 @@ const DevelopmentWeb = () =>{
                 </div>
             </section>
             <section>
-                <div className="container mx-auto max-w-7xl py-16 text-left">
-                    <div className="max-w-2xl">
+                <div className="container mx-auto max-w-7xl px-8 md:py-16 text-left">
+                    <div className="w-full md:max-w-2xl">
                         <h2>
                             Nos meilleures armes pour affronter
                             <span className="text-primary">
@@ -156,7 +156,7 @@ const DevelopmentWeb = () =>{
                             sommes fières de le dire haut et fort.
                         </p>
                     </div>
-                    <div className="my-8 flex flex-wrap gap-4">
+                    <div className="my-8 flex flex-wrap gap-1 md:gap-4 overflow-hidden">
                         {titles.map((title, i) => {
                             return (
                                 <div
@@ -171,8 +171,8 @@ const DevelopmentWeb = () =>{
                 </div>
             </section>
             <section>
-                <div className="container mx-auto max-w-7xl py-16 text-left">
-                    <div className="max-w-2xl">
+                <div className="container mx-auto max-w-7xl px-8 md:py-16 text-left">
+                    <div className="w-full md:max-w-2xl">
                         <h2>
                             Le client est au {""}
                             <span className="text-primary">centre de tout</span>
@@ -184,7 +184,7 @@ const DevelopmentWeb = () =>{
                             étape de la création du produit en toute sérénité.
                         </p>
                     </div>
-                    <div className="grid grid-cols-3 gap-4 my-10">
+                    <div className="grid w-full md:grid-cols-3 gap-4 my-10">
                         {itemsCusmens.map((item, i) => {
                             return (
                                 <CardElementServices
@@ -201,7 +201,7 @@ const DevelopmentWeb = () =>{
                     </div>
                 </div>
             </section>
-            <section className="mx-auto max-w-[1120px] text-center my-10">
+            <section className="mx-auto md:max-w-[1120px] text-center my-10">
                 <h2>
                     Nous créons des{" "}
                     <span className="text-primary">produits uniques</span> qui
@@ -209,9 +209,9 @@ const DevelopmentWeb = () =>{
                 </h2>
             </section>
             <section>
-                <div className="container mx-auto max-w-7xl py-20 text-left">
+                <div className="container mx-auto max-w-7xl py-10 md:py-20 text-left">
                     <Wrapper>
-                        <div className="flex-1 py-4">
+                        <div className="flex-1 p-8">
                             <h2>
                                 Vous avez des interrogations,Nous avons{" "}
                                 <span className="text-primary">
