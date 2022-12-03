@@ -73,14 +73,14 @@ export const NavMenu = styled.ul`
     left: ${({ click }) => (click ? 0 : '-100%')};
     opacity: 1;
     transition: all 0.5s ease-in-out;
-    background: ${(props) => props.theme.colors.darker};
+    background: ${(props) => props.theme.colors.dark};
   }
 `;
 
 export const NavItem = styled.li`
   border-bottom: 2px solid transparent;
   margin-right: 1rem;
-  color: #000;
+  color: ${(props) => props.theme.colors.dark};
   padding: 1rem 0;
 
   &:hover {
@@ -89,6 +89,7 @@ export const NavItem = styled.li`
 
   @media ${(props) => props.theme.breakpoints.md} {
     width: 100%;
+    color: ${(props) => props.theme.colors.light};
 
     &:hover {
       border: none;
@@ -97,7 +98,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-  color: #000 !important;
+  color: #0A142F !important;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -113,7 +114,7 @@ export const NavLinks = styled(Link)`
     text-align: center;
     padding: 2rem;
     width: 100%;
-    display: table;
+    display: table;color: ${(props) => props.theme.colors.light};
 
     &:hover {
       color: ${(props) => props.theme.colors.primary};
