@@ -7,7 +7,7 @@ const HeaderPage = ({ icon, title, description, smallTile, url, link }) => {
     return (
         <SectionHeader
             className="w-full overflow-hidden h-auto bg-cover object-cover bg-bgHeader text-center">
-            <div className="container mx-auto max-w-6xl">
+            <div className="container mx-auto max-w-7xl px-8">
                 <div className="w-20 h-20 mb-4 text-center mx-auto">
                     <Image src={icon} alt="" />
                 </div>

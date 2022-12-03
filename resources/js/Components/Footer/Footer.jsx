@@ -24,7 +24,7 @@ const Footer = () => {
                         <h3 className="footer__title">Liens rapides</h3>
                         <hr className="h-8 text-white w-24 mt-1" />
                         <ul className="text-left text-white space-y-6">
-                            <li className="hover:scale-x-75"><Link href="#">Services</Link></li>
+                            <li className="hover:scale-x-75"><Link href={route('services')}>Services</Link></li>
                             <li className="hover:scale-x-75"><Link href="#">Projets</Link></li>
                             <li className="hover:scale-x-75"><Link href="#">Podcast</Link></li>
                             <li className="hover:scale-x-75"><Link href="#">Blog</Link></li>
@@ -35,21 +35,21 @@ const Footer = () => {
                         <hr className="h-8 font-bold text-white w-24 mt-1" />
                         <ul className="text-left text-white space-y-6">
                             <li className="hover:scale-x-75">
-                                <Link href="#" className="text-lg">
+                                <Link href={route('devWeb')} className="text-lg">
                                     {" "}
                                     Développement web&mobile
                                 </Link>
                             </li>
                             <li className="hover:scale-x-75">
-                                <Link href="#" className="text-lg">
+                                <Link href={route('supporttech')} className="text-lg">
                                     {" "}
                                     Support Technique
                                 </Link>
                             </li>
                             <li className="hover:scale-x-75">
-                                <Link href="#" className="text-lg">
+                                <Link href={route('devops')} className="text-lg">
                                     {" "}
-                                    Déployement
+                                    Devops
                                 </Link>
                             </li>
                             <li className="hover:scale-x-75">
@@ -59,7 +59,7 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li className="hover:scale-x-75">
-                                <Link href="#" className="text-lg">
+                                <Link href={route('digitalisation')} className="text-lg">
                                     {" "}
                                     Digitalisation
                                 </Link>
