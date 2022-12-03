@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Title from "@/Components/Elements/Title";
 import { Link } from "@inertiajs/inertia-react";
+import Image from "../Elements/Image.jsx";
 
 const Footer = () => {
     return (
@@ -69,6 +70,17 @@ const Footer = () => {
                     <div className="name col-span-1">
                         <h3 className="footer__title">Partenaires</h3>
                         <hr className="h-8 text-white w-14 mt-1" />
+                        <div className="space-y-3">
+                            <div className="w-20 h-20 border flex justify-center items-center bg-white rounded">
+                               <Image src={'/assets/partenaires/dolibarr_logo.png'}/>
+                            </div>
+                            <div className="w-20 h-20">
+                               <Image src={'/assets/partenaires/Nextcloud_Bronze_Partner.svg'}/>
+                            </div>
+                            <div className="w-20 h-20">
+                               <Image src={'/assets/partenaires/zimbraZ.png'}/>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <Copyright className="border-t-2">

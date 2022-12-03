@@ -3,7 +3,6 @@ import { Link } from "@inertiajs/inertia-react";
 
 export const Nav = styled.nav`
     background: transparent;
-    /*     display: flex;
     justify-content: center;
     align-items: center; */
     color: black;
@@ -50,7 +49,6 @@ export const MobileIcon = styled.div`
     display: none;
     @media ${(props) => props.theme.breakpoints.md} {
         display: block;
-
         font-size: 1.8rem;
         cursor: pointer;
     }
@@ -62,16 +60,18 @@ export const NavMenu = styled.ul`
   justify-content: center;
   text-align: center;
   list-style: none;
+  padding-top: 1rem;
 
   @media ${(props) => props.theme.breakpoints.md} {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 90vh;
+    z-index:40;
     position: absolute;
-    top: 80px;
+    top: 48px;
     left: ${({ click }) => (click ? 0 : '-100%')};
-    opacity: 1;
+    opacity: 0.7;
     transition: all 0.5s ease-in-out;
     background: ${(props) => props.theme.colors.dark};
   }
@@ -98,7 +98,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-  color: #0A142F !important;
+  color: #0A142F;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -112,7 +112,7 @@ export const NavLinks = styled(Link)`
 
   @media ${(props) => props.theme.breakpoints.md} {
     text-align: center;
-    padding: 2rem;
+    padding: 1.3rem;
     width: 100%;
     display: table;color: ${(props) => props.theme.colors.light};
 
