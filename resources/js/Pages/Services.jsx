@@ -19,16 +19,16 @@ const Services = () => {
     return (
         <Layout>
             <div className="bg-secondaryGraded overflow-hidden w-full">
-                <div className="container mx-auto max-w-7xl text-left px-16 py-20">
+                <div className="container mx-auto max-w-7xl text-left px-6 md:px-16 py-20">
                     <TitleSection className="text-white" title="Nos services" />
-                    <div className="flex justify-between items-start">
-                        <div className="max-w-[624px]">
+                    <div className="flex justify-between flex-col md:flex-row gap-9 md:gap-0 items-start">
+                        <div className="w-full md:max-w-[624px]">
                             <Title
                                 white
                                 className="mb-4"
                                 title="Nous construisons des solutions logicielles qui résolvent les défis commerciaux de nos clients"
                             />
-                            <p className="text-white text-base font-normal leading-6 opacity-80 mb-8 w-[642px]">
+                            <p className="text-white text-base font-normal leading-6 opacity-80 mb-8 w-full md:w-[642px]">
                                 Through True Rich Attended does no end it his
                                 mother since real had half every him case in
                                 packages enquire we up ecstatic unsatiable.
@@ -54,47 +54,47 @@ const Services = () => {
                 <Process {...processInfos} />
             </div>
             <div className="bg-transparent">
-                <div className="container mx-auto max-w-7xl px-16 text-left">
+                <div className="container mx-auto max-w-7xl px-8 pt-8 md:pt-0 md:px-16 text-left">
                     <SectionService
                         title="Le meilleur support technique de sa catégorie pour votre entreprise. Nous devenons votre colonne vertébrale technologique"
                         src="/assets/images/services/feature1.png"
                         titlesection="Support technique"
-                        description="Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every."
+                        description="Nous avons des techniciens informatiques qualifiés et à votre écoute afin de répondre à des demandes d’incidents et/ou d’utilisations des outils informatiques tels que la messagerie, l’internet, l’accès à distance."
                     />
                 </div>
             </div>
             <div className="bg-[#ECF8F9]">
-                <div className="container mx-auto max-w-7xl px-16 text-left">
+                <div className="container mx-auto max-w-7xl px-8 pt-8 md:pt-0 md:px-16 text-left">
                     <SectionService reverse
-                        title="Le meilleur support technique de sa catégorie pour votre entreprise. Nous devenons votre colonne vertébrale technologique"
+                        title="Nous créons des applications et des sites web adaptent à l'image et aux valeurs de votre entreprise."
                         src="/assets/images/services/feature2.png"
                         titlesection="Développement web&mobile"
-                        description="Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every."
+                        description="Nos ingénieurs sont des spécialistes avérés qui n'ont pas peur de trouver les meilleures solutions pour chaque besoin. S’il le faut, ces solutions seront créées uniquement pour vous."
                     />
                 </div>
             </div>
             <div>
-                <div className="container mx-auto max-w-7xl px-16 text-left">
+                <div className="container mx-auto max-w-7xl pt-8 md:pt-0 md:px-16 text-left">
                     <SectionService
-                        title="Le meilleur support technique de sa catégorie pour votre entreprise. Nous devenons votre colonne vertébrale technologique"
+                        title="Un accompagnement à 360° pour une meilleure mise en place de ce dont vous avez besoins"
                         src="/assets/images/services/feature3.png"
-                        titlesection="Déployement"
-                        description="Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every."
+                        titlesection="Devops"
+                        description="Nous anticipons les sources de complication pour une meilleure gestion de vos infrastructures et menons des actions préventives ou/et correctives."
                     />
                 </div>
             </div>
             <div className="bg-[#F9F9FF]">
-                <div className="container mx-auto max-w-7xl px-16 text-left">
+                <div className="container mx-auto max-w-7xl px-8 pt-8 md:pt-0 md:px-16 text-left">
                     <SectionService reverse
-                        title="Le meilleur support technique de sa catégorie pour votre entreprise. Nous devenons votre colonne vertébrale technologique"
+                        title="Nous sommes le prolongement de votre équipe."
                         src="/assets/images/services/feature4.png"
                         titlesection="Consulting"
-                        description="Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every."
+                        description="Nos experts travaillent en partenariat avec vous, afin de vous assister dans l’utilisation et dans l'implémentation des technologies nécessaire à votre croissance et à la satisfaction de vos clients."
                     />
                 </div>
             </div>
             <div>
-                <div className="container mx-auto max-w-7xl px-16 text-left">
+                <div className="container mx-auto max-w-7xl px-8 pt-8 md:pt-0 md:px-16 text-left">
                     <SectionService
                         title="Le meilleur support technique de sa catégorie pour votre entreprise. Nous devenons votre colonne vertébrale technologique"
                         src="/assets/images/services/feature5.png"
@@ -104,7 +104,7 @@ const Services = () => {
                     />
                 </div>
             </div>
-            <div className="container mx-auto max-w-7xl px-16 mb-8">
+            <div className="container mx-auto max-w-7xl md:px-16 mb-8">
                 <Newsletter/>
             </div>
         </Layout>

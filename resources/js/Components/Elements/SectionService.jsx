@@ -17,7 +17,7 @@ const SectionService = ({
              <div className="w-full md:max-w-[480px]">
                 <Image src={src} className="" />
             </div>
-            <div className="w-full px-10 md:px-0 md:w-[642px]">
+            <div className="w-full md:w-[642px]">
                 <div className="pt-o md:pt-24">
                     <TitleSection>{titlesection} </TitleSection>
                     <Title>{title}</Title>
@@ -57,12 +57,19 @@ const Wrapper = styled.div`
     }
 `;
 
-const Title = styled.h3`
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 54px;
-    color: #232536;
+const Title = styled.h2`
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 42px;
+line-height: 58px;
+color: ${props => props.white ? "white" : "#232536"};
+
+@media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 30px;
+    text-align:left;
+    line-height: 42px;
+  }
 `;
 
 const TitleSection = styled.h4`
