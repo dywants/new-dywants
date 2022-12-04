@@ -30,7 +30,7 @@ const Nocodb = () => {
                 url={route("contact")}
             />
             <section className="my-8">
-                <div className="container mx-auto max-w-6xl py-20 text-left">
+                <div className="wrapper">
                     <Wrapper>
                         <div className="flex-1">
                             <h2>
@@ -61,7 +61,7 @@ const Nocodb = () => {
                 </div>
             </section>
             <section>
-                <div className="container mx-auto max-w-6xl pb-14 text-left">
+                <div className="wrapper">
                     <Wrapper>
                         <div className="flex-1">
                             <Image
@@ -99,7 +99,7 @@ const Nocodb = () => {
                 </div>
             </section>
             <section>
-                <div className="container mx-auto max-w-6xl pb-14 text-left">
+                <div className="wrapper">
                     <Wrapper>
                         <div className="flex-1">
                             <h2>
@@ -112,7 +112,7 @@ const Nocodb = () => {
                                 également avec une protection par mot de passe
                             </p>
                             <div className="mt-4">
-                                <CustomLink secondary url={route("contact")}>
+                                <CustomLink secondary href={route("contact")}>
                                     Faire un devis
                                 </CustomLink>
                             </div>
@@ -128,7 +128,7 @@ const Nocodb = () => {
                 </div>
             </section>
             <section>
-                <div className="container mx-auto max-w-6xl pb-14 text-left">
+                <div className="wrapper">
                     <Wrapper>
                         <div className="flex-1">
                             <Image
@@ -151,7 +151,7 @@ const Nocodb = () => {
                                 Whatsapp, Twilio, Email & SMS.
                             </p>
                             <div className="mt-4">
-                                <LinkElement url={route("contact")}>
+                                <LinkElement href={route("contact")}>
                                     Faire un devis
                                 </LinkElement>
                             </div>
@@ -160,8 +160,8 @@ const Nocodb = () => {
                 </div>
             </section>
             <section className="bg-bgSection">
-                <div className="container mx-auto max-w-6xl py-20 text-left">
-                    <div className="columns-2 py-2">
+                <div className="wrapper py-16">
+                    <div className="columns-1 md:columns-2 py-2">
                         <div className="py-2">
                             <h2 className="text-[36px] font-semibold leading-10 mb-2">
                                 Des milliers d’entreprises ont fait le pas,{" "}
@@ -170,12 +170,12 @@ const Nocodb = () => {
                                     pourquoi pas vous ?
                                 </span>
                             </h2>
-                            <p className="text-[18px] font-light mb-2">
+                            <p className="font-light mb-2">
                             Plus de 2 000 entreprises, dont des entreprises du Fortune 500 telles que Google et Walmart, utilisent NocoDB pour créer des applications et des automatisations sans code connectées aux magasins de données de production.
                             </p>
                         </div>
                         <div>
-                            <p className="text-[18px] font-light mb-2">
+                            <p className="font-light mb-2">
                                 Il est utilisé dans les secteurs de la télécommunication, l’enseignement supérieur, la technologie, le service financier, la publicité marketing, l’education, la santé etc.
                             </p>
                         </div>
@@ -187,7 +187,7 @@ const Nocodb = () => {
                 </div>
             </section>
             <section>
-                <div className="container mx-auto max-w-6xl py-20 text-left">
+                <div className="wrapper">
                     <Wrapper>
                     <div className="flex-1 py-4">
                             <h2>
@@ -200,7 +200,7 @@ const Nocodb = () => {
                                 Nous sommes là pour vous aider. Si vous ne trouvez pas la réponse à votre question ici, contactez-nous. C'est avec plaisir que nous  discuterons avec vous.
                             </p>
                             <div className="mt-4">
-                                <CustomLink secondary url={route("contact")}>
+                                <CustomLink secondary href={route("contact")}>
                                     Contactez-nous
                                 </CustomLink>
                             </div>

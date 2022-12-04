@@ -22,7 +22,7 @@ const Zimbra = () => {
                 url={route("contact")}
             />
             <section className="my-4 md:my-8">
-                <div className="container mx-auto max-w-7xl my-10 md:py-20 px-8 text-left">
+                <div className="wrapper">
                     <Wrapper>
                         <div className="flex-1">
                             <h2>
@@ -73,7 +73,7 @@ const Zimbra = () => {
                 </div>
             </section>
             <section>
-                <div className="container mx-auto max-w-6xl pb-14 text-left">
+                <div className="wrapper">
                     <Wrapper>
                         <div className="flex-1">
                             <Image
@@ -104,7 +104,7 @@ const Zimbra = () => {
                 </div>
             </section>
             <section>
-                <div className="container mx-auto max-w-6xl pb-14 text-left">
+                <div className="wrapper">
                     <Wrapper>
                         <div className="flex-1">
                             <h2>
@@ -133,7 +133,7 @@ const Zimbra = () => {
                 </div>
             </section>
             <section>
-                <div className="container mx-auto max-w-6xl pb-14 text-left">
+                <div className="wrapper">
                     <Wrapper>
                         <div className="flex-1">
                             <Image
@@ -162,7 +162,7 @@ const Zimbra = () => {
                 </div>
             </section>
             <section>
-                <div className="container mx-auto max-w-6xl py-20 text-left">
+                <div className="wrapper">
                     <Wrapper>
                         <div className="flex-1 py-4">
                             <h2>

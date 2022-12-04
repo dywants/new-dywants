@@ -3,7 +3,7 @@ import React from "react";
 
 const CardServices = ({ src, title, description, url }) => {
     return (
-        <div className="bg-white p-[40px] overflow-hidden md:max-w-[23.5rem] md:h-96">
+        <div className="bg-white p-[40px] overflow-hidden">
             <img src={src} alt="" className="mb-4" />
             <h3 className="text-base font-semibold leading-8 mb-2">{title}</h3>
             <p className="leading-6 text-texte text-base font-normal mb-2">

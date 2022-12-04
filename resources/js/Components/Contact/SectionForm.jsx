@@ -7,7 +7,7 @@ import Title from "../Elements/Title";
 
 const SectionForm = () => {
     return (
-        <div className="container mx-auto max-w-7xl mt-10 md:mt-32 mb-8 md:mb-16">
+        <div className="wrapper md:mt-32 mb-8 md:mb-16">
             <div className="wrapper flex flex-col md:flex-row px-8 gap-3 md:gap-7">
                 <div className="w-full md:max-w-[665px]">
                     <TitleSection title="Nous Contacter"/>

@@ -6,25 +6,18 @@ import LinkElement from "@/Components/LinkElement";
 const Header = () => {
     return (
         <HeaderSection className="border-gray-200 border-b relative py-12 bg-secondary">
-            <div className="container mx-auto">
+            <div className="wrapper">
                 <div className="flex flex-col md:flex-row items-center justify-between relative">
-                    <div className="zone-text py-4 px-2 md:py-[113px] flex-1 justify-between space-x-4">
-                        <div className="w-[400px] h-[60px] rounded-md bg-gray-200 p-2 hidden md:inline-flex space-x-2 items-center">
-                            {/*<div className="w-10 h-10 rounded-full bg-[#FFB400]"></div>*/}
-                            <div className="text-[20px] font-semibold leading-7">
-                                Agence de développement informatique
-                            </div>
-                        </div>
-                        <div className="">
-                            <h1 className="text-white font-bold text-[40px] md:text-[60px]">
+                    <div className="zone-text py-4 md:py-[113px] flex-1 justify-between">
+                        <h3 className="text-light leading-7 text-[30px] italic">Agence de développement informatique</h3>
+                        <h1 className="text-white font-bold text-[40px] md:text-[60px]">
                                 Let us create what you want!
-                            </h1>
-                        </div>
-                        <p className="font-medium text-[22px] text-white mb-8 z-40">
+                        </h1>
+                        <p className="font-medium text-white mb-8 z-40">
                             Nous vous proposons des solutions innovantes pour
                             votre business.
                         </p>
-                        <div className="space-x-2">
+                        <div className="flex flex-col md:flex-row gap-3 text-center">
                             <LinkElement
                                 href={route("contact")}
                                 primary

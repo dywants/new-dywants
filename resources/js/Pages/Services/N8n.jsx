@@ -30,7 +30,7 @@ const N8n = () => {
                 url={route("contact")}
             />
             <section className="my-8">
-                <div className="container mx-auto max-w-6xl py-20 text-left">
+                <div className="wrapper">
                     <Wrapper>
                         <div className="flex-1">
                             <h2>
@@ -62,7 +62,7 @@ const N8n = () => {
                 </div>
             </section>
             <section>
-                <div className="container mx-auto max-w-6xl pb-14 text-left">
+                <div className="wrapper">
                     <Wrapper>
                         <div className="flex-1">
                             <Image src={"/assets/images/n8n/rentabilite.png"} />
@@ -86,7 +86,7 @@ const N8n = () => {
                 </div>
             </section>
             <section className="my-8">
-                <div className="container mx-auto max-w-6xl py-20 text-left">
+                <div className="wrapper">
                     <Wrapper>
                         <div className="flex-1">
                             <h2>
@@ -121,8 +121,8 @@ const N8n = () => {
                 </div>
             </section>
             <section className="bg-bgSection">
-                <div className="container mx-auto max-w-6xl py-20 text-left">
-                    <div className="columns-2 py-2">
+                <div className="wrapper py-16">
+                    <div className="columns-1 md:columns-2 py-2">
                         <div className="py-2">
                             <h2 className="text-[36px] font-semibold leading-10 mb-2">
                                 Des milliers d’entreprises ont fait le pas,{" "}
@@ -131,7 +131,7 @@ const N8n = () => {
                                     pourquoi pas vous ?
                                 </span>
                             </h2>
-                            <p className="text-[18px] font-light mb-2">
+                            <p className="font-light mb-2">
                                 Nous vous accompagnons avec un outil qui a déjà
                                 fait ses preuves. Notre expertise au service de
                                 votre entreprise afin de repondre à votre besoin
@@ -139,7 +139,7 @@ const N8n = () => {
                             </p>
                         </div>
                         <div>
-                            <p className="text-[18px] font-light mb-2">
+                            <p className="font-light mb-2">
                                 Il est utilisé dans les secteurs de la
                                 communication, la publicité marketing, la
                                 technologie, le service financier, l’education,
@@ -156,7 +156,7 @@ const N8n = () => {
                 </div>
             </section>
             <section>
-                <div className="container mx-auto max-w-6xl py-20 text-left">
+                <div className="wrapper">
                     <Wrapper>
                     <div className="flex-1 py-4">
                             <h2>

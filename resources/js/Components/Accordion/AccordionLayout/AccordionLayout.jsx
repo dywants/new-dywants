@@ -14,9 +14,9 @@ const AccordionLayout = ({
         <>
             <div
                 onClick={() => handleSetIndex(index)}
-                className="flex w-full justify-between items-center p-3 mt-2"
+                className="flex w-full justify-between items-center px-3"
             >
-                <div className="text-title font-semibold text-[20px]">{title}</div>
+                <h3 className="text-title font-semibold">{title}</h3>
 
                 {activeIndex === index ? (
                     <div>
@@ -29,9 +29,9 @@ const AccordionLayout = ({
                 )}
             </div>
             {activeIndex === index && (
-                <div className="p-4 mb-6 border-b border-[#b4c1d6] transition duration-75 ease-out">
+                <p className="p-2 mb-6 border-b border-[#b4c1d6] transition duration-75 ease-out">
                     {children}
-                </div>
+                </p>
             )}
         </>
     );

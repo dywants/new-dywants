@@ -40,11 +40,11 @@ const DevelopmentWeb = () =>{
                 link={"Contactez-nous"}
                 url={route("contact")}
             />
-            <section className="md:my-8">
-                <div className="container mx-auto max-w-7xl md:py-20 text-left">
-                    <Wrapper className="pb-40">
-                        <div className="flex-1 pt-8">
-                            <div className="w-full md:max-w-2xl px-8">
+            <section className="md:mt-8" style={{marginBottom: "-4rem",}}>
+                <div className="wrapper text-left">
+                    <Wrapper className="pb-28 md:pb-40">
+                        <div className="flex-1 md:pt-8">
+                            <div className="w-full md:max-w-2xl">
                                 <h2>
                                     Nous sommes une équipe Tournée vers,{" "}
                                     <span className="text-primary">
@@ -66,7 +66,7 @@ const DevelopmentWeb = () =>{
                                     "/assets/images/development/vue-laterale-portrait-femme-developpeuse.png"
                                 }
                             />
-                            <div className="absolute md:-bottom-40 md:-left-40 w-40 h-40 md:w-72 md:h-72 -bottom-28 -left-10">
+                            <div className="absolute md:-bottom-32 md:-left-32 w-32 h-32 md:w-52 md:h-52 -bottom-20 -left-6">
                                 <Image
                                     src={
                                         "/assets/images/development/db-icon.png"
@@ -78,7 +78,7 @@ const DevelopmentWeb = () =>{
                 </div>
             </section>
             <section>
-                <div className="overflow-hidden flex flex-col-reverse md:flex-row gap-3 md:gap-8 items-center">
+                <div className="overflow-hidden flex flex-col-reverse md:flex-row gap-5 md:gap-8 items-center">
                     <div className="flex-1">
                         <Image
                             src={
@@ -86,13 +86,13 @@ const DevelopmentWeb = () =>{
                             }
                         />
                     </div>
-                    <div className="flex-1">
+                    <div className="flex-1 px-6 md:mr-16">
                         <div className="px-5">
                             <h2>
                                 Chaque projet est une oeuvre{" "}
                                 <span className="text-primary">unique.</span>
                             </h2>
-                            <p className="text-base text-texte leading-7 mb-2">
+                            <p className="text-base text-texte leading-7 my-2">
                                 Votre projet est unique au monde parce que c’est
                                 le votre! C’est pour cela que nous ne créons pas
                                 des solutions pré-assemblées sans étude.
@@ -108,15 +108,15 @@ const DevelopmentWeb = () =>{
                 </div>
             </section>
             <section>
-                <div className="container mx-auto max-w-7xl py-10 md:py-20 px-8 text-left">
-                    <div className="w-full md:max-w-2xl">
+                <div className="wrapper text-left">
+                    <div className="w-full md:max-w-2xl mb-2">
                         <h2>
                             Des services{" "}
                             <span className="text-primary">de qualité</span> sur
                             mesure.
                         </h2>
                     </div>
-                    <div className="flex items-center justify-between gap-6 flex-wrap">
+                    <div className="flex items-center justify-between gap-2 flex-wrap">
                         <p className="max-w-2xl">
                             Nous sommes des experts. Nous maîtrisons
                             parfaitement toute la chaîne de production des
@@ -143,10 +143,10 @@ const DevelopmentWeb = () =>{
                 </div>
             </section>
             <section>
-                <div className="container mx-auto max-w-7xl px-8 md:py-16 text-left">
+                <div className="wrapper">
                     <div className="w-full md:max-w-2xl">
                         <h2>
-                            Nos meilleures armes pour affronter
+                            Nos meilleures armes pour affronter {" "}
                             <span className="text-primary">
                                 tous type de projet
                             </span>
@@ -161,7 +161,7 @@ const DevelopmentWeb = () =>{
                             return (
                                 <div
                                     key={i}
-                                    className="bg-[#F6F8FA] p-5 inline-flex text-base text-title"
+                                    className="bg-[#F6F8FA] p-5 inline-flex text-base text-title rounded"
                                 >
                                     {title}
                                 </div>
@@ -171,7 +171,7 @@ const DevelopmentWeb = () =>{
                 </div>
             </section>
             <section>
-                <div className="container mx-auto max-w-7xl px-8 md:py-16 text-left">
+                <div className="wrapper">
                     <div className="w-full md:max-w-2xl">
                         <h2>
                             Le client est au {""}
@@ -201,7 +201,7 @@ const DevelopmentWeb = () =>{
                     </div>
                 </div>
             </section>
-            <section className="mx-auto md:max-w-[1120px] text-center my-10">
+            <section className="mx-auto px-8 md:max-w-[1120px] text-center my-10">
                 <h2>
                     Nous créons des{" "}
                     <span className="text-primary">produits uniques</span> qui
@@ -209,9 +209,9 @@ const DevelopmentWeb = () =>{
                 </h2>
             </section>
             <section>
-                <div className="container mx-auto max-w-7xl py-10 md:py-20 text-left">
+                <div className="wrapper">
                     <Wrapper>
-                        <div className="flex-1 p-8">
+                        <div className="flex-1 py-8">
                             <h2>
                                 Vous avez des interrogations,Nous avons{" "}
                                 <span className="text-primary">
@@ -225,7 +225,7 @@ const DevelopmentWeb = () =>{
                                 discuterons avec vous.
                             </p>
                             <div className="mt-4">
-                                <CustomLink secondary url={route("contact")}>
+                                <CustomLink secondary href={route("contact")}>
                                     Contactez-nous
                                 </CustomLink>
                             </div>

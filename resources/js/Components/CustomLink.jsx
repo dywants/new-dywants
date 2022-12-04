@@ -17,7 +17,7 @@ const LinkStyle = styled(Link)`
   transition: 0.3s ease-out;
 
   font-size: 1em;
-  padding: 0.35em 1.1em;
+  padding: 0.55rem 1.1em;
   border-radius: 3px;
 
     &:hover {

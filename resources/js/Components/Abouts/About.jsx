@@ -7,7 +7,7 @@ import { Link } from "@inertiajs/inertia-react";
 
 const About = () => {
     return (
-        <div className="container mx-auto max-w-7xl px-7 my-16">
+        <div className="wrapper">
             {aboutInfo.map((p, index) => {
                 return (
                     <div key={index}>
@@ -17,7 +17,7 @@ const About = () => {
                                 <Title title={p.title} />
                             </div>
                             <div className="flex-1">
-                                <h3 className="text-title font-semibold leading-10 mb-4 text-[30px]">
+                                <h3 className="title">
                                     {p.compagny}
                                 </h3>
                                 <p className="text-texte text-lg leading-6 font-normal">
@@ -28,7 +28,7 @@ const About = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="flex justify-between flex-col md:flex-row items-center gap-2 my-8">
+                        <div className="card3 gap-2 my-8">
                             {
                                 p.images.map((src, index) => {
                                     return (

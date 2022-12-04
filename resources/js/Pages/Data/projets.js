@@ -4,12 +4,12 @@ export const projetsObj = {
 
     projets: [
         {
-            title: "FindToFound",
+            title: "toSearchFind",
             description:
                 "Plate-forme de collecte et recherche de pièce egarées. Celle-ci met en relation les finders(les personnes ayant trouvées la pièce) et les proprietaires des pièce egarées ",
-            image: "/assets/images/projets/bannier_findtofound.png",
+            image: "/assets/images/projets/image-toseachfind.png",
             tags: ["Vue js", "Laravel", "Inertia js", "Tailwindcss" , "CSS"],
-            site: "https://www.findtofound.com",
+            site: "https://www.toseachfind.com",
             id: uuidv4(),
         },
         {

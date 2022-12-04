@@ -14,7 +14,7 @@ import Title from "@/Components/Elements/Title";
 const Apropos = () => {
     return (
         <Layout>
-            <div className="container mx-auto max-w-7xl md:mt-32">
+            <div className="wrapper">
                 <SectionService
                     titlesection={"Qui sommes-nous?"}
                     title={"Nos conceptions résolvent les problèmes"}
@@ -28,9 +28,11 @@ const Apropos = () => {
                 />
                 <Presentation />
             </div>
-            <Process {...processInfos} />
+            <div className="-mt-20 md:mt-0">
+                <Process {...processInfos} />
+            </div>
             <div className="bg-[#EEF4FA] ">
-                <div className="container mx-auto max-w-7xl">
+                <div className="wrapper">
                     <SectionService
                         titlesection={"Notre mission"}
                         title={"Inspirez, innovez, partagez"}
@@ -51,14 +53,14 @@ const Apropos = () => {
                 </div>
             </div>
             <div>
-                <div className="container mx-auto max-w-6xl px-7 my-16">
+                <div className="wrapper">
                     <TitleSection title={"Une equipe"} />
                     <Title title={"d'experte dynamique a votre écoute"} />
-                    <p className="text-texte text-base leading-6">
+                    <p className="text-texte">
                         Le travail d'équipe est la seule notre façon de
                         travailler
                     </p>
-                    <WrapperTeams className="wrapper">
+                    <WrapperTeams >
                         {teams.map((p, i) => {
                             return (
                                 <CardTeam
@@ -79,7 +81,7 @@ const Apropos = () => {
 
 const WrapperTeams = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     margin: 3rem auto;
     gap: 1rem;
 `;

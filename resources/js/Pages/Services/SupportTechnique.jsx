@@ -22,7 +22,7 @@ const SupportTechnique = () => {
                 url={route("contact")}
             />
             <section className="my-8">
-                <div className="container mx-auto max-w-7xl my-10 py-8 md:py-20 text-left">
+                <div className="wrapper">
                     <Wrapper>
                         <div className="flex-1 px-8">
                             <h2>
@@ -58,7 +58,7 @@ const SupportTechnique = () => {
                             }
                         />
                     </div>
-                    <div className="flex-1">
+                    <div className="flex-1 mr-20">
                         <div className="px-5">
                             <h2>
                                 <span className="text-primary">
@@ -81,9 +81,9 @@ const SupportTechnique = () => {
                 </div>
             </section>
             <section className="my-8">
-                <div className="container mx-auto max-w-7xl py-6 md:py-20 text-left">
+                <div className="wrapper">
                     <Wrapper>
-                        <div className="flex-1 px-8">
+                        <div className="flex-1">
                             <h2>
                                 Nous nous{" "}
                                 <span className="text-primary">adapatons</span>{" "}
@@ -107,8 +107,8 @@ const SupportTechnique = () => {
                 </div>
             </section>
             <section>
-                <div className="container mx-auto max-w-7xl pb-14 text-left">
-                    <div className="w-full md:max-w-[852px] my-6 px-8">
+                <div className="wrapper">
+                    <div className="w-full md:max-w-[852px] my-6">
                         <h2>Comment ça marche? </h2>
                         <p className="text-base text-texte left-7 mt-2">
                             Nous travaillons selon les meilleurs normes, ce qui
@@ -134,7 +134,7 @@ const SupportTechnique = () => {
                 </h2>
             </section>
             <section>
-                <div className="container mx-auto max-w-7xl my-8 md:py-20 text-left">
+                <div className="wrapper">
                     <Wrapper>
                         <div className="flex-1 p-8">
                             <h2>
@@ -150,7 +150,7 @@ const SupportTechnique = () => {
                                 discuterons avec vous.
                             </p>
                             <div className="mt-4">
-                                <CustomLink secondary url={route("contact")}>
+                                <CustomLink secondary href={route("contact")}>
                                     Contactez-nous
                                 </CustomLink>
                             </div>

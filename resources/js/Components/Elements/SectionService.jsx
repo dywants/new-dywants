@@ -18,23 +18,26 @@ const SectionService = ({
                 <Image src={src} className="" />
             </div>
             <div className="w-full md:w-[642px]">
-                <div className="pt-o md:pt-24">
+                <div className="pt-0 mb-6 md:pt-24">
                     <TitleSection>{titlesection} </TitleSection>
                     <Title>{title}</Title>
-                    <p className="text-texte text-base font-normal leading-6 opacity-80 my-2">
+                    <p className="text-texte  opacity-80 my-2">
                         {description}
                     </p>
                     {describe && (
-                        <p className="text-texte text-base font-normal leading-6 opacity-80 mb-8">
+                        <p className="text-texte opacity-80 mb-10">
                             {describe}
                         </p>
                     )}
                 </div>
-                <div className="mt-4">
-                    <CustomLink secondary href={url}>
-                        En savoir plus
-                    </CustomLink>
-                </div>
+                {
+                    url ? (
+                        <CustomLink secondary href={url} className="mt-8">
+                            En savoir plus
+                        </CustomLink>
+                    ): null
+                }
+                
             </div>
         </Wrapper>
     );

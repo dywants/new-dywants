@@ -12,7 +12,7 @@ const CardProjet = ({image, title, description, link, className = "",
                 <h3 className="text-black text-[24px] font-bold mb-4 absolute bottom-0 left-8 backdrop-contrast-50 bg-white/30 p-2 rounded-sm">{title}</h3>
             </SectionImage>
             <SectionBody className="text-left mb-2 px-12 py-4 rounded-b-lg">
-                <h4 className="text-black text-[20px] font-semibold mb-4">Technologies</h4>
+                <h4 className="text-black text-[24px] font-semibold mb-4">Technologies</h4>
                 <TagList>
                     {
                         tags.map((k,j) => {
@@ -23,7 +23,7 @@ const CardProjet = ({image, title, description, link, className = "",
                     }
 
                 </TagList>
-                <p className="text-md leading-tight">
+                <p className="text-md">
                     {description}
                 </p>
                 <div className="mt-2 text-right">

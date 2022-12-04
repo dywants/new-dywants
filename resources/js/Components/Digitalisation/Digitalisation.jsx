@@ -25,8 +25,8 @@ const Digitalisation = () => {
     ];
     return (
         <div className="">
-            <div className="container mx-auto max-w-7xl text-left p-8 md:p-16">
-                <div className="flex justify-between flex-col md:flex-row items-center gap-4">
+            <div className="wrapper">
+                <div className="card2">
                     <div className="flex-1">
                         <h2 className="text-title font-extrabold leading-9 text-[30px] mb-4">
                             Vous êtes une entreprise? Nous avons ce qu'il vous
@@ -36,13 +36,22 @@ const Digitalisation = () => {
                             </span>{" "}
                             de votre entreprise.
                         </h2>
-                        <p className="text-texte font-normal left-6 text-base mb-8">
-                            Nous sommes là pour vous permettre d’atteindre vos
-                            objectifs. C’est notre passion: assister les
-                            entreprises avec ce que nous maîtrisons le mieux; la
-                            technologie.
-                        </p>
-                        <LinkElement primary className="mt-10" href={route('digitalisation')}>
+                        <div className="mb-6 space-y-2">
+                            <p className="text-texte font-normal">
+                                Nous sommes là pour vous permettre d’atteindre
+                                vos objectifs.
+                            </p>
+                            <p>
+                                C’est notre passion: assister les entreprises
+                                avec ce que nous maîtrisons le mieux la
+                                technologie.
+                            </p>
+                        </div>
+                        <LinkElement
+                            primary
+                            className="mt-10"
+                            href={route("digitalisation")}
+                        >
                             Voir nos services
                         </LinkElement>
                     </div>
@@ -53,9 +62,16 @@ const Digitalisation = () => {
                 <div className="grid grid-col-1 md:grid-cols-3 gap-1 md:gap-8 mt-10">
                     {InfoDigics.map((p, i) => {
                         return (
-                            <div key={i} className="col-span-1 border-b md:border-b-0 pr-2 pb-3 md:pb-0 md:border-r border-[#DFDFDF] last:border-0">
-                                <h3 className="text-[25px]  leading-9 font-semibold">{p.title}</h3>
-                                <p className="text-texte font-normal left-6 text-base mt-2">{p.description}</p>
+                            <div
+                                key={i}
+                                className="col-span-1 border-b md:border-b-0 pr-2 pb-3 md:pb-0 md:border-r border-[#DFDFDF] last:border-0"
+                            >
+                                <h3 className="text-[25px]  leading-9 font-semibold">
+                                    {p.title}
+                                </h3>
+                                <p className="text-texte font-normal left-6 text-base mt-2">
+                                    {p.description}
+                                </p>
                             </div>
                         );
                     })}

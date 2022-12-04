@@ -51,7 +51,7 @@ const Projets = ({ projets }) => {
 
 const ProjetSection = styled.section`
   background-color: ${(props) => props.theme.colors.degradedPrimary};
-  padding: 5rem;
+  padding: 6rem;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 2rem;

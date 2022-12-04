@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const CardItem = ({titles}) => {
     return (
-        <div className="inline-flex space-x-2 w-full mt-6">
+        <div className="flex-wrap inline-flex gap-2 w-full mt-6">
             {titles.map((title, i) => {
                 return (
                     <Card key={i}>

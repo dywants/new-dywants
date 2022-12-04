@@ -11,17 +11,18 @@ const Digitalisation = () => {
     return (
         <Layout>
             <div
-                className="w-full md:h-[800px] overflow-hidden bg-left object-contain md:bg-cover md:object-cover"
+                className="w-full h-[695px] md:h-[700px] overflow-hidden bg-left object-contain md:bg-cover md:object-cover"
                 style={{
                     backgroundImage: `url('/assets/images/digitalisation/bannier-digitalisation.png'),url('/assets/images/digitalisation/header-digitalisation.png')`,
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
+                    paddingTop: "0px",
                 }}
             >
-                <div className="container mx-auto max-w-7xl px-8">
-                    <div className="h-screen text-left">
+                <div className="wrapper " style={{marginBottom: "0px"}}>
+                    <div className="h-screen text-left flex justify-start">
                         <div>
-                            <h1 className="text-white text-[40px] md:text-[50px] md:pt-[193px] pt-10 leading-10 md:leading-12 font-extrabold md:w-[798px]">
+                            <h1 className="text-white text-[40px] md:text-[50px] md:pt-10 leading-11 font-extrabold md:w-[798px]">
                                 Nous accompagnons les entreprises dans leur
                                 processus de digitalisation
                             </h1>
@@ -43,7 +44,7 @@ const Digitalisation = () => {
             </div>
 
             <div className="md:my-16">
-                <div className="container mx-auto max-w-7xl text-left px-8">
+                <div className="wrapper">
                     <section className="mt-10 md:my-24">
                         {InfoDigitalisation.firstSection.map((p, i) => {
                             return (
@@ -80,7 +81,7 @@ const Digitalisation = () => {
 
             <section>
                 <div className="mt-10 md:my-16 bg-secondaryGraded">
-                    <div className="container mx-auto max-w-7xl py-10 md:py-20 text-left px-8">
+                    <div className="wrapper py-16">
                         {InfoDigitalisation.zimbra.info.map((p, i) => {
                             return (
                                 <SectionDigicService
@@ -98,8 +99,8 @@ const Digitalisation = () => {
                         })}
                     </div>
                 </div>
-                <div className="container mx-auto max-w-7xl pb-14 px-8 text-left">
-                    <h3 className="text-[#454545] font-semibold text-[22px] leading-7 mt-4 mb-2">
+                <div className="wrapper">
+                    <h3 className="text-[#454545] font-semibold mb-2">
                         Ils l’ont déjà utiliser et témoignent
                     </h3>
                     <div className="grid w-full md:grid-cols-3 gap-3 md:gap-8 mt-10">
@@ -124,7 +125,7 @@ const Digitalisation = () => {
 
             <section>
                 <div className="mt-10 md:my-16 bg-[#E8E8E8]">
-                    <div className="container mx-auto max-w-7xl py-10 px-8 md:py-20 text-left">
+                    <div className="wrapper py-16">
                         {InfoDigitalisation.nextcloud.info.map((p, i) => {
                             return (
                                 <SectionDigicService
@@ -144,7 +145,7 @@ const Digitalisation = () => {
                         })}
                     </div>
                 </div>
-                <div className="container mx-auto max-w-7xl md:pb-14 mt-4 px-8 text-left">
+                <div className="wrapper">
                     <h3 className="text-[#454545] font-semibold text-[22px] leading-7 mb-2">
                         Pourquoi Nextcloud
                     </h3>
@@ -155,7 +156,7 @@ const Digitalisation = () => {
                                     key={i}
                                     className="col-span-1 border-b md:border-b-0 md:border-r pb-3 md:pb-0 border-[#DFDFDF] last:border-0"
                                 >
-                                    <h3 className="text-[18px] leading-6 font-medium mb-2">
+                                    <h3 className="text-[20px] leading-6 font-medium mb-2">
                                         {p.title}
                                     </h3>
                                     <p className="text-texte font-normal left-6 text-base">
@@ -170,7 +171,7 @@ const Digitalisation = () => {
 
             <section>
                 <div className="mt-10 md:my-16 bg-secondaryGraded">
-                    <div className="container mx-auto max-w-7xl md:pb-14 mt-4 p-8 text-left">
+                    <div className="wrapper py-16">
                         {InfoDigitalisation.dolibarr.info.map((p, i) => {
                             return (
                                 <SectionDigicService
@@ -182,13 +183,13 @@ const Digitalisation = () => {
                                     link={"Faire un devis"}
                                     link2={"En savoir plus"}
                                     url={route("contact")}
-                                    url2={route("nextcloud")}
+                                    url2={route("dolibarr")}
                                 />
                             );
                         })}
                     </div>
                 </div>
-                <div className="container mx-auto max-w-7xl md:pb-14 px-8 text-left">
+                <div className="wrapper">
                     <h3 className="text-[#454545] font-semibold text-[22px] leading-7 mt-5 mb-2">
                         Pourquoi Dolibarr
                     </h3>
@@ -199,7 +200,7 @@ const Digitalisation = () => {
                                     key={i}
                                     className="col-span-1 border-b md:border-b-0 md:border-r pb-3 md:pb-0 pr-2 border-[#DFDFDF] last:border-0"
                                 >
-                                    <h3 className="text-[18px] leading-6 font-medium mb-2">
+                                    <h3 className="text-[20px] leading-6 font-medium mb-2">
                                         {p.title}
                                     </h3>
                                     <p className="text-texte font-normal left-6 text-base">
@@ -213,7 +214,7 @@ const Digitalisation = () => {
             </section>
 
             <section className="md:my-16">
-                <div className="container mx-auto max-w-7xl py-20 px-8 text-left">
+                <div className="wrapper">
                     {InfoDigitalisation.n8n.map((p, i) => {
                         return (
                             <SectionDigicService
@@ -235,7 +236,7 @@ const Digitalisation = () => {
             </section>
 
             <section className="md:my-16">
-                <div className="container mx-auto max-w-7xl px-8 md:py-20 text-left">
+                <div className="wrapper">
                     {InfoDigitalisation.nocodb.map((p, i) => {
                         return (
                             <SectionDigicService
@@ -256,7 +257,7 @@ const Digitalisation = () => {
             </section>
 
             <section className="my-16 bg-secondaryGraded">
-                <div className="container mx-auto max-w-7xl py-20 px-8 text-left">
+                <div className="wrapper py-16">
                     <div className="flex items-start flex-wrap justify-between gap-8">
                         <div className="w-full md:flex-1">
                             <div className="w-full md:max-w-[520px]">
@@ -298,7 +299,7 @@ const Digitalisation = () => {
             </section>
 
             <section className="md:my-16">
-                <div className="container mx-auto max-w-7xl px-8 pb-10 md:py-20 text-left">
+                <div className="wrapper">
                     {InfoDigitalisation.threeSection.map((p, i) => {
                         return (
                             <SectionFlex

@@ -37,7 +37,7 @@ const SectionDigicService = (
                     <Image src={icon} />
                 </div>
                 {
-                    secondary ? <h2 className="text-[#4F6CA4] font-extrabold leading-9 text-[30px] mb-4">{title}</h2> : <h2 className="text-white font-extrabold leading-9 text-[30px] mb-4">{title}</h2>
+                    secondary ? <h2 className="text-[#4F6CA4] font-extrabold mb-4">{title}</h2> : <h2 className="text-white font-extrabold mb-4">{title}</h2>
                 }
 
                 <p className={className}>{description}</p>

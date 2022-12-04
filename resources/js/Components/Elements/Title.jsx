@@ -16,7 +16,7 @@ font-family: 'Poppins';
 font-style: normal;
 font-weight: 600;
 font-size: 42px;
-line-height: 58px;
+line-height: 50px;
 color: ${props => props.white ? "white" : "#232536"};
 
 @media ${(props) => props.theme.breakpoints.sm} {

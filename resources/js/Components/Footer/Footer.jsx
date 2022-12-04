@@ -106,7 +106,7 @@ const Container = styled.div`
 
     @media screen and (min-width: 736px) {
         width: 100%;
-        max-width: calc(100% - 15rem);
+        max-width: calc(100% - 10rem);
         margin-left: auto;
         margin-right: auto;
     }

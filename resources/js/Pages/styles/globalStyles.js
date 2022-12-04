@@ -20,15 +20,69 @@ const GlobalStyles = createGlobalStyle`
     font-family: ${(props) => props.theme.fonts.title};
   }
 
-  h2 {
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 42px;
-
-    @media screen and (min-width: 736px) {
-      font-size: 48px;
-      line-height: 55px;
+  p{
+    font-family: ${(props) => props.theme.fonts.main};
   }
+
+  html {
+    font-size: 1rem;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  p, li {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  @media screen and (min-width: 500px){
+    html{
+      font-size: 14px;
+    }
+  }
+  @media screen and (min-width: 570px){
+    html{
+      font-size: 15px;
+    }
+  }
+  @media screen and (min-width: 620px){
+    html{
+      font-size: 16px;
+    }
+  }
+  @media screen and (min-width: 680px){
+    html{
+      font-size: 17px;
+    }
+  }
+  @media screen and (min-width: 720px){
+    html{
+      font-size: 18px;
+    }
+  }
+  @media screen and (min-width: 800px){
+    html{
+      font-size: 19px;
+    }
+  }
+  @media screen and (min-width: 860px){
+    html{
+      font-size: 20px;
+    }
+  }
+  @media screen and (min-width: 920px){
+    html{
+      font-size: 21px;
+    }
+  }
+  @media screen and (min-width: 1000px){
+    html{
+      font-size: 22px;
+    }
   }
 
 `;
@@ -68,9 +122,8 @@ export const Wrapper = styled.div`
     h2 {
         font-style: normal;
         font-weight: 700;
-        font-size: 30px;
-        line-height: 50px;
         color: #0f1727;
+        padding-bottom: 1rem;
     }
 
     h3 {
@@ -85,8 +138,6 @@ export const Wrapper = styled.div`
     p {
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 32px;
         color: ${(props) => (props.whiteColor ? "#FFFFFF" : "#0f1727")};
     }
 `;

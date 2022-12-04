@@ -11,12 +11,12 @@ const HeaderPage = ({ icon, title, description, smallTile, url, link }) => {
                 <div className="w-20 h-20 mb-4 text-center mx-auto">
                     <Image src={icon} alt="" />
                 </div>
-                <p className="text-[17px] text-[#F0F0F0]">{smallTile}</p>
+                <p className="text-[20px] text-[#F0F0F0]">{smallTile}</p>
                 <h1 className="leading-loose m-0">{title}</h1>
                 <p className="font-medium text-md text-[#F0F0F0] mt-2 leading-relaxed">
                     {description}
                 </p>
-                <div className="my-4">
+                <div className="mt-8">
                     <CustomLink secondary href={url}>{link}</CustomLink>
                 </div>
             </div>

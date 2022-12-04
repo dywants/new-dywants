@@ -14,7 +14,7 @@ const SectionFlex = ({title, description, descrite, url, link, primary, src, rev
     return (
         <Wrapper reverse={reverse}>
             <div className="flex-1">
-                <h2 className="text-title font-extrabold leading-9 text-[30px] mb-4">{title}</h2>
+                <h2 className="text-title font-extrabold mb-4">{title}</h2>
                 <p className={className}>{description}</p>
                 {
                     descrite && <p className="text-texte font-normal left-6 text-base mb-8">{descrite}</p>
