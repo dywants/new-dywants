@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffb400">
+    <meta name="google-site-verification" content="4Gr3ZymmU97aAD_ZFnYsQSKUYZ-ncx3rhhYNRzgH5SI" />
     <meta name="msapplication-TileColor" content="#062b40">
     <meta name="theme-color" content="#062b40">
     <meta data-rh="true">
