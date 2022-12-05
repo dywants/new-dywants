@@ -17,9 +17,9 @@ const About = () => {
                                 <Title title={p.title} />
                             </div>
                             <div className="flex-1">
-                                <h3 className="title">
+                                <h2 className="title">
                                     {p.compagny}
-                                </h3>
+                                </h2>
                                 <p className="text-texte text-lg leading-6 font-normal">
                                     {p.description1}
                                 </p>

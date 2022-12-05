@@ -40,8 +40,8 @@ Route::get('/services/digitalisation', DigitalisationIndexController::class)->na
 Route::get('/services/developpement-web', ServiceDevelopmentWebController::class)->name('devWeb');
 Route::get('/services/support-technique', SupportTechniqueIndexController::class)->name('supporttech');
 Route::get('/services/devops-et-deploiements-app', DevopsIndexController::class)->name('devops');
-Route::get('/services/digitalisation/nextcloud', NextCloudIndexController::class)->name('nextcloud');
-Route::get('/services/digitalisation/nocodb', NocoDbIndexController::class)->name('nocodb');
+Route::get('/services/digitalisation/integrateur-nextcloud-au-cameroun', NextCloudIndexController::class)->name('nextcloud');
+Route::get('/services/digitalisation/integrateur-nocodb-au-cameroun', NocoDbIndexController::class)->name('nocodb');
 Route::get('/services/digitalisation/integrateur-n8n-au-cameroun', IntegrateurN8NIndexController::class)->name('n8n');
 Route::get('/services/digitalisation/integrateur-dolibarr-au-cameroun', DolibarrIndexController::class)->name('dolibarr');
 Route::get('/services/digitalisation/integrateur-zimbra-au-cameroun', ZimbraIndexController::class)->name('zimbra');

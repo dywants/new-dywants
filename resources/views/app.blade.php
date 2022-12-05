@@ -11,6 +11,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffb400">
     <meta name="msapplication-TileColor" content="#062b40">
     <meta name="theme-color" content="#062b40">
+    <meta data-rh="true">
 
     <title inertia>{{ config('app.name', 'Laravel') }}</title>
 

@@ -7,7 +7,7 @@ const CardBlog = ({image, category, title, description, children, url}) => {
         <CardBlobSection className='group'>
             <div className="group-hover:shadow-md p-[18px] rounded-sm ">
                 <img src={image} alt={title} className="h-[240px] object-cover w-full" />
-                <h4 className='text-[14px] text-[#6941C6] font-semibold leading-5 my-3'>{category}</h4>
+                <h3 className='text-[14px] text-[#6941C6] font-semibold leading-5 my-3'>{category}</h3>
                 <div className='flex justify-between items-start'>
                     <Link href={url}>
                         <h3 className='text-[24px] font-semibold leading-8 text-black flex-grow-1'>{title}</h3>
