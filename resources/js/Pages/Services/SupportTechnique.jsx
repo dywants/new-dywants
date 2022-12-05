@@ -24,7 +24,7 @@ const SupportTechnique = () => {
             <section className="my-8">
                 <div className="wrapper">
                     <Wrapper>
-                        <div className="flex-1 px-8">
+                        <div className="flex-1">
                             <h2>
                                 Nous facilitons votre quotidien. Concentrez-vous
                                 sur votre domaine d’activité,{" "}
@@ -58,7 +58,7 @@ const SupportTechnique = () => {
                             }
                         />
                     </div>
-                    <div className="flex-1 mr-20">
+                    <div className="flex-1 px-6 md:px-0 md:mr-20">
                         <div className="px-5">
                             <h2>
                                 <span className="text-primary">
@@ -66,11 +66,11 @@ const SupportTechnique = () => {
                                 </span>{" "}
                                 de toutes vos difficultés.
                             </h2>
-                            <p className="text-base text-texte leading-7 mb-2">
+                            <p className=" text-texte mb-2">
                                 Nous mettons à disposition des entreprises un
                                 suivi instantannée au quotidien.
                             </p>
-                            <p className="text-base text-texte leading-7">
+                            <p className=" text-texte">
                                 Nos experts previennent et extermine les
                                 différents obstacles afin d’eviter une
                                 quelconque rupture de service et garantir une
@@ -117,7 +117,7 @@ const SupportTechnique = () => {
                             étape de la création du produit en toute sérénité
                         </p>
                     </div>
-                    <div className="grid w-full px-8 md:p-0 md:grid-cols-3 gap-4 my-10">
+                    <div className="grid w-full  md:grid-cols-3 gap-4 my-10">
                         {
                             items.map((item, i) => {
                                 return(

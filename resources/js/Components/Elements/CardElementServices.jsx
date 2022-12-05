@@ -41,6 +41,9 @@ const Wrapper = styled.div`
         color: #000000;
         margin-bottom: 1rem;
     }
+    p{
+        text-align: left;
+    }
 `;
 
 const WithCard = styled.div`

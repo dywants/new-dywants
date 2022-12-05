@@ -15,7 +15,7 @@ export const MenuItems = [
     },
     {
         id: uuidv4(),
-        title: 'DevOps & Deployment',
+        title: 'DevOps & Deploiement',
         path: 'devops',
         cName: 'dropdown-link'
     },

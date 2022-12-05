@@ -11,7 +11,7 @@ const Digitalisation = () => {
     return (
         <Layout>
             <div
-                className="w-full h-[695px] md:h-[700px] overflow-hidden bg-left object-contain md:bg-cover md:object-cover"
+                className="w-full h-[695px] md:h-[700px] overflow-hidden bg-left object-contain md:bg-cover md:object-cover bg-bgHeader"
                 style={{
                     backgroundImage: `url('/assets/images/digitalisation/bannier-digitalisation.png'),url('/assets/images/digitalisation/header-digitalisation.png')`,
                     backgroundRepeat: "no-repeat",

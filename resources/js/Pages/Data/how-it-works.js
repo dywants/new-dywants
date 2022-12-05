@@ -20,3 +20,24 @@ export const items = [
         img: "/assets/images/support-technique/syringe.png",
     },
 ]
+
+export const itemsDevps = [
+    {
+        id: uuidv4(),
+        title: "Test",
+        describe: "Le site web est analysé par rapport à plusieurs critères afin de prévenir les différents problèmes et de l’optimiser.",
+        img: "/assets/images/devops/cog.png",
+    },
+    {
+        id: uuidv4(),
+        title: "Choix de la pile technique",
+        describe: "En fonction de vos attentes et des resultats du test, un environnement propice pour votre site internet est mis sur pied",
+        img: "/assets/images/devops/boxes.png",
+    },
+    {
+        id: uuidv4(),
+        title: "Deploiement",
+        describe: "Après les deux étapes, le déploiment est amorcé. Tout au long de cette étape nous continuons toujours de vérifier s’il n’y a aucun désagrément!",
+        img: "/assets/images/devops/rocket.png",
+    },
+]

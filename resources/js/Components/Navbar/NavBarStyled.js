@@ -60,13 +60,13 @@ export const NavMenu = styled.ul`
   justify-content: center;
   text-align: center;
   list-style: none;
-  padding-top: 1rem;
 
   @media ${(props) => props.theme.breakpoints.md} {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 90vh;
+    padding-top: 1rem;
     z-index:40;
     position: absolute;
     top: 48px;

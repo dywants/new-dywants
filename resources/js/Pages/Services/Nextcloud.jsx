@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "@/Layouts/Layout";
 import HeaderPage from "@/Components/Elements/HeaderPage";
-import styled from "styled-components";
 import CustomLink from "@/Components/CustomLink";
 import Image from "@/Components/Elements/Image";
 import LinkElement from "@/Components/LinkElement";

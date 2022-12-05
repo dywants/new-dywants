@@ -144,7 +144,7 @@ const DevelopmentWeb = () =>{
             </section>
             <section>
                 <div className="wrapper">
-                    <div className="w-full md:max-w-2xl">
+                    <div className="w-full md:max-w-xl">
                         <h2>
                             Nos meilleures armes pour affronter {" "}
                             <span className="text-primary">
