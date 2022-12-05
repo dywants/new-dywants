@@ -33,7 +33,7 @@ const Devops = () => {
                 <title>DYWANTS - Devops</title>
                 <meta
                     name="description"
-                    content="Nous vous accompagnons dans le choix et l'implementation de la meilleur infrastructure pour vos applications"
+                    content="Nous vous accompagnons dans le choix et dans l'implémentation de la meilleure infrastructure pour vos applications."
                 />
                 <link
                     rel="canonical"

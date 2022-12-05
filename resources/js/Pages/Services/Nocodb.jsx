@@ -23,7 +23,7 @@ const Nocodb = () => {
                 <title>DYWANTS - Integrateur nocodb Cameroun</title>
                 <meta
                     name="description"
-                    content="Nous vous permettoms d'etre productif grace a nocodb, la meilleure alternative a Airtable"
+                    content="Nous vous permettons d'être productif grâce a nocodb, la meilleure alternative a Airtable"
                 />
                 <link rel="canonical" href="https://dywants.com/digitalisation/integrateur-nocodb-au-cameroun/" />
             </Helmet>

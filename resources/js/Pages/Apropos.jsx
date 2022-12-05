@@ -19,7 +19,7 @@ const Apropos = () => {
                 <title>DYWANTS - Qui sommes nous?</title>
                 <meta
                     name="description"
-                    content="Nous sommes une equipe dynamique et d'experts dans le developpement web & mobile, dans la transformation digitale des entreprise"
+                    content="Nous sommes une équipe dynamique et d'experts dans le développement web & mobile, dans la transformation digitale des entreprises."
                 />
                 <link rel="canonical" href="https://dywants.com/qui-sommes-nous/" />
             </Helmet>

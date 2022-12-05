@@ -22,7 +22,7 @@ const Homepage = () => {
                 <title>DYWANTS TECHNOLOGIE AND SERVICES</title>
                 <meta
                     name="description"
-                    content="Bienvenue chez DYWANTS agence de développement informatique au Cameroun, spécialiser dans le développement application web, mobile et logiciel sur mesure"
+                    content="Bienvenue chez DYWANTS agence de développement informatique au Cameroun, spécialiser dans le développement application web, mobile et logiciel sur mesure."
                 />
                 <link rel="canonical" href="https://dywants.com" />
             </Helmet>

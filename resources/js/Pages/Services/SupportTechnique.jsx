@@ -17,7 +17,7 @@ const SupportTechnique = () => {
                 <title>DYWANTS - Support technique</title>
                 <meta
                     name="description"
-                    content="Nous vous apportons le meilleur support tecchnique en informatique tant a distance qu'en presentiel"
+                    content="Nous vous apportons le meilleur support technique en informatique tant à distance qu'en présentiel."
                 />
                 <link rel="canonical" href="https://dywants.com/services/support-technique/" />
             </Helmet>

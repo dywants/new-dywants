@@ -75,7 +75,7 @@ color: ${props => props.white ? "white" : "#232536"};
   }
 `;
 
-const TitleSection = styled.h4`
+const TitleSection = styled.h3`
     font-style: normal;
     font-weight: 600;
     font-size: 24px;

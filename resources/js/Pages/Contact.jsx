@@ -12,7 +12,7 @@ class Contact extends Component {
                     <title>DYWANTS - Contactes-nous</title>
                     <meta
                         name="description"
-                        content="Faite nous un message pour tous vos besoins en matiere de developpmment web et mobile"
+                        content="Faites nous un message pour tous vos besoins en matière de développement web et mobile"
                     />
                     <link
                         rel="canonical"

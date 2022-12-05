@@ -15,7 +15,7 @@ const Digitalisation = () => {
                 <title>DYWANTS - Digitalisation</title>
                 <meta
                     name="description"
-                    content="Nous vous accompagnos dans votre processus de digitalisation grace a des solutions innovation et collaborative"
+                    content="Nous vous accompagnions dans votre processus de digitalisation grâce a des solutions innovation et collaborative."
                 />
                 <link
                     rel="canonical"

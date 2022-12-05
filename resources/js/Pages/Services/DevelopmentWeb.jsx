@@ -37,7 +37,7 @@ const DevelopmentWeb = () => {
                 <title>DYWANTS - Developpement web&mobile</title>
                 <meta
                     name="description"
-                    content="Nous developpons pour des sites web et application performantes qui correspondent a vos besoins avec des outils modernes "
+                    content="Nous développons pour des sites web et applications performantes qui correspondent a vos besoins avec des outils modernes."
                 />
                 <link rel="canonical" href="https://dywants.com/services/developpement-web/" />
             </Helmet>

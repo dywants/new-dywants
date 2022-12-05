@@ -11,7 +11,7 @@ const TitleSection = ({title ,  className = ""}) => {
     );
 };
 
-const TitleName = styled.h3`
+const TitleName = styled.h2`
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 500;
@@ -20,6 +20,5 @@ line-height: 20px;
 letter-spacing: 3px;
 text-transform: uppercase;
 opacity: 0.87;
-
 `;
 export default TitleSection;

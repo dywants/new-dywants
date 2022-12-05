@@ -22,7 +22,7 @@ const Services = () => {
                 <title>DYWANTS - Nos services et exprtises</title>
                 <meta
                     name="description"
-                    content="Nous regroupons les experts dans le domaine de la creation des sites web (vitrine, blog, ecommerce, intranet...) et application web et mobile"
+                    content="Nous regroupons les experts dans le domaine de la création des sites web (vitrine, blog, e-commerce, intranet...) et application web et mobile."
                 />
                 <link rel="canonical" href="https://dywants.com/services/" />
             </Helmet>
@@ -52,12 +52,12 @@ const Services = () => {
                             <div className="space-y-4">
                                 {ServivicesTitle.map((service, i) => {
                                     return (
-                                        <h4
+                                        <h3
                                             className="text-white font-semibold text-[24px] leading-6"
                                             key={i}
                                         >
                                             {service}
-                                        </h4>
+                                        </h3>
                                     );
                                 })}
                             </div>

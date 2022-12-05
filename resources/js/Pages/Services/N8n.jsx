@@ -18,7 +18,7 @@ const N8n = () => {
                 <title>DYWANTS - Integrateur n8n Cameroun</title>
                 <meta
                     name="description"
-                    content="Nous automatisons les taches entre vos different services et application ou bases de donnees"
+                    content="Nous automatisons les taches entre vos différents services et application ou bases de données."
                 />
                 <link rel="canonical" href="https://dywants.com/digitalisation/integrateur-n8n-au-cameroun/" />
             </Helmet>

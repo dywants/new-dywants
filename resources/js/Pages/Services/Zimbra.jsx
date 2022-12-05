@@ -16,7 +16,7 @@ const Zimbra = () => {
                 <title>DYWANTS - Integrateur Zimbra au Cameroun</title>
                 <meta
                     name="description"
-                    content="Zimbra est un outil d'email collaborative. nous integrons cette outil au seins de votre entreprise pour une meilleure productivité de vos equipes"
+                    content="Zimbra est un outil d'email collaboratif. Nous intégrons cet outil au sein de votre entreprise pour une meilleure productivité de vos équipes."
                 />
                 <link
                     rel="canonical"

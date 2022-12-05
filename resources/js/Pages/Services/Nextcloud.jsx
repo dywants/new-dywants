@@ -25,7 +25,7 @@ const Nextcloud = ({ reverse }) => {
                 <title>DYWANTS - Integrateur Nextcloud Cameroun</title>
                 <meta
                     name="description"
-                    content="Nous installons, configurons votre instance de Nextcloud sur votre propre serveur web. formons vos equipe a tirer le meilleur de l'outil de collaboration par excellence"
+                    content="Nous installons, configurons votre instance de Nextcloud sur votre propre serveur web. Formons vos équipes à tirer le meilleur de l'outil de collaboration par excellence."
                 />
                 <link rel="canonical" href="https://dywants.com/digitalisation/integrateur-nextcloud-au-cameroun/" />
             </Helmet>

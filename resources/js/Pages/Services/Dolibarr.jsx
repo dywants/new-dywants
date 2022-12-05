@@ -33,7 +33,7 @@ const Dolibarr = () => {
                 <title>DYWANTS - Integrateur Dolibarr Cameroun</title>
                 <meta
                     name="description"
-                    content="Nous integretrons, developpons des modules Dolibarr personnalises et formons les employés de votre entreprise a l'utilisation de l'ERP/CRM"
+                    content="Nous intégrerons, développons des modules Dolibarr personnalises et formons les employés de votre entreprise à l'utilisation de l'ERP/CRM."
                 />
                 <link rel="canonical" href="https://dywants.com/digitalisation/integrateur-dolibarr-au-cameroun/" />
             </Helmet>
