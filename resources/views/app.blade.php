@@ -24,9 +24,8 @@
     @viteReactRefresh
     @vite('resources/js/app.jsx')
     @inertiaHead
-</head>
-    <!-- Matomo -->
-    <script>
+     <!-- Matomo -->
+     <script>
         var _paq = window._paq = window._paq || [];
         /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
         _paq.push(['trackPageView']);
@@ -40,7 +39,8 @@
         })();
       </script>
       <!-- End Matomo Code -->
-
+</head>
+   
 <body class="font-sans antialiased">
     @inertia
 </body>
