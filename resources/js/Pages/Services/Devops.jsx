@@ -42,7 +42,7 @@ const Devops = () => {
             </Helmet>
             <Layout>
                 <div
-                    className="w-full h-[695px] md:h-[700px] overflow-hidden bg-left object-contain md:bg-cover md:object-cover bg-bgHeader"
+                    className="w-full pb-20 lg:h-[700px] overflow-hidden bg-left object-contain lg:bg-cover lg:object-cover bg-bgHeader"
                     style={{
                         backgroundImage: `url('/assets/images/devops/digital-world-map-hologram-blue-background.png')`,
                         backgroundRepeat: "no-repeat",
@@ -51,9 +51,9 @@ const Devops = () => {
                     }}
                 >
                     <div className="wrapper " style={{ marginBottom: "0px" }}>
-                        <div className="h-screen text-center flex justify-start w-full md:w-[798px] mx-auto">
+                        <div className="text-center flex justify-start w-full lg:w-[798px] mx-auto">
                             <div>
-                                <h1 className="text-white text-[40px] md:text-[50px] md:pt-10 leading-11 font-extrabold ">
+                                <h1 className="text-white text-[40px] lg:text-[50px] lg:pt-10 leading-11 font-extrabold ">
                                     Déploiement et maintenance des sites et
                                     applications web
                                 </h1>
@@ -119,14 +119,14 @@ const Devops = () => {
                         </Wrapper>
                     </div>
                 </section>
-                <section>
-                    <div className="overflow-hidden flex flex-col-reverse md:flex-row gap-3 md:gap-8 items-center">
+                <section className="my-10">
+                    <div className="overflow-hidden flex flex-col-reverse lg:flex-row gap-3 lg:gap-8 items-center">
                         <div className="flex-1">
                             <Image
                                 src={"/assets/images/devops/devops-image2.png"}
                             />
                         </div>
-                        <div className="flex-1 px-6 md:px-0 md:mr-20">
+                        <div className="flex-1 py-6 lg:px-0 lg:mr-20">
                             <div className="px-5">
                                 <h2>
                                     Même si{" "}
@@ -146,7 +146,7 @@ const Devops = () => {
                                     hébergement Web et la gestion du nom de
                                     domaine.
                                 </p>
-                                <div className="mt-4">
+                                <div className="my-4">
                                     <CustomLink
                                         secondary
                                         href={route("contact")}
@@ -158,7 +158,7 @@ const Devops = () => {
                         </div>
                     </div>
                 </section>
-                <section className="my-8">
+                <section className="my-10">
                     <div className="wrapper">
                         <Wrapper>
                             <div className="flex-1">
@@ -180,7 +180,7 @@ const Devops = () => {
                                     dernières technologies en matière de
                                     sécurité.
                                 </p>
-                                <div className="mt-4">
+                                <div className="my-4">
                                     <CustomLink
                                         secondary
                                         href={route("contact")}

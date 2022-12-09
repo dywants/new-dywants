@@ -14,14 +14,14 @@ const SectionService = ({
 }) => {
     return (
         <Wrapper reverse={reverse}>
-             <div className="w-full md:max-w-[480px]">
+             <div className="w-full lg:max-w-[480px]">
                 <Image src={src} className="" />
             </div>
-            <div className="w-full md:w-[642px]">
-                <div className="pt-0 mb-6 md:pt-24">
+            <div className="w-full lg:w-[642px]">
+                <div className="pt-0 mb-6 lg:pt-24">
                     <TitleSection>{titlesection} </TitleSection>
                     <Title>{title}</Title>
-                    <p className="text-texte  opacity-80 my-2">
+                    <p className="text-texte opacity-80 my-2">
                         {description}
                     </p>
                     {describe && (

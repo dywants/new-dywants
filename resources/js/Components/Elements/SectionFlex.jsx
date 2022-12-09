@@ -42,7 +42,7 @@ padding-top: 1rem;
 padding-bottom: 1rem;
 overflow: hidden;
 
-@media screen and (min-width: 764px) {
+@media screen and (min-width: 1024px) {
     flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
     gap: 5rem;
 }

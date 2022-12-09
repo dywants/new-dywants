@@ -47,6 +47,7 @@ const Digitalisation = () => {
                                 technologie.
                             </p>
                         </div>
+                        <div className="pb-2 lg:pb-0">
                         <LinkElement
                             primary
                             className="mt-10"
@@ -54,6 +55,7 @@ const Digitalisation = () => {
                         >
                             Voir nos services
                         </LinkElement>
+                        </div>
                     </div>
                     <div className="flex-1 mt-8 md:mt-0">
                         <Image src={"/assets/images/digitalisation.png"} />

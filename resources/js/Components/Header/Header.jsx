@@ -7,10 +7,10 @@ const Header = () => {
     return (
         <HeaderSection className="border-gray-200 border-b relative py-12 bg-secondary">
             <div className="wrapper">
-                <div className="flex flex-col md:flex-row items-center justify-between relative">
-                    <div className="zone-text py-4 md:py-[113px] flex-1 justify-between">
+                <div className="flex flex-col lg:flex-row items-center justify-between relative">
+                    <div className="zone-text py-4 lg:py-[113px] flex-1 justify-between">
                         <h3 className="text-light leading-7 text-[30px] italic">Agence de développement informatique</h3>
-                        <h1 className="text-white font-bold text-[40px] md:text-[60px]">
+                        <h1 className="text-white font-bold text-[40px] lg:text-[60px]">
                                 Let us create what you want!
                         </h1>
                         <p className="font-medium text-white mb-8 z-40">
@@ -73,7 +73,7 @@ const Header = () => {
             <img
                 src="assets/images/header_circles.png"
                 alt=""
-                className="absolute -top-12 -right-16 -z-40 hidden md:block"
+                className="absolute -top-12 -right-16 -z-40 hidden lg:block"
             />
         </HeaderSection>
     );

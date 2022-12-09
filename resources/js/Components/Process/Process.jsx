@@ -6,13 +6,13 @@ import styled from "styled-components";
 
 const Process = ({ processes }) => {
     return (
-        <div className="wrapper my-10 md:my-20">
+        <div className="wrapper my-10 lg:my-20">
             <TitleSection className="text-black" title="Notre processus" />
             <Title
-                className="md:w-[777px] mb-4"
+                className="lg:w-[777px] mb-4"
                 title="Nous adoptons une méthodologie de travail couvrant tous les aspects important de vos projets digitaux."
             />
-            <p className="text-texte opacity-80 mb-8 md:w-[642px]">
+            <p className="text-texte opacity-80 mb-8 lg:w-[642px]">
                 Notre équipe de développement web&app est expérimentée et formée
                 aux dernières technologies pour vous garantir un code de
                 qualité.
@@ -39,7 +39,7 @@ const GridSection = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     gap: 1.5rem;
 
-    @media ${(props) => props.theme.breakpoints.md} {
+    @media ${(props) => props.theme.breakpoints.sm} {
         grid-template-columns: 1fr;
     }
 `;

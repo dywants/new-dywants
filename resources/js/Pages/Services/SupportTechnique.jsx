@@ -64,7 +64,7 @@ const SupportTechnique = () => {
                     </div>
                 </section>
                 <section>
-                    <div className="overflow-hidden flex flex-col-reverse md:flex-row gap-3 md:gap-8 items-center">
+                    <div className="overflow-hidden flex flex-col-reverse lg:flex-row gap-3 lg:gap-8 items-center">
                         <div className="flex-1">
                             <Image
                                 src={
@@ -72,7 +72,7 @@ const SupportTechnique = () => {
                                 }
                             />
                         </div>
-                        <div className="flex-1 px-6 md:px-0 md:mr-20">
+                        <div className="flex-1 px-6 lg:px-0 lg:mr-20">
                             <div className="px-5">
                                 <h2>
                                     <span className="text-primary">

@@ -7,7 +7,7 @@ import { valuesInfo } from "@/Pages/Data/values";
 const Values = () => {
     return (
         <div className="bg-[#E8E8E8]">
-            <div className="container mx-auto max-w-7xl px-10 md:px-24 py-16">
+            <div className="wrapper py-16"  style={{marginBottom: "0" }}>
                 <div className="card2">
                     <div className="md:max-w-[642px] ">
                         <TitleSection title="Nos valeurs" />

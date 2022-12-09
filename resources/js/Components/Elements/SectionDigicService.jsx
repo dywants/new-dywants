@@ -75,7 +75,7 @@ const Wrapper = styled.div`
     gap: 3rem;
     overflow: hidden;
 
-    @media screen and (min-width: 764px) {
+    @media screen and (min-width: 1024px) {
         flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
         gap: 5rem;
     }

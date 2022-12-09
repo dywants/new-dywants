@@ -7,9 +7,9 @@ import Title from "../Elements/Title";
 
 const SectionForm = () => {
     return (
-        <div className="wrapper md:mt-32 mb-8 md:mb-16">
-            <div className="wrapper flex flex-col md:flex-row px-8 gap-3 md:gap-7">
-                <div className="w-full md:max-w-[665px]">
+        <div className="wrapper lg:mt-32 mb-8 lg:mb-16">
+            <div className="wrapper flex flex-col lg:flex-row px-8 gap-3 lg:gap-7">
+                <div className="w-full lg:max-w-[665px]">
                     <TitleSection title="Nous Contacter"/>
                     <Title title="Avoir une question ? Prenons contact avec nous 👋"/>
                     <p className="text-texte text-base leading-6">Remplissez le formulaire et notre équipe vous répondra dans les 24 heures</p>
@@ -69,7 +69,7 @@ const SectionForm = () => {
                 <div className="bg-secondaryGraded flex-1 flex justify-center items-center">
                     <div className="p-10">
                         <TitleSection className="text-white" title="Location"/>
-                        <ul className="text-left text-white space-y-4 md:space-y-10 mt-4">
+                        <ul className="text-left text-white space-y-4 lg:space-y-10 mt-4">
                             <li className="font-medium md:text-3xl">contact@dywants.com</li>
                             <li className="font-medium md:text-3xl">(+237) 699278240</li>
                             <li className="font-medium md:text-3xl">Douala Cameroun, sis Lycée cité des palmiers</li>

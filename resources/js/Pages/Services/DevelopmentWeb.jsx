@@ -79,7 +79,7 @@ const DevelopmentWeb = () => {
                                         "/assets/images/development/vue-laterale-portrait-femme-developpeuse.png"
                                     }
                                 />
-                                <div className="absolute md:-bottom-32 md:-left-32 w-32 h-32 md:w-52 md:h-52 -bottom-20 -left-6">
+                                <div className="absolute w-32 h-32 md:w-40 md:h-40 lg:w-52 lg:h-52 -bottom-20 -left-6 lg:-bottom-32 lg:-left-32 md:-bottom-28 md:-left-24">
                                     <Image
                                         src={
                                             "/assets/images/development/db-icon.png"
@@ -145,7 +145,7 @@ const DevelopmentWeb = () => {
                                 meilleure solution.
                             </p>
                         </div>
-                        <div className="grid w-full md:grid-cols-4 gap-4 my-10">
+                        <div className="grid w-full md:grid-cols-2 lg:grid-cols-4 gap-4 my-10">
                             {itemsDevelopment.map((item, i) => {
                                 return (
                                     <CardElementServices

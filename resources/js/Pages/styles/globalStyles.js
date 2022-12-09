@@ -114,7 +114,7 @@ export const Wrapper = styled.div`
     gap: 1.5rem;
     overflow: hidden;
 
-    @media screen and (min-width: 736px) {
+    @media screen and (min-width: 1024px) {
       gap: 5rem;
       flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
   }

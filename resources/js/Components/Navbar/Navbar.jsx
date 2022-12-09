@@ -91,11 +91,11 @@ const Navbar = () => {
                             <NavLinks href="#">Blog</NavLinks>
                         </NavItem>
                     </NavMenu>
-                    <SectionButton className="space-x-2 hidden md:block">
+                    <div className="hidden lg:block">
                         <LinkElement href={route("contact")}>
                             Demander un devis
                         </LinkElement>
-                    </SectionButton>
+                    </div>
                 </NavBarContainer>
             </Nav>
         </>

@@ -6,9 +6,9 @@ import Image from "./Image.jsx";
 const HeaderOtherPages = ({ image, title, describe, url, link }) => {
     return (
         <SectionHeader className="w-full overflow-hidden h-auto bg-cover object-cover bg-bgHeader text-center">
-            <div className="flex flex-col md:flex-row justify-between pt-8 md:pt-0 gap-4 items-center overflow-hidden h-auto">
-                <div className="flex-1">
-                    <div className="px-8 text-left md:ml-24">
+            <div className="flex flex-col lg:flex-row justify-between pt-8 lg:pt-0 gap-4 items-center overflow-hidden h-auto">
+                <div className="w-full lg:flex-1">
+                    <div className="px-8 text-left lg:ml-24">
                         <h1>{title}</h1>
                         <p className="text-white text-base">{describe}</p>
                         <div className="my-4">
@@ -18,8 +18,8 @@ const HeaderOtherPages = ({ image, title, describe, url, link }) => {
                         </div>
                     </div>
                 </div>
-                <div className="flex-1 m-0 p-0 overflow-hidden">
-                    <Image src={image} />
+                <div className="w-full lg:flex-1 m-0 p-0 overflow-hidden">
+                     <Image src={image} />
                 </div>
             </div>
         </SectionHeader>

@@ -82,7 +82,7 @@ const Services = () => {
                     </div>
                 </div>
                 <div className="bg-[#ECF8F9]">
-                    <div className="wrapper text-left pt-16 -pb-10 md:pt-0 md:pb-0">
+                    <div className="wrapper text-left pt-16 -pb-10 lg:pt-0 lg:pb-0">
                         <SectionService
                             reverse
                             title="Nous créons des applications et des sites web adaptent à l'image et aux valeurs de votre entreprise."
@@ -106,7 +106,7 @@ const Services = () => {
                     />
                 </div>
                 <div className="bg-[#F9F9FF]">
-                    <div className="wrapper text-left pt-16 -pb-10 md:pt-0 md:pb-0">
+                    <div className="wrapper text-left pt-16 -pb-10 lg:pt-0 lg:pb-0">
                         <SectionService
                             reverse
                             title="Nous sommes le prolongement de votre équipe."

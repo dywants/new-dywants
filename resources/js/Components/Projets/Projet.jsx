@@ -21,9 +21,8 @@ const Projets = ({ projets }) => {
                             gap: "2rem",
 
                             breakpoints: {
-                                640: {
+                                768: {
                                     fixedWidth: "100%",
-                                    fixedHeight: "590px",
                                     perPage: 1, // Used after destruction
                                 },
                             },
@@ -53,7 +52,7 @@ const ProjetSection = styled.section`
   background-color: ${(props) => props.theme.colors.degradedPrimary};
   padding: 6rem;
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media ${(props) => props.theme.breakpoints.lg} {
     padding: 2rem;
   }
 
@@ -62,7 +61,6 @@ const ProjetSection = styled.section`
      background: #FFB400;
     }
   }
- }
 `;
 
 export default Projets;

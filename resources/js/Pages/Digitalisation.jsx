@@ -24,7 +24,7 @@ const Digitalisation = () => {
             </Helmet>
             <Layout>
                 <div
-                    className="w-full h-[695px] md:h-[700px] overflow-hidden bg-left object-contain md:bg-cover md:object-cover bg-bgHeader"
+                    className="w-full h-[500px] lg:h-[700px] overflow-hidden bg-left object-contain lg:bg-cover lg:object-cover bg-bgHeader"
                     style={{
                         backgroundImage: `url('/assets/images/digitalisation/bannier-digitalisation.png'),url('/assets/images/digitalisation/header-digitalisation.png')`,
                         backgroundRepeat: "no-repeat",
@@ -35,7 +35,7 @@ const Digitalisation = () => {
                     <div className="wrapper " style={{ marginBottom: "0px" }}>
                         <div className="h-screen text-left flex justify-start">
                             <div>
-                                <h1 className="text-white text-[40px] md:text-[50px] md:pt-10 leading-11 font-extrabold md:w-[798px]">
+                                <h1 className="text-white text-[40px] lg:text-[50px] lg:pt-10 leading-11 font-extrabold lg:w-[798px]">
                                     Nous accompagnons les entreprises dans leur
                                     processus de digitalisation
                                 </h1>
@@ -62,9 +62,9 @@ const Digitalisation = () => {
                     </div>
                 </div>
 
-                <div className="md:my-16">
+                <div className="lg:my-16">
                     <div className="wrapper">
-                        <section className="mt-10 md:my-24">
+                        <section className="mt-10 lg:my-24">
                             {InfoDigitalisation.firstSection.map((p, i) => {
                                 return (
                                     <SectionFlex
@@ -79,7 +79,7 @@ const Digitalisation = () => {
                                 );
                             })}
                         </section>
-                        <section className="mt-10 md:my-24">
+                        <section className="mt-10 lg:my-24">
                             {InfoDigitalisation.secondSection.map((p, i) => {
                                 return (
                                     <SectionFlex
