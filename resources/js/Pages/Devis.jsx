@@ -33,7 +33,7 @@ const Devis = () => {
                                 minHeight: "100vh",
                             }}
                         >
-                            <Link className="flex-1">
+                            <Link href={route("homepage")} className="flex-1">
                                 <div className="flex items-center ">
                                     <img
                                         className="w-2 h-2 mr-2 inline-flex"
