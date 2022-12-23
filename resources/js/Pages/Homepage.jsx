@@ -24,12 +24,11 @@ const Homepage = () => {
                     name="description"
                     content="Bienvenue chez DYWANTS agence de développement informatique au Cameroun, spécialiser dans le développement application web, mobile et logiciel sur mesure."
                 />
-                <link rel="canonical" href="https://dywants.com" />
+                <link rel="canonical" href="https://dywants.com/" />
             </Helmet>
             <Layout>
                 <Header />
                 <About />
-                <Expertises />
                 <Services />
                 <Digitalisation />
                 <Process {...processInfos} />

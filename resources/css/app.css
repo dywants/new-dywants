@@ -10,10 +10,14 @@
     @apply text-title font-semibold leading-8 mb-4 text-[30px];
 }
 
-.card3{
+.card3 {
     @apply grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-5;
 }
 
-.card2{
+.card2 {
     @apply flex justify-between flex-col lg:flex-row items-center gap-5;
+}
+
+.mt0 {
+    margin-top: 0 !important;
 }

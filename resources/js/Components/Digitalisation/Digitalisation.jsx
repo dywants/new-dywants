@@ -28,7 +28,7 @@ const Digitalisation = () => {
             <div className="wrapper">
                 <div className="card2">
                     <div className="flex-1">
-                        <h2 className="text-title font-extrabold leading-9 text-[30px] mb-4">
+                        <h2 className="text-title font-extrabold text-[30px] md:leading-8 md:text-[40px] mb-4">
                             Vous êtes une entreprise? Nous avons ce qu'il vous
                             faut pour la{" "}
                             <span className="text-primary">
@@ -41,20 +41,20 @@ const Digitalisation = () => {
                                 Nous sommes là pour vous permettre d’atteindre
                                 vos objectifs.
                             </p>
-                            <p>
+                            <p className="text-texte font-normal">
                                 C’est notre passion: assister les entreprises
                                 avec ce que nous maîtrisons le mieux la
                                 technologie.
                             </p>
                         </div>
                         <div className="pb-2 lg:pb-0">
-                        <LinkElement
-                            primary
-                            className="mt-10"
-                            href={route("digitalisation")}
-                        >
-                            Voir nos services
-                        </LinkElement>
+                            <LinkElement
+                                primary
+                                className="mt-10"
+                                href={route("digitalisation")}
+                            >
+                                Voir nos services
+                            </LinkElement>
                         </div>
                     </div>
                     <div className="flex-1 mt-8 md:mt-0">

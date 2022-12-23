@@ -14,10 +14,7 @@ class Contact extends Component {
                         name="description"
                         content="Faites nous un message pour tous vos besoins en matière de développement web et mobile"
                     />
-                    <link
-                        rel="canonical"
-                        href="https://dywants.com/contact/"
-                    />
+                    <link rel="canonical" href="https://dywants.com/contact/"/>
                 </Helmet>
                 <Layout>
                     <SectionForm />

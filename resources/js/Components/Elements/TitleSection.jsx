@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components'
 
-const TitleSection = ({title ,  className = ""}) => {
+const TitleSection = ({title , white, className = ""}) => {
     return (
-        <TitleName  className={
+        <TitleName white={white} className={
             `` + className
         }>
             {title}
@@ -19,6 +19,6 @@ font-size: 14px;
 line-height: 20px;
 letter-spacing: 3px;
 text-transform: uppercase;
-opacity: 0.87;
+color: ${props => props.white ? "white" : "#4F6CA4"};
 `;
 export default TitleSection;

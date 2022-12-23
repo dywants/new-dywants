@@ -12,18 +12,18 @@ export const aboutInfo = [
         images: [
             {
                 id: uuidv4(),
-                image: "/assets/images/apropos/Image1.png",
-                name: 'image1'
+                image: "/assets/images/apropos/image-innovation.png",
+                name: 'Innovation'
             },
             {
                 id: uuidv4(),
-                image: "/assets/images/apropos/Image2.png",
-                name: 'image2'
+                image: "/assets/images/apropos/image-rigueur.png",
+                name: 'Rigueur'
             },
             {
                 id: uuidv4(),
-                image: "/assets/images/apropos/Image3.png",
-                name: 'image2'
+                image: "/assets/images/apropos/image-excellence.png",
+                name: 'Excellence'
             },
         ]
     },

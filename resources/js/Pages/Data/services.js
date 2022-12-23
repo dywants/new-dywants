@@ -49,10 +49,10 @@ export const servicesInfo = [
 export const servicesInfos = [
     {
         id: uuidv4(),
-        title: "Support Technique & Maintenance",
+        title: "Support Technique",
         description:
             "Une équipe d’experts en maintenance informatique est à votre disposition pour vous effectuer toutes les mises à jours nécessaires à votre système d’exploitation et logiciels",
-        icon: "/assets/images/services/support.png",
+        icon: "/assets/images/services/support-technique.png",
         url: "/services/support-technique"
     },
     {
@@ -60,7 +60,7 @@ export const servicesInfos = [
         title: "Développement web&app",
         description:
             "Nos experts web&App analyseront avec précision vos besoins, tout en vous proposant les solutions techniques les plus adaptées à votre projet avec un respect des délais de livraison",
-        icon: "/assets/images/services/developpement.png",
+        icon: "/assets/images/services/codes.png",
         url: "/services/developpement-web"
     },
     {
@@ -68,7 +68,7 @@ export const servicesInfos = [
         title: "DevOps & Deploiement",
         description:
             "Nos experts DevOps vous aides dans le choix de la meilleure insfrastructure (serveur ou cloud) pour vos sites web et application, tout en mettant en place des tâches Cron dans vous serveurs,VPS et cloud",
-        icon: "/assets/images/services/maintenance.png",
+        icon: "/assets/images/services/devops.png",
         url: "/services/devops-et-deploiements-app"
     },
 ]
