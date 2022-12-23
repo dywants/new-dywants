@@ -18,7 +18,7 @@ const Header = () => {
         "dév mobile",
     ];
     return (
-        <HeaderSection className="border-gray-200 border-b relative py-12 bg-[url('/assets/images/bg-header-home.png')]">
+        <HeaderSection className="border-gray-200 border-b relative object-left-top py-12 bg-[url('/assets/images/bg-header-home.png')]">
             <div className="wrapper mt0 pb-10 relative">
                 <div className="zone-text py-4 lg:py-[113px] flex-1 justify-between w-full lg:max-w-[951px]">
                     <h3 className="text-light leading-7 text-[30px]">

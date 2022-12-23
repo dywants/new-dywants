@@ -11,6 +11,7 @@ use App\Http\Controllers\DevopsIndexController;
 use App\Http\Controllers\ServicesIndexController;
 use App\Http\Controllers\NextCloudIndexController;
 use App\Http\Controllers\DigitalisationIndexController;
+use App\Http\Controllers\DevisIndexController;
 use App\Http\Controllers\DolibarrIndexController;
 use App\Http\Controllers\IntegrateurN8NIndexController;
 use App\Http\Controllers\ServiceDevelopmentWebController;
@@ -34,6 +35,7 @@ Route::get('/dashboard', function () {
 
 Route::get('/', HomeIndexController::class)->name('homepage');
 Route::get('/contact', ContactIndexController::class)->name('contact');
+Route::get('/demande-de-devis', DevisIndexController::class)->name('devis');
 Route::get('/qui-sommes-nous', AproposIndexController::class)->name('apropos');
 Route::get('/services', ServicesIndexController::class)->name('services');
 Route::get('/services/digitalisation', DigitalisationIndexController::class)->name('digitalisation');

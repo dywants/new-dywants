@@ -92,7 +92,7 @@ const Navbar = () => {
                         </NavItem>
                     </NavMenu>
                     <div className="hidden lg:block">
-                        <LinkElement href={route("contact")}>
+                        <LinkElement href={route("devis")}>
                             Demander un devis
                         </LinkElement>
                     </div>

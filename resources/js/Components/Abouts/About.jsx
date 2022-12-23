@@ -1,9 +1,7 @@
 import React from "react";
-import Image from "../Elements/Image";
 import Title from "../Elements/Title";
 import TitleSection from "../Elements/TitleSection";
 import { aboutInfo } from "@/Pages/Data/aboutSection";
-import { Link } from "@inertiajs/inertia-react";
 import Expertises from "../Expertises/Expertises.jsx";
 
 const About = () => {
