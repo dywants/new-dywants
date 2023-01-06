@@ -25,3 +25,11 @@
 .mb0 {
     margin-bottom: 0 !important;
 }
+
+.mr {
+    margin-right: 0 !important;
+}
+
+.pr {
+    padding-right: 0 !important;
+}

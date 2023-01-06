@@ -344,14 +344,4 @@ const Digitalisation = () => {
     );
 };
 
-const GridSection = styled.div`
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
-
-    @media ${(props) => props.theme.breakpoints.md} {
-        grid-template-columns: 1fr;
-    }
-`;
-
 export default Digitalisation;

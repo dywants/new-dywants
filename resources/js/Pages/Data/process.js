@@ -1,30 +1,30 @@
 import { v4 as uuidv4 } from "uuid";
 
 export const processInfos = {
-    processes : [
+    processes: [
         {
             id: uuidv4(),
-            title: "Discover",
+            title: "Introduction",
             description:
                 "Nous visons à atteindre la plus grande satisfaction de nos clients, ceci en ecoutant, evaluant leur besoins pour un service de qualité",
             icon: "/assets/images/process/discover.png",
-            number: "/assets/images/process/01.png"
+            number: "1",
         },
         {
             id: uuidv4(),
-            title: "Designing",
+            title: "Conception",
             description:
                 "Recueillir les besoins des utilisateurs afin de mettre en place la meilleure experience utilisateurs",
             icon: "/assets/images/process/designing.png",
-            number: "/assets/images/process/02.png"
+            number: "2",
         },
         {
             id: uuidv4(),
-            title: "Development",
+            title: "Développement",
             description:
                 "Nous développons des solutions sur mesure avec des outils modernes nécessaire pour vous démarquer de la concurrence.",
             icon: "/assets/images/process/development.png",
-            number: "/assets/images/process/03.png"
+            number: "3",
         },
         {
             id: uuidv4(),
@@ -32,7 +32,7 @@ export const processInfos = {
             description:
                 "Toutes nos applications et sites web sont testés pour une meilleure performance en production.",
             icon: "/assets/images/process/testing.png",
-            number: "/assets/images/process/04.png"
+            number: "4",
         },
         {
             id: uuidv4(),
@@ -40,7 +40,7 @@ export const processInfos = {
             description:
                 "Nous vous conseillons sur le meilleur environnement pour vos applications et nous nous occupons de tous.",
             icon: "/assets/images/process/deplyment.png",
-            number: "/assets/images/process/05.png"
+            number: "5",
         },
         {
             id: uuidv4(),
@@ -48,7 +48,7 @@ export const processInfos = {
             description:
                 "Nous avons des experts en informatique pour toute intervention sur site comme à distance.",
             icon: "/assets/images/process/maintenance-new.png",
-            number: "/assets/images/process/06.png"
+            number: "6",
         },
-    ]
-}
+    ],
+};

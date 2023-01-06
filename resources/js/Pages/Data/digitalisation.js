@@ -15,7 +15,8 @@ export const InfoDigitalisation = {
             title: "Plus de 98% des entreprises reconnaissent que leur succès repose sur une approche digitale réussie.",
             description:
                 "Nous sommes là pour vous permettre d’atteindre vos objectifs.C’est notre passion: assister les entreprises avec ce que nous maîtrisons le mieux; la technologie.",
-            describe: "Mailing professionnel, outils de collaboration, automatisations, planifications de projets, gestion d’entreprises etc. Tout est là pour vous!",
+            describe:
+                "Mailing professionnel, outils de collaboration, automatisations, planifications de projets, gestion d’entreprises etc. Tout est là pour vous!",
             src: "/assets/images/digitalisation/nocode.png",
             linkTitle: "Commençons maintenant",
         },
@@ -26,9 +27,10 @@ export const InfoDigitalisation = {
                 title: "Zimbra - Outils de messagerie et de collaboration",
                 description:
                     "Zimbra est utilisé par des centaines de millions de personnes & organisations dans le monde.",
-                describe: "Le meilleur e-mail professionnel, meilleurs outils de productivité pour les équipes de travail au bureau et à distance des micro, petites, moyennes et entreprises",
+                describe:
+                    "Le meilleur e-mail professionnel, meilleurs outils de productivité pour les équipes de travail au bureau et à distance des micro, petites, moyennes et entreprises",
                 src: "/assets/images/digitalisation/zimbra-info.png",
-                icon : "/assets/images/digitalisation/zimbraZ.png",
+                icon: "/assets/images/digitalisation/zimbraZ.png",
                 link: "Faire un devis",
                 link2: "En savoir plus",
             },
@@ -52,7 +54,7 @@ export const InfoDigitalisation = {
                 comment:
                     "La plate-forme évolutive de Zimbra est reconnue pour son accent sur la sécurité, l'évolutivité et la souveraineté des données.",
             },
-        ]
+        ],
     },
     nextcloud: {
         info: [
@@ -60,9 +62,10 @@ export const InfoDigitalisation = {
                 title: "Nextcloud - Outils de collaboration",
                 description:
                     "La solution de collaboration auto-hébergée la plus populaire pour des dizaines de millions d'utilisateurs dans des milliers d'organisations à travers le monde.",
-                describe: "Nextcloud Files offre une plate-forme d'accès universel aux fichiers et de synchronisation sur site avec de puissantes capacités de collaboration et des interfaces de bureau, mobiles et Web.",
+                describe:
+                    "Nextcloud Files offre une plate-forme d'accès universel aux fichiers et de synchronisation sur site avec de puissantes capacités de collaboration et des interfaces de bureau, mobiles et Web.",
                 src: "/assets/images/digitalisation/nextcloud-info.png",
-                icon : "/assets/images/digitalisation/nextcloud.png",
+                icon: "/assets/images/digitalisation/nextcloud.png",
                 link: "Faire un devis",
                 link2: "En savoir plus",
             },
@@ -71,22 +74,19 @@ export const InfoDigitalisation = {
             {
                 id: uuidv4(),
                 title: "Productivité",
-                texte:
-                    "Gagnez en productivité sur n’importe quelle plateforme, que ce soit au bureau ou en déplacement, pour partager, collaborer et communiquer au-delà des frontières organisationnelles.",
+                texte: "Gagnez en productivité sur n’importe quelle plateforme, que ce soit au bureau ou en déplacement, pour partager, collaborer et communiquer au-delà des frontières organisationnelles.",
             },
             {
                 id: uuidv4(),
                 title: "Contrôle",
-                texte:
-                    "Protégez, contrôlez et supervisez les données et communications dans votre entreprise. Garantissez le respect des exigences commerciales et légales.",
+                texte: "Protégez, contrôlez et supervisez les données et communications dans votre entreprise. Garantissez le respect des exigences commerciales et légales.",
             },
             {
                 id: uuidv4(),
                 title: "Communauté",
-                texte:
-                    "Les améliorations constantes grâce à un modèle de développement communautaire ouvert et transparent entièrement open source, sans enfermement propriétaire ni verrou d’accès payant.",
+                texte: "Les améliorations constantes grâce à un modèle de développement communautaire ouvert et transparent entièrement open source, sans enfermement propriétaire ni verrou d’accès payant.",
             },
-        ]
+        ],
     },
     dolibarr: {
         info: [
@@ -95,7 +95,7 @@ export const InfoDigitalisation = {
                 description:
                     "Utilisé par des millions d'utilisateurs dans le monde, Dolibarr ERP CRM est devenu une solution intégrée majeure dans le monde Open Source.",
                 src: "/assets/images/digitalisation/dolibarr-info.png",
-                icon : "/assets/images/digitalisation/dolibarr.png",
+                icon: "/assets/images/digitalisation/dolibarr.png",
                 link: "Faire un devis",
                 link2: "En savoir plus",
             },
@@ -104,22 +104,19 @@ export const InfoDigitalisation = {
             {
                 id: uuidv4(),
                 title: "Gestion globale de votre entreprise",
-                texte:
-                    "Quels que soient vos besoins (Customer Relationship Management, Ventes, Ressources Humaines, Logistique, Stock, Facturation, Comptabilité, Fabrication, Marketing, Gestion d'association, Enquêtes, ...), vous pouvez paramétrer l'application pour correspondre à vos besoins ",
+                texte: "Quels que soient vos besoins (Customer Relationship Management, Ventes, Ressources Humaines, Logistique, Stock, Facturation, Comptabilité, Fabrication, Marketing, Gestion d'association, Enquêtes, ...), vous pouvez paramétrer l'application pour correspondre à vos besoins ",
             },
             {
                 id: uuidv4(),
                 title: "Une application personnalisable et extensible",
-                texte:
-                    "Etant open source il possible de personnaliser et ajouter d'autre fonctionnalité adaptées a vos besoins",
+                texte: "Etant open source il possible de personnaliser et ajouter d'autre fonctionnalité adaptées a vos besoins",
             },
             {
                 id: uuidv4(),
                 title: "Mise à jour regulière",
-                texte:
-                    "Les mises à niveau des nouvelles versions sont intégrées par conception dans le processus de développement. Ainsi, les utilisateurs bénéficient toujours des dernières fonctionnalités et innovations",
+                texte: "Les mises à niveau des nouvelles versions sont intégrées par conception dans le processus de développement. Ainsi, les utilisateurs bénéficient toujours des dernières fonctionnalités et innovations",
             },
-        ]
+        ],
     },
     n8n: [
         {
@@ -144,7 +141,8 @@ export const InfoDigitalisation = {
             title: "Qu’attendez-vous pour faire passer votre activité au niveau supérieur?",
             description:
                 "Qu’attendez-vous pour faire passer votre activité au niveau supérieur? Nous avons tous les outils pour la croissance exponentielle de votre activité.",
-                describe: "Et nous ne le disons pas juste pour dire, nous avons réellement ce qu’il vous faut.",
+            describe:
+                "Et nous ne le disons pas juste pour dire, nous avons réellement ce qu’il vous faut.",
             src: "/assets/images/digitalisation/team-work.png",
         },
     ],

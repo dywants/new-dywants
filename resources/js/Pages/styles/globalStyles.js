@@ -106,6 +106,16 @@ export const ContentContainer = styled.div`
     flex-direction: column;
 `;
 
+export const GridSection = styled.div`
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+
+    @media ${(props) => props.theme.breakpoints.md} {
+        grid-template-columns: 1fr;
+    }
+`;
+
 export const Wrapper = styled.div`
     display: flex;
     align-items: center;
@@ -115,9 +125,9 @@ export const Wrapper = styled.div`
     overflow: hidden;
 
     @media screen and (min-width: 1024px) {
-      gap: 5rem;
-      flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
-  }
+        gap: 5rem;
+        flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
+    }
 
     h2 {
         font-style: normal;

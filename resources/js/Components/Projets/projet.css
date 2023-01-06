@@ -1,0 +1,54 @@
+.splide__arrows {
+}
+
+.splide__arrow--prev,
+.splide__arrow--next {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    z-index: 10;
+    right: 60px;
+    left: auto;
+    top: -80px;
+    transform: translateY(50%);
+    color: #363636;
+    border-radius: 8px;
+}
+
+.splide__arrow--prev::after,
+.splide__arrow--next::after {
+    font-size: 2rem;
+}
+
+.splide__arrow--next {
+    right: 10rem;
+    color: white;
+    background: #3d5686;
+}
+
+.splide__arrow--prev {
+    margin-right: 10rem;
+    background: #3d5686;
+    border: 1px solid #3d5686;
+}
+
+.splide__arrow--prev svg,
+.splide__arrow--next svg {
+    fill: white !important;
+}
+
+@media screen and (max-width: 736px) {
+    .splide__arrow--prev,
+    .splide__arrow--next {
+        right: 60px;
+        left: auto;
+        top: -55px;
+    }
+    .splide__arrow--next {
+        right: 1rem;
+    }
+
+    .splide__arrow--prev {
+        margin-right: 1rem;
+    }
+}

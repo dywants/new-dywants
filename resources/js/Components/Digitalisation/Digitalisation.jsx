@@ -53,7 +53,7 @@ const Digitalisation = () => {
                                 className="mt-10"
                                 href={route("digitalisation")}
                             >
-                                Voir nos services
+                                Services pour les entreprises
                             </LinkElement>
                         </div>
                     </div>
@@ -68,7 +68,7 @@ const Digitalisation = () => {
                                 key={i}
                                 className="col-span-1 border-b md:border-b-0 pr-2 pb-3 md:pb-0 md:border-r border-[#DFDFDF] last:border-0"
                             >
-                                <h3 className="text-[25px]  leading-9 font-semibold">
+                                <h3 className="text-[25px] text-title  leading-9 font-semibold">
                                     {p.title}
                                 </h3>
                                 <p className="text-texte font-normal left-6 text-base mt-2">
