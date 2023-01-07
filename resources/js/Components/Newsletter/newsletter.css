@@ -1,0 +1,8 @@
+.embed-page {
+    display: none !important;
+    align-items: stretch;
+}
+
+.use-theme-bg {
+    background: #ffb400 !important;
+}

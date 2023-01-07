@@ -2,9 +2,6 @@ import React from "react";
 import Layout from "@/Layouts/Layout";
 import Header from "@/Components/Header/Header";
 import Services from "@/Components/Services/Services";
-import Expertises from "@/Components/Expertises/Expertises";
-import Values from "@/Components/Values/Values";
-import Newsletter from "@/Components/Newsletter/Newsletter";
 import Projets from "@/Components/Projets/Projet";
 import { projetsObj } from "@/Pages/Data/projets";
 import { processInfos } from "@/Pages/Data/process";
@@ -17,6 +14,8 @@ import Digitalisation from "@/Components/Digitalisation/Digitalisation";
 import { Helmet } from "react-helmet-async";
 import Image from "@/Components/Elements/Image.jsx";
 import { GridSection } from "./styles/globalStyles.js";
+import Iframe from "react-iframe";
+import { NewsLetter } from "@/Components/Newsletter";
 
 const Homepage = () => {
     return (
@@ -79,7 +78,9 @@ const Homepage = () => {
                 <Projets {...projetsObj} />
                 <BlogSection {...articles} />
                 <div className="wrapper md:my-20">
-                    <Newsletter />
+                    <div className="w-full flex items-center justify-cente">
+                        <NewsLetter />
+                    </div>
                 </div>
             </Layout>
         </>

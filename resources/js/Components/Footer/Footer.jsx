@@ -3,32 +3,59 @@ import styled from "styled-components";
 import Title from "@/Components/Elements/Title";
 import { Link } from "@inertiajs/inertia-react";
 import Image from "../Elements/Image.jsx";
+import Iframe from "react-iframe";
 
 const Footer = () => {
     return (
         <SectionFooter>
             <Container>
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-0 py-14">
-                    <div className="text-left col-span-1 md:col-span-2">
-                        <Title white title="Let's make something special" />
+                    <div className="text-left col-span-1 md:col-span-2 mr-6">
+                        <Title white title="Faisons quelque chose de spécial" />
                         <h3 className="my-4 text-lg font-medium">
-                            Let's talk! 🤙{" "}
+                            Parlons! 🤙{" "}
                         </h3>
                         <ul className="text-left text-white space-y-3">
                             <li>contact@dywants.com</li>
                             <li>(+237) 699278240</li>
-                            <hr className="bg-white opacity-75 w-20"/>
-                            <li>Douala Cameroun, sis Lycée cité des palmier</li>
+                            <hr className="bg-white opacity-75 w-20" />
+                            <li>
+                                Douala Cameroun, sis Lycée cité des palmiers
+                            </li>
                         </ul>
+                        <div className="mt-4">
+                            <h3 className="text-lg font-semibold mb-2 text-primary">
+                                Notre Newsletter
+                            </h3>
+                            <div>
+                                <Iframe
+                                    src="https://dywantsletter.substack.com/embed"
+                                    width="100%"
+                                    frameborder="0"
+                                    scrolling="no"
+                                />
+                            </div>
+                        </div>
                     </div>
                     <div className="name col-span-1">
-                        <h3 className="footer__title">Liens rapides</h3>
+                        <h3 className="footer__title">Pour les entreprises</h3>
                         <hr className="h-8 text-white w-24 mt-1" />
                         <ul className="text-left text-white space-y-6">
-                            <li className="hover:scale-x-75"><Link href={route('services')}>Services</Link></li>
-                            <li className="hover:scale-x-75"><Link href="#">Projets</Link></li>
-                            <li className="hover:scale-x-75"><Link href="#">Podcast</Link></li>
-                            <li className="hover:scale-x-75"><Link href="#">Blog</Link></li>
+                            <li className="hover:scale-x-75">
+                                <Link href={route("nextcloud")}>NextCloud</Link>
+                            </li>
+                            <li className="hover:scale-x-75">
+                                <Link href={route("zimbra")}>Zimbra</Link>
+                            </li>
+                            <li className="hover:scale-x-75">
+                                <Link href={route("n8n")}>n8n</Link>
+                            </li>
+                            <li className="hover:scale-x-75">
+                                <Link href={route("dolibarr")}>Dolibarr</Link>
+                            </li>
+                            <li className="hover:scale-x-75">
+                                <Link href={route("nocodb")}>NocoDb</Link>
+                            </li>
                         </ul>
                     </div>
                     <div className="name col-span-1">
@@ -36,19 +63,28 @@ const Footer = () => {
                         <hr className="h-8 font-bold text-white w-24 mt-1" />
                         <ul className="text-left text-white space-y-6">
                             <li className="hover:scale-x-75">
-                                <Link href={route('devWeb')} className="text-lg">
+                                <Link
+                                    href={route("devWeb")}
+                                    className="text-lg"
+                                >
                                     {" "}
                                     Développement web&mobile
                                 </Link>
                             </li>
                             <li className="hover:scale-x-75">
-                                <Link href={route('supporttech')} className="text-lg">
+                                <Link
+                                    href={route("supporttech")}
+                                    className="text-lg"
+                                >
                                     {" "}
                                     Support Technique
                                 </Link>
                             </li>
                             <li className="hover:scale-x-75">
-                                <Link href={route('devops')} className="text-lg">
+                                <Link
+                                    href={route("devops")}
+                                    className="text-lg"
+                                >
                                     {" "}
                                     Devops
                                 </Link>
@@ -60,7 +96,10 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li className="hover:scale-x-75">
-                                <Link href={route('digitalisation')} className="text-lg">
+                                <Link
+                                    href={route("digitalisation")}
+                                    className="text-lg"
+                                >
                                     {" "}
                                     Digitalisation
                                 </Link>
@@ -71,14 +110,24 @@ const Footer = () => {
                         <h3 className="footer__title">Partenaires</h3>
                         <hr className="h-8 text-white w-14 mt-1" />
                         <div className="space-y-3">
-                            <div className="w-20 h-20 border flex justify-center items-center bg-white rounded">
-                               <Image src={'/assets/partenaires/dolibarr_logo.png'}/>
+                            <div className="w-16 h-16 border flex justify-center items-center bg-white rounded">
+                                <Image
+                                    src={
+                                        "/assets/partenaires/dolibarr_logo.png"
+                                    }
+                                />
                             </div>
-                            <div className="w-20 h-20">
-                               <Image src={'/assets/partenaires/Nextcloud_Bronze_Partner.svg'}/>
+                            <div className="w-16 h-16">
+                                <Image
+                                    src={
+                                        "/assets/partenaires/Nextcloud_Bronze_Partner.svg"
+                                    }
+                                />
                             </div>
-                            <div className="w-20 h-20">
-                               <Image src={'/assets/partenaires/zimbraZ.png'}/>
+                            <div className="w-16 h-16">
+                                <Image
+                                    src={"/assets/partenaires/zimbraZ.png"}
+                                />
                             </div>
                         </div>
                     </div>
@@ -94,12 +143,12 @@ const Footer = () => {
 const SectionFooter = styled.footer`
     background-color: ${(props) => props.theme.colors.secondary};
     color: ${(props) => props.theme.colors.light};
-    padding-left:1rem;
-    padding-right:1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
     @media screen and (min-width: 964px) {
-        padding-left:30px;
-        padding-right:30px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 `;
 
@@ -128,7 +177,6 @@ const Container = styled.div`
         color: ${(props) => props.theme.colors.primary};
     }
 `;
-
 
 const FooterWrapper = styled.div`
     display: grid;
