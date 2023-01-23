@@ -115,7 +115,8 @@ export const NavLinks = styled(Link)`
     text-align: center;
     padding: 1.3rem;
     width: 100%;
-    display: table;color: ${(props) => props.theme.colors.light};
+    display: table;
+    color: ${(props) => props.theme.colors.light};
 
     &:hover {
       color: ${(props) => props.theme.colors.primary};

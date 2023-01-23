@@ -89,7 +89,7 @@ const Navbar = () => {
                         </NavItem>
                         <NavItem>
                             <a
-                                href="blog.dywants.com"
+                                href="https://blog.dywants.com"
                                 className="text-[#0A142F] px-[1rem] py[0.5rem]"
                             >
                                 Blog
