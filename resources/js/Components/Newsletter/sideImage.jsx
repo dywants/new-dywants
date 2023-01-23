@@ -14,6 +14,10 @@ const SideImageContainer = styled.div`
     clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
     border-top-right-radius: 26px;
     border-bottom-right-radius: 26px;
+
+    @media ${(props) => props.theme.breakpoints.sm} {
+        display: none;
+    }
 `;
 
 const Image = styled.div`

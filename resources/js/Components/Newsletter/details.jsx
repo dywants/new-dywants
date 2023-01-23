@@ -21,6 +21,10 @@ const Header = styled.h2`
     color: ${(props) => props.theme.colors.secondary};
     font-weight: 700;
     font-size: 45px;
+
+    @media ${(props) => props.theme.breakpoints.sm} {
+        font-size: 30px;
+    }
 `;
 
 const SubHeader = styled.h3`
@@ -28,12 +32,20 @@ const SubHeader = styled.h3`
     color: ${(props) => props.theme.colors.dark};
     font-weight: 700;
     font-size: 24px;
+
+    @media ${(props) => props.theme.breakpoints.sm} {
+        font-size: 20px;
+    }
 `;
 
 const Text = styled.p`
     color: #5d5f6d;
     font-weight: 500;
     font-size: 20px;
+
+    @media ${(props) => props.theme.breakpoints.sm} {
+        font-size: 18px;
+    }
 `;
 
 const FormGroup = styled.div`

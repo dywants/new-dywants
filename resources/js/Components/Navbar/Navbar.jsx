@@ -88,9 +88,9 @@ const Navbar = () => {
                             <NavLinks href="#">Podcast</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks href="https://www.blog.dywants.com">
-                                Blog
-                            </NavLinks>
+                            <a href="blog.dywants.com">
+                                <NavLinks>Blog</NavLinks>
+                            </a>
                         </NavItem>
                     </NavMenu>
                     <div className="hidden lg:block">
