@@ -91,8 +91,11 @@ const Devis = () => {
                                             value="Votre status"
                                         />
                                         <select className="w-full rounded-md border-gray-300 p-3">
-                                            <option value="">Entreprise</option>
-                                            <option value="">
+                                            <option value="1">
+                                                Entreprise
+                                            </option>
+                                            <option value="2">
+                                                {" "}
                                                 Particulier
                                             </option>
                                         </select>
