@@ -88,8 +88,11 @@ const Navbar = () => {
                             <NavLinks href="#">Podcast</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <a href="blog.dywants.com">
-                                <NavLinks>Blog</NavLinks>
+                            <a
+                                href="blog.dywants.com"
+                                className="text-[#0A142F] px-[1rem] py[0.5rem]"
+                            >
+                                Blog
                             </a>
                         </NavItem>
                     </NavMenu>
