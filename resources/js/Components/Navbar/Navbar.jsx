@@ -88,7 +88,7 @@ const Navbar = () => {
                             <NavLinks href="#">Podcast</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks href="https://blog.dywants.com">
+                            <NavLinks href="https://www.blog.dywants.com">
                                 Blog
                             </NavLinks>
                         </NavItem>
