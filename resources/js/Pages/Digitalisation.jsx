@@ -7,6 +7,7 @@ import React from "react";
 import Image from "@/Components/Elements/Image";
 import styled from "styled-components";
 import { Helmet } from "react-helmet-async";
+import { GridSection } from "./styles/globalStyles.js";
 
 const Digitalisation = () => {
     return (

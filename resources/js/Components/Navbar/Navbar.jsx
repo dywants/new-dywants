@@ -77,7 +77,9 @@ const Navbar = () => {
                             </div>
                         </NavItem>
                         <NavItem>
-                            <NavLinks href="#">Projets</NavLinks>
+                            <NavLinks href={route("index.projets")}>
+                                Projets
+                            </NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks href={route("apropos")}>
